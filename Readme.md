@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Данил Чернов](https://up.htmlacademy.ru/adaptive/13/user/301585).
-* Наставник: `Неизвестно`.
+* Наставник: `Моего наставника зовут Алексей Попков. Его можно найти в ВК по следующей ссылке : https://vk.com/poalrom `.
 
 ---
 
