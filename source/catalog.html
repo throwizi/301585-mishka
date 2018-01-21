@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Каталог</title>
+</head>
+<body>
+  <!-- header -->
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html" title="Перейти на главную страницу магазина">
+      <img src="http://via.placeholder.com/90x36" width="90" height="36" alt="Интернет-магазин милых вещиц для дома 'Мишка' ">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button" title="Открыть главное меню сайта">Открыть меню</button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__link"  title="Перейти на страницу каталога">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html" title="Перйти на страницу оформление товара на заказ">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#" title="Поиск по сайту">Поиск по сайту</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#" title="Ваша корзина">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- /header -->
+
+  <!-- section: catalog-intro -->
+  <section class="catalog-intro">
+    <h1 class="catalog-intro__title">Каталог товаров</h1>
+  </section>
+  <!-- /section: catalog-intro -->
+
+  <main class="catalog-main">
+
+    <!-- section: catalog -->
+    <section class="catalog">
+      <h2 class="visually-hidden">Каталог товаров магазина "Мишка"</h2>
+      <ul class="catalog-list good-list">
+        <li class="good-list__item">
+          <a class="good__link good__link--img" href="#" title="Cтраничка товара 'Зайчик-попрыгайчик'">
+            <img class="good__img" src="http://via.placeholder.com/260x196" alt="Зайчик-попрыгайчик" width="260" height="196">
+          </a>
+          <h3 class="good__title">
+            <a class="good__link" href="#" title="Cтраничка товара 'Зайчик-попрыгайчик'">Зайчик-попрыгайчик</a>
+          </h3>
+          <p class="good__profile">Рост 30 см, вес 200 г</p>
+          <footer class="good__footer">
+            <b class="good__price">1 200 руб.</b>
+            <button class="good__order"><img src="http://via.placeholder.com/23x19" alt=""></button>
+          </footer>
+        </li>
+        <li class="good-list__item">
+          <a class="good__link good__link--img" href="#" title="Cтраничка товара 'Корзинка для белья'">
+            <img class="good__img" src="http://via.placeholder.com/260x196" alt="Корзинка для белья" width="260" height="196">
+          </a>
+          <h3 class="good__title">
+            <a class="good__link" href="#" title="Cтраничка товара 'Корзинка для белья'">Корзинка для белья</a>
+          </h3>
+          <p class="good__profile">Диаметр 15 см, высота 10 см</p>
+          <footer class="good__footer">
+            <b class="good__price">690 руб.</b>
+            <button class="good__order"><img src="http://via.placeholder.com/23x19" alt=""></button>
+          </footer>
+        </li>
+        <li class="good-list__item">
+          <a class="good__link good__link--img" href="#" title="Cтраничка товара 'Большая корзинка для игрушек'">
+            <img class="good__img" src="http://via.placeholder.com/260x196" alt="Большая корзинка для игрушек" width="260" height="196">
+          </a>
+          <h3 class="good__title">
+            <a class="good__link" href="#" title="Cтраничка товара 'Большая корзинка для игрушек'">Большая корзинка для игрушек</a>
+          </h3>
+          <p class="good__profile">Диаметр 30 см, высота 30 см</p>
+          <footer class="good__footer">
+            <b class="good__price">1 500 руб.</b>
+            <button class="good__order"><img src="http://via.placeholder.com/23x19" alt=""></button>
+          </footer>
+        </li>
+      </ul>
+    </section>
+    <!-- /section: catalog -->
+
+    <!-- section: video -->
+    <section class="video">
+      <h2 class="video__title">Процесс производства</h2>
+      <!-- Хочу подключить видео через iframe, пока изображение. Обертку добавил по ТЗ -->
+      <div class="video__wrapper">
+        <img src="http://via.placeholder.com/260x151" width="260" height="151" alt="Тут будет находиться видео-контент">
+      </div>
+      <p class="video__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a class="btn" href="#">Cделать заказ</a>
+    </section>
+    <!-- /section: video -->
+  </main>
+
+  <!-- footer: page-footer -->
+  <footer class="page-footer">
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </footer>
+  <!-- /footer: page-footer -->
+
+</body>
+</html>

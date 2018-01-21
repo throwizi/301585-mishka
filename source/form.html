@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <head>
+    <meta charset="utf-8">
+    <title>Вязание на заказ</title>
+  </head>
+</head>
+<body>
+  <!-- header -->
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html" title="Перейти на главную страницу магазина">
+      <img src="http://via.placeholder.com/90x36" width="90" height="36" alt="Интернет-магазин милых вещиц для дома 'Мишка' ">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button" title="Открыть главное меню сайта">Открыть меню</button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html" title="Перейти на страницу каталога">Каталог товаров</a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__link" title="Перйти на страницу формы сайта">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#" title="Поиск по сайту">Поиск по сайту</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#" title="Ваша корзина">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- /header -->
+
+  <!-- section: catalog-intro -->
+  <section class="form-intro">
+    <h1 class="form-intro__title">Вязание на заказ</h1>
+  </section>
+  <!-- /section: catalog-intro -->
+
+  <main class="form-main">
+    <!-- section: order-options -->
+    <section class="order-options">
+      <form action="#" method="post">
+        <p class="order-options__slogan">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <fieldset class="order-options__type">
+          <legend class="order-options__title">Тип</legend>
+          <label class="order-options__elem" for="accessoryForInterior">
+            <input type="checkbox" id="accessoryForInterior" name="Accessory for interior" checked> Аксессуар для интерьера
+          </label>
+          <label class="order-options__elem" for="childrensToy">
+            <input type="checkbox" id="childrensToy" name="Children's toy"> Аксессуар для интерьера
+          </label>
+        </fieldset>
+        <fieldset class="order-options__color">
+          <legend class="order-options__title">Цвет</legend>
+          <label class="order-options__elem" for="white">
+            <input type="checkbox" id="white" name="White" checked> Белый
+          </label>
+          <label class="order-options__elem" for="grey">
+            <input type="checkbox" id="grey" name="Grey" checked> Серый
+          </label>
+          <label class="order-options__elem" for="tiffany">
+            <input type="checkbox" id="tiffany" name="Tiffany"> "Тиффани"
+          </label>
+          <label class="order-options__elem" for="black">
+            <input type="checkbox" id="black" name="Black"> Черный
+          </label>
+          <label class="order-options__elem" for="pink">
+            <input type="checkbox" id="pink" name="Pink"> Розовый
+          </label>
+          <label class="order-options__elem" for="orange">
+            <input type="checkbox" id="orange" name="Orange"> Оранжевый
+          </label>
+        </fieldset>
+        <fieldset class="order-options__initials">
+          <legend class="order-options__title">ФИО</legend>
+          <p class="order-options-type">
+            <label class="order-options__elem" for="name">Имя:</label>
+            <input type="text" id="name" name="Name" placeholder="Введите ваше имя*" required>
+          </p>
+          <p class="order-options-type">
+            <label class="order-options__elem" for="surname">Фамилия:</label>
+            <input type="text" id="surname" name="Surname" placeholder="Укажите фамилию*" required>
+          </p>
+          <p class="order-options-type">
+            <label class="order-options__elem" for="surname">Отчество:</label>
+            <input type="text" id="surname" name="Surname" placeholder="Отчество, если желаете">
+          </p>
+        </fieldset>
+        <fieldset class="order-options__tel">
+          <legend class="order-options__title">Тел</legend>
+          <input type="tel" pattern="+7 [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*" required>
+        </fieldset>
+        <fieldset class="order-options__email">
+          <legend class="order-options__title">e-mail</legend>
+          <input type="tel" pattern="+7 [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*" required>
+        </fieldset>
+        <fieldset class="order-options__addit">
+          <legend class="order-options__title">Доп</legend>
+          <textarea name="Additional information" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </fieldset>
+        <small class="order-options__descr">*Поля обязательны для заполнения</small>
+        <button class="btn" type="submit" title="Оформить заказ">Оформить заказ</button>
+      </form>
+    </section>
+    <!-- /section: order-options -->
+  </main>
+
+  <!-- footer: page-footer -->
+  <footer class="page-footer">
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </footer>
+  <!-- /footer: page-footer -->
+</body>
+</html>
