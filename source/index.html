@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <!-- header -->
@@ -20,10 +21,10 @@
             <a class="site-list__link" href="form.html" title="Перйти на страницу оформление товара на заказ">Вязание на заказ</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#" title="Поиск по сайту">Поиск по сайту</a>
+            <a class="site-list__link site-list__link--search" href="#" title="Поиск по сайту">Поиск по сайту</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#" title="Ваша корзина">Корзина: пока пуста</a>
+            <a class="site-list__link site-list__link--bucket" href="#" title="Ваша корзина">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -36,10 +37,10 @@
       <section class="intro">
         <h1 class="intro__title">Милые штуки ручной работы для дома</h1>
         <ul class="intro-list type-list">
-          <li class="type-list__item">
+          <li class="type-list__item type-list__item--left">
             <a class="type-list__link" href="#">Предметы интерьера</a>
           </li>
-          <li class="type-list__item">
+          <li class="type-list__item type-list__item--right">
             <a class="type-list__link" href="#">Детские игрушки</a>
           </li>
         </ul>
@@ -79,16 +80,14 @@
 
       <!-- section: about -->
       <section class="about">
-        <h2 class="visually-hidden">Почему наши изделия лучшие?</h2>
-        <h3 class="about__subtitle">Коротко о нас:</h3>
+        <h2 class="about__title">Коротко о нас:</h2>
         <ul class="about__list advantages-list">
-          <!-- Склоняюсь к тому, что здесь декор.изображения, позже реализую через bg-i спрайтом -->
-          <li class="advatages-list__item advatages-list__item--clean">Экологически чистые материалы</li>
-          <li class="advatages-list__item advatages-list__item--low-price">Скандинавский стиль по российской цене</li>
-          <li class="advatages-list__item advatages-list__item--nore-likes">Увеличивает лайкина фотографиях</li>
-          <li class="advatages-list__item advatages-list__item--with-love">Связано вручную с любовью и умилением</li>
+          <li class="advatages-list__item advatages-list__item--flower">Экологически чистые материалы</li>
+          <li class="advatages-list__item advatages-list__item--money">Скандинавский стиль по российской цене</li>
+          <li class="advatages-list__item advatages-list__item--heart">Увеличивает лайкина фотографиях</li>
+          <li class="advatages-list__item advatages-list__item--ball">Связано вручную с любовью и умилением</li>
           <li class="advatages-list__item advatages-list__item--rocket">Поддержка отечественного производителя</li>
-          <li class="advatages-list__item advatages-list__item--surprise">Поставляется в подарочной упаковке</li>
+          <li class="advatages-list__item advatages-list__item--gift">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
       <!-- /section: about -->
@@ -99,7 +98,7 @@
         <ul class="reviews__slider slider">
           <li class="reviews__slide">
             <p class="reviews__description">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <cite class="reviews__author-name">Трэвис Баркер</cite>
+            <cite class="reviews__author-name">Анастасия Красильникова</cite>
             <a class="reviews__link" href="#">@misssssiskras</a>
           </li>
           <!-- Ещё отзывы... -->
@@ -115,10 +114,10 @@
       <!-- section: contacts -->
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
-        <table class="contacts-list">
+        <table class="contacts__list">
           <tr>
             <td class="contacts-property">email:</td>
-            <td class="contacts-value"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+            <td class="contacts-value contacts-value--underlined"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
           </tr>
           <tr>
             <td class="contacts-property">адрес</td>
