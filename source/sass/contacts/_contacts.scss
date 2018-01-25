@@ -1,4 +1,4 @@
-.contacts{
+$text-color.contacts{
   padding: 40px 0 42px 0;
 
   //grid
@@ -18,5 +18,5 @@
 .contacts__list td {
   font-size: 15px;
   line-height: 30px;
-  color: #444444;
+  color: $text-color;
 }

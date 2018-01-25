@@ -34,7 +34,7 @@ input[type="radio"].visually-hidden {
 }
 
 .btn{
-  border: 2px solid #444444;
+  border: 2px solid $text-color;
   background-color: #ffffff;
 
   font-size: 17px;
@@ -43,7 +43,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
     &:hover, &:focus{
       color: #ffffff;
-      background-color: #444444;
+      background-color: $text-color;
     }
 
     &:active{

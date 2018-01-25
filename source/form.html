@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Вязание на заказ</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 </head>
 <body>
@@ -18,8 +19,8 @@
         <li class="site-list__item">
           <a class="site-list__link" href="catalog.html" title="Перейти на страницу каталога">Каталог товаров</a>
         </li>
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__link" title="Перйти на страницу формы сайта">Вязание на заказ</a>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--active" title="Перйти на страницу формы сайта">Вязание на заказ</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link" href="#" title="Поиск по сайту">Поиск по сайту</a>
@@ -40,7 +41,7 @@
         Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
       <fieldset class="order-options__elem">
-        <legend class="order-options__title">Тип</legend>
+        <legend class="order-options__subtitle">Тип</legend>
         <label class="order-options__label order-options__label--radio">
           <input class="order-options__input order-options__input--radio" type="radio" name="type" value="accessory" checked> Аксессуар для интерьера
         </label>
@@ -49,7 +50,7 @@
         </label>
       </fieldset>
       <fieldset class="order-options__elem">
-        <legend class="order-options__title">Цвет</legend>
+        <legend class="order-options__subtitle">Цвет</legend>
         <label class="order-options__label order-options__label--checkbox">
           <input class="order-options__input order-options__input--checkbox" type="checkbox" name="color[]" value="white" checked> Белый
         </label>
@@ -70,28 +71,28 @@
         </label>
       </fieldset>
       <fieldset class="order-options__elem">
-        <legend class="order-options__title">ФИО</legend>
-          <label class="order-options__elem">Имя:
+        <legend class="order-options__subtitle">ФИО</legend>
+          <label class="order-options__label">Имя:
             <input class="order-options__input order-options__input--underlined" type="text" name="Name" placeholder="Введите ваше имя*" required>
           </label>
-          <label class="order-options__elem">Фамилия:
+          <label class="order-options__label">Фамилия:
             <input class="order-options__input order-options__input--underlined" type="text" name="Surname" placeholder="Укажите фамилию*" required>
           </label>
-          <label class="order-options__elem">Отчество:
+          <label class="order-options__label">Отчество:
             <input class="order-options__input order-options__input--underlined" type="text" name="Patronym" placeholder="Отчество, если желаете">
           </label>
       </fieldset>
       <fieldset class="order-options__elem">
-        <legend class="order-options__title">Тел</legend>
+        <legend class="order-options__subtitle">Тел</legend>
         <input class="order-options__input order-options__input--underlined order-options__input--phone"
         type="tel" pattern="+7 [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*" required>
       </fieldset>
       <fieldset class="order-options__elem">
-        <legend class="order-options__title">e-mail</legend>
+        <legend class="order-options__subtitle">e-mail</legend>
         <input class="order-options__input order-options__input--underlined order-options__input--message" type="email" placeholder="Ваш Email*" required>
       </fieldset>
       <fieldset class="order-options__elem">
-        <legend class="order-options__title">Доп</legend>
+        <legend class="order-options__subtitle">Доп</legend>
         <textarea class="order-options__input order-options__input__input--underlined order-options__input__input--area" name="Additional information"
         placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </fieldset>
