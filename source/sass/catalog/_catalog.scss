@@ -36,23 +36,3 @@
 product__price{
   font-size: 15px;
 }
-
-.video{
-  background-color: #ffffff;
-  padding: 0 30px 34px 30px;
-  margin-bottom: 60px;
-  //grid
-  outline: 1px solid blue;
-}
-
-.video__title{
-  font-size: 17px;
-  line-height: 30px;
-  text-align: center;
-}
-
-.video__description{
-  font-size: 13px;
-  line-height: 24px;
-  color: $text-color;
-}
