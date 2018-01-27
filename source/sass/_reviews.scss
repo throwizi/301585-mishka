@@ -1,5 +1,8 @@
 .reviews {
-  padding: 35px 30px 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 30px 50px 30px;
 
   //grid
   outline: 1px solid pink;
@@ -12,17 +15,52 @@
   }
 
   &__slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     padding-left: 0;
     list-style-type: none;
   }
 
   &__description {
+    margin-bottom: 30px;
+
     font-size: 15px;
     line-height: 30px;
     color: $text-color;
   }
 
+  &__author-name{
+    display: block;
+    margin-bottom: 8px;
+  }
+
   &__link {
+    display: block;
+    margin-bottom: 30px;
     color: $text-color;
+  }
+  &__slider-toggles{
+    display: flex;
+    width: 100%;
+    max-width: 260px;
+    margin-bottom: 38px;
+  }
+
+  &__prev,
+  &__next{
+    padding: 13px 0;
+    border: 1px solid $border-color;
+
+    background-color: #ffffff;
+  }
+
+  &__prev{
+    border-right: none;
+  }
+
+  &__next{
+    border-left: none;
   }
 }

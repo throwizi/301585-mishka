@@ -1,4 +1,7 @@
 .about {
+  display: flex;
+  flex-direction: column;
+
   padding: 35px 30px;
   background-color: #ffffff;
   outline: 1px solid blue;

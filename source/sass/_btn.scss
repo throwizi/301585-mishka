@@ -1,7 +1,11 @@
 .btn {
+  width: 100%;
+  max-width: 290px;
+  padding: 17.5px 0;
   border: 2px solid $text-color;
   background-color: #ffffff;
 
+  text-align: center;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;

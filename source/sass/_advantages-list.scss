@@ -1,0 +1,48 @@
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding-left: 0;
+  list-style-type: none;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+
+  &__item {
+    padding-top: 55px;
+    padding-bottom: 30px;
+
+    color: #000000;
+
+    &--flower {
+      background: url("../img/icon-feature-flower.svg") 0% 0% no-repeat;
+    }
+
+    &--money {
+      background: url("../../img/icon-feature-money.svg") 0% 0% no-repeat;
+    }
+
+    &--heart {
+      background: url("../../img/icon-feature-heart.svg") 0% 0% no-repeat;
+    }
+
+    &--ball {
+      background: url("../../img/icon-feature-ball.svg") 0% 0% no-repeat;
+    }
+
+    &--rocket {
+      background: url("../../img/icon-feature-rocket.svg") 0% 0% no-repeat;
+    }
+
+    &--gift {
+      background: url("../../img/icon-feature-gift.svg") 0% 0% no-repeat;
+    }
+  }
+
+  &__item:last-child{
+    padding-bottom: 0;
+  }
+
+}

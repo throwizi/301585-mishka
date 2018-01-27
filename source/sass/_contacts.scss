@@ -1,19 +1,42 @@
 .contacts {
+  display: flex;
+  flex-direction: column;
+
   padding: 40px 0 42px 0;
 
   //grid
   outline: 1px solid aqua;
 
   &__title {
+    margin-top: 0;
+    margin-bottom: 32px;
+    padding: 0 30px;
     font-size: 18px;
     line-height: 30px;
   }
 
   &-list {
+    width: 100%;
+    max-width: 315px;
     padding: 0 30px;
+    margin-bottom: 35px;
 
     font-size: 15px;
     line-height: 30px;
     color: $text-color;
+  }
+
+  &__property,
+  &__value{
+    vertical-align: top;
+  }
+
+  &__map{
+    margin-bottom: 35px;
+  }
+
+  &__btn{
+    align-self: center;
+    max-width: 260px;
   }
 }

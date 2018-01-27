@@ -1,8 +1,9 @@
 .intro {
   display: flex;
   flex-direction: column;
-
+  justify-content: space-between;
   min-height: 283px;
+  margin: 0 auto;
 
   background: #f6f7fb url("../../img/hero-mobile@1x.jpg") 50% 50% no-repeat;
   background-size: cover;
@@ -12,10 +13,9 @@
 
   &__title {
     margin-top: 0;
-
+    padding: 0 30px;
     font-size: 27px;
     line-height: 30px;
-
     text-align: center;
   }
 }

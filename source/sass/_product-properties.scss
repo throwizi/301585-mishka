@@ -1,4 +1,16 @@
 .product-properties {
+  width: 100%;
+  max-width: 295px;
+  margin-bottom: 26px;
+
   font-size: 15px;
+  border-collapse: collapse;
   color: $text-color;
+
+  &__property,
+  &__value{
+    padding: 9px 0;
+    border-bottom: 1px solid $border-color;
+  }
+
 }
