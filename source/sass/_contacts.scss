@@ -1,0 +1,19 @@
+.contacts {
+  padding: 40px 0 42px 0;
+
+  //grid
+  outline: 1px solid aqua;
+
+  &__title {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &-list {
+    padding: 0 30px;
+
+    font-size: 15px;
+    line-height: 30px;
+    color: $text-color;
+  }
+}

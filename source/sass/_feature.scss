@@ -1,0 +1,32 @@
+.feature {
+  background-color: #ffffff;
+  padding: 31.5px 30px 41px 30px;
+
+  //grid
+  outline: 1px solid yellow;
+
+  &__title {
+    margin-top: 0;
+
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__subtitle {
+    font-size: 17px;
+    line-height: 20px;
+    color: #63d1bb;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 24px;
+    color: $text-color;
+  }
+
+  &__price {
+    color: $text-color;
+    font-weight: bold;
+  }
+}

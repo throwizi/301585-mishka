@@ -1,0 +1,12 @@
+.about {
+  padding: 35px 30px;
+  background-color: #ffffff;
+  outline: 1px solid blue;
+
+  &__title {
+    margin-top: 0;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+  }
+}
