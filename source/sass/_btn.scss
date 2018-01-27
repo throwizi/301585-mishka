@@ -1,0 +1,19 @@
+.btn {
+  border: 2px solid $text-color;
+  background-color: #ffffff;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $text-color;
+  }
+
+  &:active {
+    color: #7c7c7c;
+  }
+}

@@ -5,37 +5,3 @@
   // grid
   outline: 1px solid red;
 }
-
-.site-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  padding-left: 0;
-  list-style-type: none;
-
-  &__item {
-    //Чтобы не ругался трэвис
-    color: #000000;
-  }
-
-  &__link {
-    color: #000000;
-    font-size: 17px;
-    font-weight: 700;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      color: #666666;
-    }
-
-    &:active {
-      color: #b2b2b2;
-    }
-
-    &--active {
-      color: #666666;
-    }
-  }
-}

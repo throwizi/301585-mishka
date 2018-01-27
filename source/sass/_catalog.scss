@@ -18,25 +18,3 @@
     list-style-type: none;
   }
 }
-
-.product {
-  //Чтобы не ругался трэвис
-  color: #000000;
-
-  &__title {
-    font-size: 17px;
-    line-height: 24px;
-
-    text-align: center;
-  }
-
-  &__description {
-    font-size: 13px;
-    line-height: 30px;
-    color: $text-color;
-  }
-
-  &__price {
-    font-size: 15px;
-  }
-}
