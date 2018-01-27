@@ -1,0 +1,45 @@
+order-options{
+  background-color: #ffffff;
+
+  //grid
+
+  outline: 1px solid red;
+
+  &__title{
+    margin: 0;
+    padding: 75.5px 0;
+    text-align: center;
+
+    background-color: #f1f1f1;
+  }
+
+  &__slogan{
+    padding: 0 30px;
+    font-size: 13px;
+    color: $text-color;
+  }
+
+  &__elem{
+    padding: 0 30px;
+  }
+
+  &__subtitle{
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 17px;
+    color: #63d1bb;
+    text-transform: uppercase;
+  }
+
+  &__label{
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 18px;
+  }
+
+  &__description{
+    font-size: 14px;
+    line-height: 16px;
+    color: $text-color;
+  }
+}

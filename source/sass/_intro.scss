@@ -11,32 +11,35 @@
 
   // grid
   outline: 1px solid green;
-}
 
-.intro__title{
-  margin-top: 0;
+  &__title{
+    margin-top: 0;
 
-  font-size: 27px;
-  line-height: 30px;
+    font-size: 27px;
+    line-height: 30px;
 
-  text-align: center;
+    text-align: center;
+  }
 }
 
 .type-list{
   padding-left: 0;
   list-style-type: none;
-}
 
-.type-list__item--left{
-  background-color: #63d1bb;
-}
+  &__item{
 
-.type-list__item--right{
-  background-color: #46c1ae;
-}
+    &--left{
+      background-color: #63d1bb;
+    }
 
-.type-list__link{
-  font-size: 19px;
-  font-weight: bold;
-  color: #ffffff;
+    &--right{
+      background-color: #46c1ae;
+    }
+  }
+
+  &__link{
+    font-size: 19px;
+    font-weight: bold;
+    color: #ffffff;
+  }
 }
