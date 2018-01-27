@@ -1,17 +1,17 @@
-.video{
+.video {
   background-color: #ffffff;
   padding: 0 30px 34px 30px;
   margin-bottom: 60px;
   //grid
   outline: 1px solid blue;
 
-  &__title{
+  &__title {
     font-size: 17px;
     line-height: 30px;
     text-align: center;
   }
 
-  &__description{
+  &__description {
     font-size: 13px;
     line-height: 24px;
     color: $text-color;

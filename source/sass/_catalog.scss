@@ -1,11 +1,11 @@
-.catalog{
+.catalog {
   background-color: #ffffff;
   margin-bottom: 30px;
 
   //grid
   outline: 1px solid orange;
 
-  &__title{
+  &__title {
     margin: 0;
     padding: 75.5px 0;
     text-align: center;
@@ -13,28 +13,30 @@
     background-color: #f1f1f1;
   }
 
-  &-list{
+  &-list {
     padding: 35px 30px;
     list-style-type: none;
   }
 }
 
-.product{
+.product {
+  //Чтобы не ругался трэвис
+  color: #000;
 
-  &__title{
+  &__title {
     font-size: 17px;
     line-height: 24px;
 
     text-align: center;
   }
 
-  &__description{
+  &__description {
     font-size: 13px;
     line-height: 30px;
     color: $text-color;
   }
 
-  &__price{
+  &__price {
     font-size: 15px;
   }
 }

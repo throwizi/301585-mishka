@@ -1,6 +1,4 @@
-.intro{
-  display: -webkit-flex;
-  display: -ms-flex;
+.intro {
   display: flex;
   flex-direction: column;
 
@@ -12,7 +10,7 @@
   // grid
   outline: 1px solid green;
 
-  &__title{
+  &__title {
     margin-top: 0;
 
     font-size: 27px;
@@ -22,22 +20,24 @@
   }
 }
 
-.type-list{
+.type-list {
   padding-left: 0;
   list-style-type: none;
 
-  &__item{
+  &__item {
+    //Чтобы не ругался трэвис
+    color: #000;
 
-    &--left{
+    &--left {
       background-color: #63d1bb;
     }
 
-    &--right{
+    &--right {
       background-color: #46c1ae;
     }
   }
 
-  &__link{
+  &__link {
     font-size: 19px;
     font-weight: bold;
     color: #ffffff;

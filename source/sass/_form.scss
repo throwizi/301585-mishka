@@ -1,11 +1,10 @@
-order-options{
+order-options {
   background-color: #ffffff;
 
   //grid
-
   outline: 1px solid red;
 
-  &__title{
+  &__title {
     margin: 0;
     padding: 75.5px 0;
     text-align: center;
@@ -13,17 +12,17 @@ order-options{
     background-color: #f1f1f1;
   }
 
-  &__slogan{
+  &__slogan {
     padding: 0 30px;
     font-size: 13px;
     color: $text-color;
   }
 
-  &__elem{
+  &__elem {
     padding: 0 30px;
   }
 
-  &__subtitle{
+  &__subtitle {
     font-size: 17px;
     font-weight: bold;
     line-height: 17px;
@@ -31,13 +30,13 @@ order-options{
     text-transform: uppercase;
   }
 
-  &__label{
+  &__label {
     font-size: 17px;
     font-weight: bold;
     line-height: 18px;
   }
 
-  &__description{
+  &__description {
     font-size: 14px;
     line-height: 16px;
     color: $text-color;
