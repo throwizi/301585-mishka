@@ -2,13 +2,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 30px 50px 30px;
+  padding-bottom: 47px;
 
   //grid
   outline: 1px solid pink;
 
   &__title {
     margin-top: 0;
+    margin-bottom: 30px;
 
     font-size: 25px;
     line-height: 30px;
@@ -19,11 +20,13 @@
     flex-direction: column;
     justify-content: space-between;
 
+    margin: 0;
     padding-left: 0;
     list-style-type: none;
   }
 
   &__description {
+    margin-top: 0;
     margin-bottom: 30px;
 
     font-size: 15px;
@@ -33,7 +36,7 @@
 
   &__author-name {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 7px;
   }
 
   &__link {
@@ -45,8 +48,8 @@
   &__slider-toggles {
     display: flex;
     width: 100%;
-    max-width: 260px;
-    margin-bottom: 38px;
+    max-width: 290px;
+    margin-bottom: 40px;
   }
 
   &__prev,

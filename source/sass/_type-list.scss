@@ -7,8 +7,25 @@
 
   &__item {
     display: flex;
+    justify-content: space-around;
     flex-grow: 1;
     color: #000000;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+    padding: 21.5px 30px;
+
+    font-size: 19px;
+    font-weight: bold;
+    color: #ffffff;
+
+    span{
+      padding-right: 51px;
+    }
 
     &--left {
       background-color: #63d1bb;
@@ -17,14 +34,6 @@
     &--right {
       background-color: #46c1ae;
     }
-  }
-
-  &__link {
-    padding: 25px 30px;
-
-    font-size: 19px;
-    font-weight: bold;
-    color: #ffffff;
   }
 }
 

@@ -1,5 +1,6 @@
 .site-nav {
   width: 100%;
+  display: none;
 }
 
 .site-list {
@@ -18,7 +19,6 @@
     justify-content: center;
     width: 100%;
     padding: 27.5px 0;
-    text-align: center;
 
     border-top: 1px solid $border-color;
   }
@@ -37,7 +37,6 @@
     font-weight: 700;
     text-decoration: none;
 
-    &:hover,
     &:focus {
       color: #666666;
     }

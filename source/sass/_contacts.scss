@@ -2,15 +2,11 @@
   display: flex;
   flex-direction: column;
 
-  padding: 40px 0 42px 0;
-
-  //grid
-  outline: 1px solid aqua;
+  padding: 32px 0;
 
   &__title {
     margin-top: 0;
-    margin-bottom: 32px;
-    padding: 0 30px;
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -19,7 +15,7 @@
     width: 100%;
     max-width: 315px;
     padding: 0 30px;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
 
     font-size: 15px;
     line-height: 30px;
@@ -31,8 +27,28 @@
     vertical-align: top;
   }
 
+  &__property{
+    width: 33%;
+    padding-bottom: 30px;
+  }
+
+  &__value{
+    width: 66%;
+  }
+
+  &__link{
+    color: $text-color;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #46c1ae;
+  }
+
+  &__link:focus{
+    color: #d6f1ed;
+    border-color: #d6f1ed;
+  }
+
   &__map {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 
   &__btn {
