@@ -27,3 +27,9 @@
     color: #ffffff;
   }
 }
+
+@media (min-width : $tablet-width){
+  .type-list{
+    flex-direction: row;
+  }
+}

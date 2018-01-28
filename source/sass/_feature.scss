@@ -50,3 +50,40 @@
     font-weight: bold;
   }
 }
+
+@media (min-width : $tablet-width){
+  .feature {
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:55px 50px 57px 50px ;
+
+    &__header {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+
+    }
+
+    &__text {
+      margin-top: 0;
+      flex-basis: 38%;
+      order: 2;
+    }
+
+    &__img{
+      order: 3;
+    }
+
+    &__footer{
+      margin: 0 auto;
+      order: 5;
+    }
+
+    &__price{
+      width: 240px;
+    }
+  }
+}

@@ -45,3 +45,16 @@
     padding-bottom: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .advantages-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item{
+      flex-basis: 40%;
+      padding-right: 10%;
+    }
+  }
+}
