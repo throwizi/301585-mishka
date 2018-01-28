@@ -31,7 +31,7 @@
     color: $text-color;
   }
 
-  &__author-name{
+  &__author-name {
     display: block;
     margin-bottom: 8px;
   }
@@ -41,7 +41,8 @@
     margin-bottom: 30px;
     color: $text-color;
   }
-  &__slider-toggles{
+
+  &__slider-toggles {
     display: flex;
     width: 100%;
     max-width: 260px;
@@ -49,18 +50,18 @@
   }
 
   &__prev,
-  &__next{
+  &__next {
     padding: 13px 0;
     border: 1px solid $border-color;
 
     background-color: #ffffff;
   }
 
-  &__prev{
+  &__prev {
     border-right: none;
   }
 
-  &__next{
+  &__next {
     border-left: none;
   }
 }

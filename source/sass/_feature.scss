@@ -10,7 +10,7 @@
   //grid
   outline: 1px solid yellow;
 
-  &__header{
+  &__header {
     display: flex;
     flex-direction: column;
   }
@@ -37,12 +37,11 @@
     color: $text-color;
   }
 
-  &__footer{
+  &__footer {
     width: 100%;
     max-width: 292px;
     display: flex;
     flex-direction: column;
-
   }
 
   &__price {
