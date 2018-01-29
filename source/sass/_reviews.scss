@@ -4,9 +4,6 @@
   justify-content: space-between;
   padding-bottom: 47px;
 
-  //grid
-  outline: 1px solid pink;
-
   &__title {
     margin-top: 0;
     margin-bottom: 30px;
@@ -49,6 +46,7 @@
     display: flex;
     width: 100%;
     max-width: 290px;
+    margin: 0 auto;
     margin-bottom: 40px;
   }
 
@@ -66,5 +64,9 @@
 
   &__next {
     border-left: none;
+  }
+
+  &__btn {
+    margin: 0 auto;
   }
 }

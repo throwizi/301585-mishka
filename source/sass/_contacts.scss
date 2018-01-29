@@ -23,26 +23,26 @@
   }
 
   &__property,
-  &__value  {
+  &__value {
     vertical-align: top;
   }
 
-  &__property{
+  &__property {
     width: 33%;
     padding-bottom: 30px;
   }
 
-  &__value{
+  &__value {
     width: 66%;
   }
 
-  &__link{
+  &__link {
     color: $text-color;
     padding-bottom: 7px;
     border-bottom: 1px solid #46c1ae;
   }
 
-  &__link:focus{
+  &__link:focus {
     color: #d6f1ed;
     border-color: #d6f1ed;
   }

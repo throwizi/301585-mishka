@@ -23,7 +23,7 @@
     font-weight: bold;
     color: #ffffff;
 
-    span{
+    span {
       padding-right: 51px;
     }
 
@@ -37,8 +37,8 @@
   }
 }
 
-@media (min-width : $tablet-width){
-  .type-list{
+@media (min-width: $tablet-width) {
+  .type-list {
     flex-direction: row;
   }
 }

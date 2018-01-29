@@ -1,7 +1,36 @@
-.sub-list{
+.sub-list {
   display: none;
+  justify-content: flex-start;
 
-  padding-left: 0;
   list-style-type: none;
+}
 
+@media (min-width: $tablet-width) {
+  .sub-list {
+    display: flex;
+    margin-top: 20.5px;
+    margin-bottom: 112px;
+
+    &__item--tablet {
+      margin-right: 5.43%;
+    }
+
+    &__item--desktop {
+      display: none;
+    }
+
+    &__item:last-child {
+      margin-left: auto;
+    }
+
+    &__link {
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: bold;
+    }
+
+    &__link--normal {
+      font-weight: normal;
+    }
+  }
 }

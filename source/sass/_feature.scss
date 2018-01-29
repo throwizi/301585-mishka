@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  align-content: center;
+  align-content: flex-start;
 
   background-color: #ffffff;
   padding-top: 30px;
@@ -12,6 +12,7 @@
   &__header {
     display: flex;
     flex-direction: column;
+    margin-bottom: 29px;
   }
 
   &__title {
@@ -23,8 +24,6 @@
   }
 
   &__subtitle {
-    margin-bottom: 29px;
-
     font-size: 17px;
     line-height: 20px;
     color: #63d1bb;
@@ -40,7 +39,9 @@
     color: $text-color;
   }
 
-  &__img{
+  &__img {
+    width: 50%;
+    height: 100%;
     margin-bottom: 26.5px;
   }
 
@@ -60,39 +61,47 @@
   }
 }
 
-@media (min-width : $tablet-width){
+@media (min-width: $tablet-width) {
   .feature {
+    padding-top: 51px;
     flex-direction: row;
-    align-items: flex-start;
-    align-content: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding:55px 50px 57px 50px ;
 
     &__header {
       width: 100%;
-      flex-direction: row;
-      justify-content: space-between;
+      margin-bottom: 56.5px;
 
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__title {
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &__subtitle {
+      width: 78px;
+      margin-bottom: 0;
+      padding: 0 30px;
+
+      text-align: center;
+      font-weight: bold;
     }
 
     &__text {
-      margin-top: 0;
-      flex-basis: 38%;
-      order: 2;
+      flex-basis: 37%;
     }
 
-    &__img{
+    &__img {
+      order: 1;
+    }
+
+    &__footer {
+      flex-basis: 100%;
       order: 3;
-    }
-
-    &__footer{
-      margin: 0 auto;
-      order: 5;
-    }
-
-    &__price{
-      width: 240px;
     }
   }
 }

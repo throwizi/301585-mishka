@@ -53,9 +53,36 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    &__item{
-      flex-basis: 40%;
-      padding-right: 10%;
+    &__item {
+      flex-basis: 43%;
+      margin-bottom: 60px;
+
+      font-size: 20px;
+    }
+
+    &__item--flower {
+      flex-basis: 33%;
+    }
+
+    &__item--money {
+      flex-basis: 37%;
+      order: 3;
+    }
+
+    &__item--heart {
+      order: 6;
+    }
+
+    &__item--ball {
+      order: 2;
+    }
+
+    &__item--rocket {
+      order: 4;
+    }
+
+    &__item--gift {
+      order: 6;
     }
   }
 }

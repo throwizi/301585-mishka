@@ -17,13 +17,18 @@
   }
 }
 
-@media (min-width: $tablet-width){
-  .page-header{
+@media (min-width: $tablet-width) {
+  .page-header {
     padding: 0 50px;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
 
-    &__toggle{
+    &__logo {
+      padding: 0;
+      align-self: center;
+    }
+
+    &__toggle {
       display: none;
     }
   }

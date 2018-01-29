@@ -1,6 +1,6 @@
 .product-properties {
   width: 100%;
-  max-width: 295px;
+  // max-width: 295px;
   margin-bottom: 30px;
 
   font-size: 15px;
@@ -16,10 +16,9 @@
   }
 }
 
-@media (min-width : $tablet-width) {
+@media (min-width: $tablet-width) {
   .product-properties {
-    width: auto;
-    flex-basis: 30%;
-    order: 4;
+    width: 37%;
+    order: 2;
   }
 }

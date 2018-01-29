@@ -52,35 +52,30 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .site-nav {
+    display: flex;
     width: auto;
     margin-left: auto;
   }
 
   .site-list {
-    margin-left: auto;
     flex-direction: row;
 
     &__item {
-      padding: 0;
-      border: none;
-
-      &--search {
-        order: -2;
-      }
-
-      &--bucket {
-        order: -1;
-      }
+      display: none;
     }
 
-    &__link {
-      padding: 0;
+    &__item--search,
+    &__item--bucket {
+      display: flex;
+      align-items: center;
+      padding: 32.5px 0;
+      border: none;
+      height: 100%;
     }
 
     &__item:last-child {
-      padding: 0;
+      padding-bottom: 0;
       border: none;
     }
   }

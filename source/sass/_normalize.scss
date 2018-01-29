@@ -124,15 +124,6 @@ strong {
 }
 
 /**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
@@ -140,7 +131,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
+  font-family: monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -276,7 +267,7 @@ button,
 html [type="button"], /* 1 */
 [type="reset"],
 [type="submit"] {
-appearance: button; /* 2 */
+  appearance: button; /* 2 */
 }
 
 /**
