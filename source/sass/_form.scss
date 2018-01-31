@@ -1,39 +1,112 @@
 .order-options {
   background-color: #ffffff;
 
-  //grid
-  outline: 1px solid red;
 
   &__title {
     margin: 0;
-    padding: 75.5px 0;
+    padding: 73.5px 0;
+    font-size: 27px;
+    line-height: 30px;
     text-align: center;
 
     background-color: #f1f1f1;
   }
 
-  &__slogan {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     padding: 0 30px;
+  }
+
+  &__slogan {
+    max-width: 260px;
+    margin: 23px auto 24px auto;
     font-size: 13px;
     color: $text-color;
   }
 
   &__elem {
-    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 260px;
+    margin: 0 auto;
+    border: 1px solid #62d1ba;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding-left: 0;
+
+    &--radio {
+      padding-top: 33px;
+      padding-bottom: 42px;
+    }
   }
 
   &__subtitle {
+    align-self: flex-start;
+    padding-right: 28px;
+
     font-size: 17px;
     font-weight: bold;
     line-height: 17px;
     color: #63d1bb;
     text-transform: uppercase;
+
+    background-color: #ffffff;
   }
 
   &__label {
+    position: relative;
     font-size: 17px;
     font-weight: bold;
     line-height: 18px;
+
+    &--radio {
+      padding-left: 60px;
+      margin-bottom: 25px;
+
+      span {
+        cursor: pointer;
+      }
+
+      span::before {
+        content: "";
+        position: absolute;
+        top: -9px;
+        left: 0;
+        width: 36px;
+        height: 37px;
+        border-radius: 50%;
+        border: 1px solid #000000;
+      }
+
+      span::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 10px;
+        width: 17px;
+        height: 17px;
+        opacity: 0;
+        background-color: #62d1ba;
+        border-radius: 50%;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__input {
+    &--radio:checked + span::after {
+      opacity: 1;
+    }
+
+    &--radio:hover + span::before {
+      border-color: #62d1ba;
+    }
   }
 
   &__description {
