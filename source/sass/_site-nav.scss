@@ -1,6 +1,13 @@
 .site-nav {
   width: 100%;
-  display: none;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
 }
 
 .site-list {
@@ -18,20 +25,20 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 27.5px 0;
 
     border-top: 1px solid $border-color;
   }
 
   &__item:last-child {
     border-bottom: 1px solid $border-color;
-    padding-bottom: 26.5px;
   }
 
   &__link {
-    width: auto;
-    height: auto;
-
+    position: relative;
+    width: 100%;
+    padding: 27.5px 0;
+    padding-right: 20px;
+    text-align: center;
     color: #000000;
     font-size: 17px;
     font-weight: 700;
@@ -39,14 +46,36 @@
 
     &:focus {
       color: #666666;
+
+      path {
+        fill: #63d1bb;
+      }
     }
 
     &:active {
       color: #b2b2b2;
+
+      path {
+        fill: #d0f1ea;
+      }
     }
 
     &--active {
       color: #666666;
+    }
+
+    &--search,
+    &--bucket {
+      svg {
+        position: absolute;
+        left: 30px;
+      }
+    }
+
+    &--bucket {
+      span {
+        padding-left: 30px;
+      }
     }
   }
 }

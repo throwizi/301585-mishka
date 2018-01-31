@@ -1,6 +1,5 @@
 .product-properties {
-  width: 100%;
-  // max-width: 295px;
+  width: 260px;
   margin-bottom: 30px;
 
   font-size: 15px;
@@ -11,8 +10,12 @@
   &__property,
   &__value {
     padding-top: 7.5px;
-    padding-bottom: 6.5px;
+    padding-bottom: 6px;
     border-bottom: 1px solid $border-color;
+  }
+
+  &__value {
+    padding-left: 15px;
   }
 }
 

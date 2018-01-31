@@ -6,18 +6,18 @@
   align-content: flex-start;
 
   background-color: #ffffff;
-  padding-top: 30px;
+  padding-top: 27px;
   padding-bottom: 40px;
 
   &__header {
     display: flex;
     flex-direction: column;
-    margin-bottom: 29px;
+    margin-bottom: 22px;
   }
 
   &__title {
     margin-top: 0;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
 
     font-size: 25px;
     line-height: 30px;
@@ -26,6 +26,7 @@
   &__subtitle {
     font-size: 17px;
     line-height: 20px;
+    font-weight: bold;
     color: #63d1bb;
     text-transform: uppercase;
   }
@@ -39,15 +40,22 @@
     color: $text-color;
   }
 
+  &__product-properties {
+    align-self: center;
+  }
+
   &__img {
-    width: 50%;
+
+    align-self: center;
+
+    width: 260px;
     height: 100%;
     margin-bottom: 26.5px;
   }
 
   &__footer {
-    width: 100%;
-    max-width: 292px;
+    align-self: center;
+    width: 260px;
     display: flex;
     flex-direction: column;
   }
@@ -58,6 +66,10 @@
 
     color: $text-color;
     font-weight: bold;
+  }
+
+  &__btn {
+    align-self: center;
   }
 }
 

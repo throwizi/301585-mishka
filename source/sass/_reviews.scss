@@ -2,11 +2,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 17px;
   padding-bottom: 47px;
 
   &__title {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 
     font-size: 25px;
     line-height: 30px;
@@ -24,7 +25,7 @@
 
   &__description {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 
     font-size: 15px;
     line-height: 30px;
@@ -33,40 +34,116 @@
 
   &__author-name {
     display: block;
+    font-weight: bold;
     margin-bottom: 7px;
   }
 
   &__link {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
     color: $text-color;
   }
 
   &__slider-toggles {
     display: flex;
+    justify-content: space-between;
     width: 100%;
-    max-width: 290px;
+    max-width: 260px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
   }
 
   &__prev,
   &__next {
-    padding: 13px 0;
+    position: relative;
+    flex-basis: 130px;
+    padding: 11px 0;
     border: 1px solid $border-color;
 
     background-color: #ffffff;
   }
 
   &__prev {
-    border-right: none;
+    &:focus {
+      polygon {
+        fill: #666666;
+      }
+    }
+
+    &:active {
+      polygon {
+        fill: #b2b2b2;
+      }
+    }
   }
 
   &__next {
     border-left: none;
+
+    &:focus {
+      polygon {
+        fill: #666666;
+      }
+    }
+
+    &:active {
+      polygon {
+        fill: #b2b2b2;
+      }
+    }
   }
 
   &__btn {
+    width: 255px;
     margin: 0 auto;
+    padding: 13.5px 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    position: relative;
+
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding-top: 80px;
+    padding-bottom: 90px;
+    background: #ffffff url("../img/review@1x.jpg") -10% 0% no-repeat;
+
+    &__title {
+      margin-bottom: 0;
+
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &__slider {
+      margin-top: 50px;
+      order: 2;
+    }
+
+    &__description {
+      padding-right: 71px;
+    }
+
+    &__link {
+      margin-bottom: 0;
+    }
+
+    &__slider-toggles {
+      position: absolute;
+      top: 65%;
+      right: 50px;
+      order: 3;
+    }
+
+    &__btn {
+      flex-basis: 175px;
+      margin: 0;
+      margin-left: auto;
+      order: 1;
+    }
   }
 }

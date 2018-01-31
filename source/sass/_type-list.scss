@@ -17,22 +17,39 @@
     justify-content: space-between;
     align-items: center;
     flex-basis: 100%;
-    padding: 21.5px 30px;
+    padding: 21px 30px;
 
     font-size: 19px;
     font-weight: bold;
     color: #ffffff;
 
     span {
-      padding-right: 51px;
+      flex-basis: 130px;
     }
 
     &--left {
+      padding-right: 36px;
       background-color: #63d1bb;
+
+      &:active {
+        color: #8be2d0;
+
+        path {
+          fill: #44c0aa;
+        }
+      }
     }
 
     &--right {
       background-color: #46c1ae;
+
+      &:active {
+        color: #7ed4c6;
+
+        path {
+          fill: #37b2a0;
+        }
+      }
     }
   }
 }

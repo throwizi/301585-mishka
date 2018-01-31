@@ -2,9 +2,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5px 37px 0;
 
-  &__text {
+  &__link {
+    display: flex;
+    width: 260px;
+    justify-content: space-between;
+    align-items: center;
+
     font-size: 19px;
-    margin-right: 20px;
+    font-weight: bold;
+
+    &:active {
+      color: #a8a8a8;
+
+      path {
+        fill: #bde3dd;
+      }
+    }
   }
 }
