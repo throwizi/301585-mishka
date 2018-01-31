@@ -1,21 +1,74 @@
 .product {
-  //Чтобы не ругался трэвис
+  display: flex;
+  flex-direction: column;
+  max-width: 260px;
+  margin: 0 auto;
+  margin-bottom: 32px;
   color: #000000;
+  border: 1px solid $border-color;
 
   &__title {
+    margin-top: 20.5px;
+    margin-bottom: 4px;
+    padding: 0 30px;
     font-size: 17px;
     line-height: 24px;
-
-    text-align: center;
   }
 
   &__description {
+    margin-top: 0;
+    padding: 0 30px;
+    margin-bottom: 20px;
+
     font-size: 13px;
     line-height: 30px;
     color: $text-color;
   }
 
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 260px;
+    padding-top: 20.5px;
+    padding-bottom: 26px;
+    border-top: 1px solid $border-color;
+  }
+
   &__price {
     font-size: 15px;
+    font-weight: bold;
+    line-height: 24px;
   }
+
+  &__order {
+    background-color: #ffffff;
+    border: none;
+
+    &:focus {
+      color: #666666;
+
+      path {
+        fill: #63d1bb;
+      }
+    }
+
+    &:active {
+      color: #b2b2b2;
+
+      path {
+        fill: #d0f1ea;
+      }
+    }
+  }
+}
+
+.product:last-child {
+  margin-bottom: 0;
 }
