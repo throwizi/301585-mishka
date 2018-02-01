@@ -66,55 +66,66 @@
             <span>Детская игрушка</span>
           </label>
         </fieldset>
-        <fieldset class="order-options__elem">
+
+        <fieldset class="order-options__elem order-options__elem--checkbox">
           <legend class="order-options__subtitle">Цвет</legend>
           <label class="order-options__label order-options__label--checkbox">
-            <input class="order-options__input order-options__input--checkbox" type="checkbox" name="color[]" value="white" checked> Белый
+            <input class="visually-hidden order-options__input order-options__input--checkbox" type="checkbox" name="color[]" value="white" checked>
+            <span>Белый</span>
           </label>
           <label class="order-options__label order-options__label--checkbox">
-            <input class="order-options__input order-options__input--checkbox" type="checkbox" name="color[]" value="grey" checked> Серый
+            <input class="visually-hidden order-options__input order-options__input--checkbox" type="checkbox" name="color[]" value="grey" checked>
+            <span>Серый</span>
           </label>
           <label class="order-options__label order-options__label--checkbox">
-            <input class="order-options__input order-options__input--checkbox" type="checkbox" name="color[]" value="tiffany"> "Тиффани"
+            <input class="visually-hidden order-options__input order-options__input--checkbox" type="checkbox" name="color[]" value="tiffany">
+            <span>&#171;Тиффани&#187;</span>
           </label>
           <label class="order-options__label order-options__label--checkbox">
-            <input class="order-options__input order-options__input--checkbox" type="checkbox" name="color[]" value="black"> Черный
+            <input class="visually-hidden order-options__input order-options__input--checkbox" type="checkbox" name="color[]" value="black">
+            <span>Черный</span>
           </label>
           <label class="order-options__label order-options__label--checkbox">
-            <input class="order-options__input order-options__input--checkbox" type="checkbox" name="color[]" value="pink"> Розовый
+            <input class="visually-hidden order-options__input order-options__input--checkbox" type="checkbox" name="color[]" value="pink">
+            <span>Розовый</span>
           </label>
           <label class="order-options__label order-options__label--checkbox">
-            <input class="order-options__input order-options__input--checkbox" type="checkbox" name="color[]" value="orange"> Оранжевый
+            <input class="visually-hidden order-options__input order-options__input--checkbox" type="checkbox" name="color[]" value="orange">
+            <span>Оранжевый</span>
           </label>
         </fieldset>
-        <fieldset class="order-options__elem">
+
+        <fieldset class="order-options__elem order-options__elem--initials">
           <legend class="order-options__subtitle">ФИО</legend>
-            <label class="order-options__label">Имя:
+            <label class="order-options__label order-options__label--initials">Имя:
               <input class="order-options__input order-options__input--underlined" type="text" name="Name" placeholder="Введите ваше имя*" required>
             </label>
-            <label class="order-options__label">Фамилия:
+            <label class="order-options__label order-options__label--initials">Фамилия:
               <input class="order-options__input order-options__input--underlined" type="text" name="Surname" placeholder="Укажите фамилию*" required>
             </label>
-            <label class="order-options__label">Отчество:
+            <label class="order-options__label order-options__label--initials">Отчество:
               <input class="order-options__input order-options__input--underlined" type="text" name="Patronym" placeholder="Отчество, если желаете">
             </label>
         </fieldset>
-        <fieldset class="order-options__elem">
+
+        <fieldset class="order-options__elem order-options__elem--phone">
           <legend class="order-options__subtitle">Тел</legend>
           <input class="order-options__input order-options__input--underlined order-options__input--phone"
           type="tel" pattern="+7 [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*" required>
         </fieldset>
-        <fieldset class="order-options__elem">
+
+        <fieldset class="order-options__elem order-options__elem--email">
           <legend class="order-options__subtitle">e-mail</legend>
           <input class="order-options__input order-options__input--underlined order-options__input--message" type="email" placeholder="Ваш Email*" required>
         </fieldset>
-        <fieldset class="order-options__elem">
+
+        <fieldset class="order-options__elem order-options__elem--addit-info">
           <legend class="order-options__subtitle">Доп</legend>
-          <textarea class="order-options__input order-options__input__input--underlined order-options__input__input--area" name="Additional information"
+          <textarea class="order-options__input order-options__input--underlined order-options__input--area" name="Additional information"
           placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
         <small class="order-options__description">*Поля обязательны для заполнения</small>
-        <button class="btn" type="submit" title="Оформить заказ">Оформить заказ</button>
+        <button class="btn" type="submit" title="Оформить заказ">Отправить заказ</button>
       </div>
     </form>
     <!-- /form: order-options -->
