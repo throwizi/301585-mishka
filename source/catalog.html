@@ -48,16 +48,35 @@
 
     <!-- section: catalog -->
     <section class="catalog">
+      <ul class="container sub-list catalog__sub-list">
+        <li class="sub-list__item sub-list__item--tablet">
+          <a href="catalog.html" class="sub-list__link">Каталог товаров</a>
+        </li>
+        <li class="sub-list__item sub-list__item--tablet">
+          <a href="form.html" class="sub-list__link">Вязание на заказ</a>
+        </li>
+        <li class="sub-list__item sub-list__item--desktop">
+          <a href="#" class="sub-list__link">Новые поступления</a>
+        </li>
+        <li class="sub-list__item sub-list__item--desktop">
+          <a href="#" class="sub-list__link ">Распродажа</a>
+        </li>
+        <li class="sub-list__item">
+          <a href="#" class="sub-list__link sub-list__link--normal">Бесплатная доставка по России</a>
+        </li>
+      </ul>
       <h1 class="catalog__title">Каталог товаров</h1>
       <ul class="catalog-list">
         <li class="catalog-list__item product">
-          <a class="product__link product__link--img" href="#" title="Cтраничка товара 'Зайчик-попрыгайчик'">
-            <img class="product__img" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
-          </a>
-          <h3 class="product__title">
-            <a class="product__link product__link--source" href="#" title="Cтраничка товара 'Зайчик-попрыгайчик'">Зайчик-попрыгайчик</a>
-          </h3>
-          <p class="product__description">Рост 30 см, вес 200 г</p>
+          <header class="product__header">
+            <a class="product__link product__link--img" href="#" title="Cтраничка товара 'Зайчик-попрыгайчик'">
+              <img class="product__img" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+            </a>
+            <h3 class="product__title">
+              <a class="product__link product__link--source" href="#" title="Cтраничка товара 'Зайчик-попрыгайчик'">Зайчик-попрыгайчик</a>
+              <p class="product__description">Рост 30 см, вес 200 г</p>
+            </h3>
+          </header>
           <footer class="product__footer">
             <div class="product__wrapper">
               <b class="product__price">1 200 руб.</b>
@@ -71,13 +90,15 @@
           </footer>
         </li>
         <li class="catalog-list__item product">
-          <a class="product__link product__link--img" href="#" title="Cтраничка товара 'Корзинка для белья'">
-            <img class="product__img" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
-          </a>
-          <h3 class="product__title">
-            <a class="product__link product__link--source" href="#" title="Cтраничка товара 'Зайчик-попрыгайчик'">Корзинка для белья</a>
-          </h3>
-          <p class="product__description">Диаметр 15 см, высота 10 см</p>
+          <header class="product__header">
+            <a class="product__link product__link--img" href="#" title="Cтраничка товара 'Корзинка для белья'">
+              <img class="product__img" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
+            </a>
+            <h3 class="product__title">
+              <a class="product__link product__link--source" href="#" title="Cтраничка товара 'Зайчик-попрыгайчик'">Корзинка для белья</a>
+              <p class="product__description">Диаметр 15 см, высота 10 см</p>
+            </h3>
+          </header>
           <footer class="product__footer">
             <div class="product__wrapper">
               <b class="product__price">690 руб.</b>
@@ -91,13 +112,15 @@
           </footer>
         </li>
         <li class="catalog-list__item product">
-          <a class="product__link product__link--img" href="#" title="Cтраничка товара 'Большая корзинка для игрушек'">
-            <img class="product__img" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
-          </a>
-          <h3 class="product__title">
-            <a class="product__link product__link--source" href="#" title="Cтраничка товара 'Большая корзиная для игрушек'">Большая корзинка для игрушек</a>
-          </h3>
-          <p class="product__description">Диаметр 30 см, высота 30 см</p>
+          <header class="product__header">
+            <a class="product__link product__link--img" href="#" title="Cтраничка товара 'Большая корзинка для игрушек'">
+              <img class="product__img" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
+            </a>
+            <h3 class="product__title">
+              <a class="product__link product__link--source" href="#" title="Cтраничка товара 'Большая корзиная для игрушек'">Большая корзинка для игрушек</a>
+              <p class="product__description">Диаметр 30 см, высота 30 см</p>
+            </h3>
+          </header>
           <footer class="product__footer">
             <div class="product__wrapper">
               <b class="product__price">1 500 руб.</b>
@@ -130,6 +153,9 @@
 
   <!-- footer: page-footer -->
   <footer class="page-footer container">
+    <a class="page-footer__logo" href="#" title="Главная страница интернет-магазина Mishka ">
+      <img src="img/logo-mobile.svg" width="90" height="37" alt="Интернет-магазин милых вещиц для дома 'Мишка' ">
+    </a>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">

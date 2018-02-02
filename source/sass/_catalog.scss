@@ -18,3 +18,29 @@
     list-style-type: none;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    max-width: $tablet-width;
+    margin: 0 auto;
+
+    margin-bottom: 53px;
+
+    &__sub-list {
+      margin: 0;
+      padding-top: 19px;
+      background-color: #f1f1f1;
+    }
+
+    &__title {
+      padding-top: 53px;
+      padding-bottom: 68px;
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &-list {
+      padding: 92px 50px 0 50px;
+    }
+  }
+}
