@@ -6,4 +6,30 @@
   padding-top: 30px;
   padding-bottom: 23px;
   background-color: #f1f1f1;
+
+  &__logo {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 52px;
+    padding-bottom: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+      display: block;
+    }
+
+    &__social {
+      padding-top: 11px;
+    }
+
+    &__copyright {
+      width: 180px;
+    }
+  }
 }

@@ -21,7 +21,12 @@
 
 @media (min-width: $tablet-width) {
   .product-properties {
-    width: 37%;
+    margin-bottom: 58px;
     order: 2;
+
+    &__property,
+    &__value {
+      padding-top: 8px;
+    }
   }
 }

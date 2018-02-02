@@ -76,39 +76,49 @@
 
 @media (min-width: $tablet-width) {
   .advantages-list {
+    max-width: $tablet-width;
+    margin: 0 auto;
+
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     &__item {
-      flex-basis: 43%;
       margin-bottom: 60px;
 
       font-size: 20px;
     }
 
     &__item--flower {
-      flex-basis: 33%;
+      flex-basis: 31%;
+      margin-right: 127px;
     }
 
     &__item--money {
-      flex-basis: 37%;
+      flex-basis: 39%;
+      margin-right: 74px;
       order: 3;
     }
 
     &__item--heart {
+      flex-basis: 36%;
+      margin-right: 94px;
       order: 6;
     }
 
     &__item--ball {
+      flex-basis: 38%;
+      margin-bottom: 1px;
       order: 2;
     }
 
     &__item--rocket {
+      flex-basis: 44%;
       order: 4;
     }
 
     &__item--gift {
+      flex-basis: 35%;
       order: 6;
     }
   }

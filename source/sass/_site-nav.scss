@@ -13,9 +13,6 @@
 .site-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   margin: 0;
   padding-left: 0;
 
@@ -82,7 +79,7 @@
 
 @media (min-width: $tablet-width) {
   .site-nav {
-    display: flex;
+    display: block;
     width: auto;
     margin-left: auto;
   }
@@ -92,20 +89,56 @@
 
     &__item {
       display: none;
+      padding: 31px 0;
+
+      &--search,
+      &--bucket {
+        display: block;
+        width: auto;
+        border: none;
+      }
+
+      &:last-child {
+        border: none;
+      }
+
+      &--search {
+        width: 83px;
+        padding-top: 36px;
+        padding-bottom: 27px;
+        text-align: center;
+        border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+      }
+
+      &--bucket {
+        width: 265px;
+        text-align: right;
+      }
     }
 
-    &__item--search,
-    &__item--bucket {
-      display: flex;
-      align-items: center;
-      padding: 32.5px 0;
-      border: none;
-      height: 100%;
-    }
+    &__link {
+      padding: 0;
 
-    &__item:last-child {
-      padding-bottom: 0;
-      border: none;
+      svg {
+        position: static;
+      }
+
+      &--search {
+        span {
+          display: none;
+        }
+      }
+
+      &--bucket {
+        svg {
+          padding-right: 26px;
+        }
+      }
+
+      span {
+        padding: 0;
+      }
     }
   }
 }

@@ -108,9 +108,12 @@
     align-items: center;
     flex-wrap: wrap;
 
+    max-width: $tablet-width;
+    margin: 0 auto;
+
     padding-top: 80px;
-    padding-bottom: 90px;
-    background: #ffffff url("../img/review@1x.jpg") -10% 0% no-repeat;
+    padding-bottom: 124px;
+    background: #ffffff url("../img/review@1x.jpg") 0% 0% no-repeat;
 
     &__title {
       margin-bottom: 0;
@@ -120,12 +123,21 @@
     }
 
     &__slider {
-      margin-top: 50px;
+      margin-top: 45px;
       order: 2;
     }
 
     &__description {
-      padding-right: 71px;
+      padding-right: 25px;
+      margin-bottom: 58px;
+
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    &__author-name {
+      font-size: 18px;
+      font-style: normal;
     }
 
     &__link {
@@ -134,13 +146,19 @@
 
     &__slider-toggles {
       position: absolute;
-      top: 65%;
+      bottom: 84px;
       right: 50px;
+      width: 175px;
       order: 3;
     }
 
+    &__prev,
+    &__next {
+      border: none;
+    }
+
     &__btn {
-      flex-basis: 175px;
+      width: 172px;
       margin: 0;
       margin-left: auto;
       order: 1;

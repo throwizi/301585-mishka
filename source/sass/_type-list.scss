@@ -57,5 +57,16 @@
 @media (min-width: $tablet-width) {
   .type-list {
     flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px;
+
+    &__item {
+      flex-basis: 50%;
+    }
+
+    &__link {
+      padding: 23px 27px 20px 34px;
+      line-height: 30px;
+    }
   }
 }

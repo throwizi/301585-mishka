@@ -12,7 +12,7 @@
     margin-bottom: 112px;
 
     &__item--tablet {
-      margin-right: 5.43%;
+      margin-right: 17px;
     }
 
     &__item--desktop {
@@ -20,6 +20,7 @@
     }
 
     &__item:last-child {
+      letter-spacing: -1px;
       margin-left: auto;
     }
 

@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     padding: 0 30px 56px;
   }
 
@@ -30,7 +31,8 @@
     display: flex;
     flex-direction: column;
     max-width: 260px;
-    margin: 0;
+    margin: 0 auto 0;
+    width: 100%;
     padding: 0;
     border: 1px solid #62d1ba;
     border-left: none;
@@ -154,6 +156,20 @@
   }
 
   &__input {
+    @include placeholder {
+      color: #d2d2d2;
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+
+    &:focus {
+      border-color: #62d1ba;
+
+      @include placeholder {
+        opacity: 0;
+      }
+    }
+
     &--radio:checked + span::after,
     &--checkbox:checked + span::after {
       opacity: 1;
@@ -176,19 +192,19 @@
       padding: 10.5px 0 14px 0;
       border-bottom: 2px solid #000000;
 
-      @include placeholder {
-        color: #d2d2d2;
-        opacity: 1;
-        transition: opacity 0.3s;
-      }
-
-      &:focus {
-        border-color: #62d1ba;
-
-        @include placeholder {
-          opacity: 0;
-        }
-      }
+      // @include placeholder {
+      //   color: #d2d2d2;
+      //   opacity: 1;
+      //   transition: opacity 0.3s;
+      // }
+      //
+      // &:focus {
+      //   border-color: #62d1ba;
+      //
+      //   @include placeholder {
+      //     opacity: 0;
+      //   }
+      // }
     }
 
     &--area {
@@ -207,5 +223,6 @@
     line-height: 16px;
     color: $text-color;
     margin-bottom: 31px;
+    text-align: center;
   }
 }

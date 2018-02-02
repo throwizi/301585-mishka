@@ -18,14 +18,12 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    background: #f6f7fb url("../img/hero-desktop.jpg") no-repeat 50% 50%;
+    background: #f6f7fb url("../img/hero-desktop.jpg") 50% 0 no-repeat;
 
     &__title {
-      margin-top: 0;
-      margin-bottom: 367px;
+      margin: 0 auto 371px auto;
       font-size: 43px;
       line-height: 50px;
-      padding: 0 112px;
     }
   }
 }

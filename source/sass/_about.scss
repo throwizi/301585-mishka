@@ -17,16 +17,13 @@
 
 @media (min-width: $tablet-width) {
   .about {
-    padding-top: 54.5px;
-    padding-bottom: 81px;
-
-    outline: 3px solid green;
+    padding-top: 65px;
+    padding-bottom: 25px;
 
     &__title {
       font-size: 43px;
       line-height: 50px;
-
-      margin-bottom: 57.5px;
+      margin-bottom: 47px;
     }
   }
 }
