@@ -1,0 +1,13 @@
+.modal {
+  background-color: pink;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
