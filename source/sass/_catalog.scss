@@ -17,6 +17,12 @@
     padding: 35px 30px 3px;
     list-style-type: none;
   }
+
+  &__modal {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 @media (min-width: $tablet-width) {

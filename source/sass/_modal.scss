@@ -1,13 +1,139 @@
 .modal {
-  background-color: pink;
   position: absolute;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
+  width: 320px;
+  padding-top: 30px;
+
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+
+  &--open {
+    display: flex;
+  }
+
+  &__wrapper {
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border: none;
+
+    background-color: #ffffff;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 3px;
+
+      width: 20px;
+      height: 2px;
+      transform: rotate(45deg);
+      background-color: red;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 11px;
+    padding: 0 53px;
+
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    margin-top: 0;
+    margin-bottom: 23px;
+    font-size: 15px;
+    line-height: 30px;
+    color: $text-color;
+    font-weight: normal;
+  }
 
   &__form {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
     justify-content: center;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  &__text {
+    width: 80px;
+    padding: 18px 0;
+    margin-bottom: 30px;
+
+    font-size: 17px;
+    line-height: 16px;
+    color: $text-color;
+    text-transform: uppercase;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 81px;
+      height: 51px;
+      border: 1px solid $border-color;
+    }
+  }
+
+  &__input {
+    &:focus + .modal__text::before,
+    &:hover + .modal__text::before {
+      border-color: #c7c7c7;
+    }
+
+    &:active + .modal__text::before,
+    &:checked + .modal__text::before {
+      border-color: #63d1bb;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 46px;
+    color: #ffffff;
+    background-color: #63d1bb;
+    border: none;
+
+    &:focus,
+    &:hover {
+      background-color: #40ccb0;
+    }
+
+    &:active {
+      color: #41a08d;
+      background-color: #60c8b3;
+    }
   }
 }

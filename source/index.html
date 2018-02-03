@@ -13,7 +13,7 @@
       <a class="page-header__logo" href="#" title="Главная страница интернет-магазина Mishka ">
         <img src="img/logo-mobile.svg" width="90" height="37" alt="Интернет-магазин милых вещиц для дома 'Мишка' ">
       </a>
-      <button class="page-header__toggle page-header__toggle--closed" type="button" title="Открыть главное меню сайта">
+      <button class="page-header__toggle page-header__toggle--opened" type="button" title="Открыть главное меню сайта">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <nav class="site-nav site-nav--opened">
@@ -121,33 +121,33 @@
         <img class="feature__img" src="img/triple-set-mobile@1x.jpg" alt="Изображение товара недели" title="Изображение товара недели">
         <footer class="feature__footer">
           <span class="feature__price">Цена: 990 руб.</span>
-          <button class="btn feature__btn">Заказать</button>
+          <button class="btn feature__btn btn-modal">Заказать</button>
         </footer>
 
-        <!-- <div class="modal feature__modal">
-          <button type="button">
-            <span class="visually-hidden">Закрыть всплывающее окно</span>
-          </button>
-          <h2 class="modal__title">Добавить в корзину</h2>
-          <h3 class="modal__subtitle">Выберите размер:</h3>
-          <form action="#" class="modal__form">
-            <div class="modal__wrapper">
+        <div class="modal feature__modal">
+          <div class="modal__wrapper">
+            <button class="modal__close-btn" type="button">
+              <span class="visually-hidden">Закрыть всплывающее окно</span>
+            </button>
+            <h2 class="modal__title">Добавить в корзину</h2>
+            <h3 class="modal__subtitle">Выберите размер:</h3>
+            <form action="#" class="modal__form">
               <label class="modal__item">
-                <input type="text" class="modal__input visually-hidden">
-                <span class="modal__text">1</span>
+                <input type="radio" class="modal__input visually-hidden" name="size" value="Размер S">
+                <span class="modal__text">s</span>
               </label>
               <label class="modal__item">
-                <input type="text" class="modal__input visually-hidden">
-                <span class="modal__text">1</span>
+                <input type="radio" class="modal__input visually-hidden" name="size" value="Размер M">
+                <span class="modal__text">m</span>
               </label>
               <label class="modal__item">
-                <input type="text" class="modal__input visually-hidden">
-                <span class="modal__text">1</span>
+                <input type="radio" class="modal__input visually-hidden" name="size" value="Размер L">
+                <span class="modal__text">l</span>
               </label>
-            </div>
             <button class="btn modal__btn">Добавить</button>
-          </form>
-        </div> -->
+            </form>
+          </div>
+        </div>
 
       </section>
       <!-- /section: feature -->
