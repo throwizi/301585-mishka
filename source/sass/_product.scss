@@ -18,6 +18,10 @@
   &__link {
     display: block;
     margin-bottom: 4px;
+
+    &--img {
+      margin-bottom: 0;
+    }
   }
 
   &__description {
@@ -80,20 +84,21 @@
 
 @media (min-width: $tablet-width) {
   .product {
-    align-items: flex-end;
-    justify-content: space-between;
-    position: relative;
+
+    flex-direction: row;
     max-width: $tablet-width;
-    margin: 0;
+    margin: 0 auto 0 auto;
     height: 330px;
     margin-bottom: 56px;
 
     &__img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 334px;
       height: 330px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     &__title {
@@ -108,8 +113,12 @@
       display: block;
       margin-bottom: 7px;
 
-      &:last-of-type {
-        padding-right: 65px;
+      &--img {
+        margin-right: 28px;
+      }
+
+      &--source:last-of-type {
+        margin-right: 64px;
       }
     }
 
