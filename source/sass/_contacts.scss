@@ -11,11 +11,15 @@
     line-height: 30px;
   }
 
+  &__wrapper {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
   &-list {
     width: 100%;
-    max-width: 260px;
-    margin: 0 auto;
-    margin-bottom: 33px;
+    max-width: 320px;
+    margin-bottom: 35px;
 
     font-size: 15px;
     line-height: 30px;
@@ -28,17 +32,17 @@
   }
 
   &__property {
-    text-align: left;
-    width: 30%;
-    padding-bottom: 30px;
+    width: 70px;
+    padding-bottom: 26px;
   }
 
   &__value {
     text-align: right;
-    width: 67%;
+    width: 180px;
 
     address {
-      padding-right: 17px;
+      padding-right: 20px;
+      font-style: normal;
     }
 
     &--align-left {
@@ -48,7 +52,7 @@
 
   &__link {
     color: $text-color;
-    padding-bottom: 7px;
+    padding-bottom: 4px;
     border-bottom: 1px solid #46c1ae;
   }
 
@@ -63,12 +67,13 @@
   }
 
   &__map {
-    margin-bottom: 38px;
+    margin-bottom: 40px;
   }
 
   &__btn {
     align-self: center;
     max-width: 260px;
+    letter-spacing: 1px;
   }
 }
 
@@ -133,6 +138,84 @@
 
     &__btn {
       max-width: 228px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding: 73px 100px 0;
+
+    max-width: $desktop-width;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__wrapper {
+      padding-top: 70px;
+      margin-right: 36px;
+      height: auto;
+    }
+
+    &__title {
+      padding-right: 0;
+      padding-left: 173px;
+      margin-bottom: 41px;
+
+      font-size: 53px;
+      line-height: 57px;
+
+      &::after {
+        top: -9px;
+        left: 63px;
+      }
+    }
+
+    &-list {
+      margin-left: 170px;
+      margin-bottom: 0;
+
+      max-width: 325px;
+      padding: 0;
+      margin-right: 0;
+      margin-bottom: 33px;
+
+      font-size: 15px;
+      line-height: 30px;
+      color: $text-color;
+
+      tbody {
+        display: table;
+      }
+    }
+
+    &__property,
+    &__value {
+      font-size: 17px;
+      font-style: normal;
+      vertical-align: top;
+    }
+
+    &__property {
+      text-align: left;
+      width: 75px;
+      padding-bottom: 30px;
+    }
+
+    &__value {
+      text-align: left;
+      width: 230px;
+
+      address {
+        padding-right: 8px;
+      }
+
+      &--align-left {
+        text-align: left;
+      }
+    }
+
+    &__map {
+      width: 525px;
     }
   }
 }

@@ -28,6 +28,10 @@
       font-size: 17px;
       line-height: 24px;
       font-weight: bold;
+
+      &--active {
+        color: #666666;
+      }
     }
 
     &__link--normal {
@@ -59,5 +63,4 @@
       line-height: 24px;
     }
   }
-
 }
