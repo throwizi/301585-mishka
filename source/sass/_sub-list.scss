@@ -35,3 +35,29 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .sub-list {
+    margin-top: 17.5px;
+
+    &__item--tablet {
+      display: none;
+    }
+
+    &__item--desktop {
+      display: block;
+      margin-right: 63px;
+    }
+
+    &__item:last-child {
+      letter-spacing: normal;
+      margin-right: 2px;
+    }
+
+    &__link {
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+
+}

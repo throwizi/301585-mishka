@@ -1,10 +1,12 @@
 .feature {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
+
+  max-width: 320px;
+  margin: 0 auto;
 
   background-color: #ffffff;
   padding-top: 27px;
@@ -149,6 +151,62 @@
     &__btn {
       width: 292px;
       margin-left: 29px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feature {
+    max-width: $desktop-width;
+    padding-top: 135px;
+    padding-bottom: 95px;
+
+    &__header {
+      justify-content: flex-start;
+      margin-bottom: 50px;
+    }
+
+    &__title {
+      margin: 0;
+      font-size: 53px;
+      line-height: 57px;
+
+      order: 1;
+      z-index: 1;
+    }
+
+    &__subtitle {
+      margin: 15px 50px 0 0;
+      margin-left: 43.5px;
+    }
+
+    &__img {
+      width: 525px;
+      top: 85px;
+      right: 100px;
+    }
+
+    &__text {
+      margin-left: 175px;
+      margin-bottom: 47px;
+    }
+
+    &__product-properties {
+      margin-left: 175px;
+      margin-bottom: 115px;
+    }
+
+    &__footer {
+      margin-left: 175px;
+    }
+
+    &__price {
+      font-size: 20px;
+      padding-left: 36px;
+    }
+
+    &__btn {
+      margin-left: 36px;
     }
   }
 }

@@ -123,3 +123,51 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages-list {
+    max-width: $desktop-width;
+    margin: 0 auto;
+    padding-left: 178px;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    &__item {
+      margin-bottom: 60px;
+    }
+
+    &__item--flower {
+      flex-basis: 25%;
+      margin-right: 127px;
+    }
+
+    &__item--money {
+      flex-basis: 30%;
+      margin-right: 89px;
+      order: 3;
+    }
+
+    &__item--heart {
+      flex-basis: 27%;
+      margin-right: 114px;
+      order: 6;
+    }
+
+    &__item--ball {
+      flex-basis: 34%;
+      margin-bottom: 1px;
+      order: 2;
+    }
+
+    &__item--rocket {
+      order: 4;
+    }
+
+    &__item--gift {
+      flex-basis: 33%;
+      order: 6;
+    }
+  }
+}

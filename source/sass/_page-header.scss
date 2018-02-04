@@ -92,3 +92,17 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    position: relative;
+    padding: 0 100px;
+
+    &__logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

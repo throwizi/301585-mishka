@@ -30,3 +30,15 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-properties {
+    margin-bottom: 113px;
+    order: 2;
+
+    &__property,
+    &__value {
+      padding-top: 8px;
+    }
+  }
+}

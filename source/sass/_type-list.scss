@@ -23,6 +23,8 @@
     font-weight: bold;
     color: #ffffff;
 
+    transition: all 0.3s;
+
     span {
       flex-basis: 130px;
     }
@@ -68,5 +70,11 @@
       padding: 23px 27px 20px 34px;
       line-height: 30px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .type-list {
+    padding: 0 100px;
   }
 }

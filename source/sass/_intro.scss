@@ -6,7 +6,7 @@
   background: #f6f7fb url("../img/hero-mobile@1x.jpg") 50% -15% no-repeat;
 
   &__title {
-    margin-top: 67px;
+    margin-top: 71px;
     margin-bottom: 122px;
 
     padding: 0 30px;
@@ -24,6 +24,19 @@
       margin: 0 auto 371px auto;
       font-size: 43px;
       line-height: 50px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+
+    &__title {
+      margin-bottom: 359px;
+      padding: 0 200px;
+      font-size: 53px;
+      line-height: 57px;
+      letter-spacing: normal;
     }
   }
 }

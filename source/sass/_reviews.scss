@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  max-width: 320px;
+  margin: 0 auto;
+
   padding-top: 17px;
   padding-bottom: 47px;
 
@@ -162,6 +166,47 @@
       margin: 0;
       margin-left: auto;
       order: 1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    max-width: $desktop-width;
+    padding-top: 70px;
+    background-position: 100px 0;
+
+    &__title {
+      margin-left: 173px;
+      font-size: 53px;
+      line-height: 57px;
+    }
+
+    &__btn {
+      margin-top: 10px;
+    }
+
+    &__slider {
+      margin-bottom: 61px;
+    }
+
+    &__slide {
+      padding-left: 177px;
+    }
+
+    &__description {
+      padding-right: 100px;
+      line-height: 30px;
+      margin-bottom: 39px;
+    }
+
+    &__author-name {
+      font-size: 17px;
+    }
+
+    &__slider-toggles {
+      bottom: 146px;
+      right: 100px;
     }
   }
 }
