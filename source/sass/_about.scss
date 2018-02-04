@@ -19,6 +19,7 @@
 
 @media (min-width: $tablet-width) {
   .about {
+    max-width: $tablet-width;
     padding-top: 65px;
     padding-bottom: 25px;
 
@@ -32,6 +33,8 @@
 
 @media (min-width: $desktop-width) {
   .about {
+    max-width: $tablet-width;
+
     padding-top: 60px;
     padding-bottom: 33px;
 

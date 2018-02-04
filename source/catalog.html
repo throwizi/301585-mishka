@@ -12,13 +12,13 @@
     <a class="page-header__logo" href="index.html" title="Главная страница интернет-магазина Mishka ">
       <img src="img/logo-mobile.svg" width="90" height="37" alt="Интернет-магазин милых вещиц для дома 'Мишка' ">
     </a>
-    <button class="page-header__toggle page-header__toggle--closed" type="button" title="Открыть главное меню сайта">
+    <button class="page-header__toggle page-header__toggle--opened" type="button" title="Открыть главное меню сайта">
       <span class="visually-hidden">Открыть меню</span>
     </button>
     <nav class="site-nav site-nav--opened">
       <ul class="site-list">
         <li class="site-list__item">
-          <a class="site-list__link site-list__link--active" href="catalog.html" title="Перейти на страницу каталога">Каталог товаров</a>
+          <a class="site-list__link site-list__link--active"  title="Страница каталога">Каталог товаров</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link" href="form.html" title="Перйти на страницу оформление товара на заказ">Вязание на заказ</a>
@@ -50,7 +50,7 @@
     <section class="catalog">
       <ul class="container sub-list catalog__sub-list">
         <li class="sub-list__item sub-list__item--tablet">
-          <a href="catalog.html" class="sub-list__link">Каталог товаров</a>
+          <a class="sub-list__link sub-list__link--active">Каталог товаров</a>
         </li>
         <li class="sub-list__item sub-list__item--tablet">
           <a href="form.html" class="sub-list__link">Вязание на заказ</a>
@@ -75,7 +75,7 @@
             <header class="product__header">
               <h3 class="product__title">
                 <a class="product__link product__link--source" href="#" title="Cтраничка товара 'Зайчик-попрыгайчик'">Зайчик-попрыгайчик</a>
-                <p class="product__description">Рост 30 см, вес 200 г</p>
+                <span class="product__description">Рост 30 см, вес 200 г</span>
               </h3>
             </header>
             <footer class="product__footer">
@@ -99,7 +99,7 @@
             <header class="product__header">
               <h3 class="product__title">
                 <a class="product__link product__link--source" href="#" title="Cтраничка товара 'Зайчик-попрыгайчик'">Корзинка для белья</a>
-                <p class="product__description">Диаметр 15 см, высота 10 см</p>
+                <span class="product__description">Диаметр 15 см, высота 10 см</span>
               </h3>
             </header>
             <footer class="product__footer">
@@ -123,7 +123,7 @@
             <header class="product__header">
               <h3 class="product__title">
                 <a class="product__link product__link--source" href="#" title="Cтраничка товара 'Большая корзиная для игрушек'">Большая корзинка для игрушек</a>
-                <p class="product__description">Диаметр 30 см, высота 30 см</p>
+                <span class="product__description">Диаметр 30 см, высота 30 см</span>
               </h3>
             </header>
             <footer class="product__footer">
@@ -140,32 +140,6 @@
           </section>
         </li>
       </ul>
-
-      <div class="modal catalog__modal">
-        <div class="modal__wrapper">
-          <button class="modal__close-btn" type="button">
-            <span class="visually-hidden">Закрыть всплывающее окно</span>
-          </button>
-          <h2 class="modal__title">Добавить в корзину</h2>
-          <h3 class="modal__subtitle">Выберите размер:</h3>
-          <form action="#" class="modal__form">
-            <label class="modal__item">
-              <input type="radio" class="modal__input visually-hidden" name="size" value="Размер S">
-              <span class="modal__text">s</span>
-            </label>
-            <label class="modal__item">
-              <input type="radio" class="modal__input visually-hidden" name="size" value="Размер M">
-              <span class="modal__text">m</span>
-            </label>
-            <label class="modal__item">
-              <input type="radio" class="modal__input visually-hidden" name="size" value="Размер L">
-              <span class="modal__text">l</span>
-            </label>
-          <button class="btn modal__btn">Добавить</button>
-          </form>
-        </div>
-      </div>
-
     </section>
     <!-- /section: catalog -->
 
@@ -191,7 +165,7 @@
           </button>
         </div>
         <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="btn video__btn" href="#">Cделать заказ</a>
+        <a class="btn video__btn" href="form.html">Cделать заказ</a>
       </div>
     </section>
     <!-- /section: video -->
@@ -199,13 +173,13 @@
 
   <!-- footer: page-footer -->
   <footer class="page-footer container">
-    <a class="page-footer__logo" href="#" title="Главная страница интернет-магазина Mishka ">
-      <img src="img/logo-mobile.svg" width="90" height="37" alt="Интернет-магазин милых вещиц для дома 'Мишка' ">
+    <a class="page-footer__logo" title="Главная страница интернет-магазина Mishka ">
+      <img src="img/logo-mobile.svg" width="90" height="37" alt="Логотип интернет-магазина милых вещиц для дома 'Мишка' ">
     </a>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://vk.com/htmlacademy">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy/" title="HTML-Academy в интсаграмме">
             <span class="visually-hidden">Мы в интсаграмме</span>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.769px" height="21.334px" viewBox="53.115 53.19 21.769 21.334" enable-background="new 53.115 53.19 21.769 21.334" xml:space="preserve">
               <g id="instagram">
@@ -217,7 +191,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" title="HTML-Academy в фейсбуке">
             <span class="visually-hidden">Мы в Фейсбуке</span>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.962px" height="27.718px" viewBox="56.519 49.996 14.962 27.718" enable-background="new 56.519 49.996 14.962 27.718" xml:space="preserve">
               <g id="facebook">
@@ -229,7 +203,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+          <a class="social__link social__link--instagram" href="https://twitter.com/htmlacademy_ru" title="HTML-Academy в твиттере">
             <span class="visually-hidden">Мы в Твиттере</span>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.494px" height="20.168px" viewBox="52.253 53.771 23.494 20.168" enable-background="new 52.253 53.771 23.494 20.168" xml:space="preserve">
               <g id="twitter">
@@ -243,7 +217,7 @@
       </ul>
     </div>
     <div class="page-footer__copyright copyright container">
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Страница интесива HTML/CSS уровень: 2">
         <b class="copyright__text">Разработано</b>
         <span class="visually-hidden">HTML Academy</span>
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
@@ -254,6 +228,31 @@
   </footer>
   <!-- /footer: page-footer -->
 
-  <script src="js/functions.js"></script>
+  <div class="modal">
+    <div class="modal__wrapper">
+      <button class="modal__close-btn" type="button">
+        <span class="visually-hidden">Закрыть всплывающее окно</span>
+      </button>
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <h3 class="modal__subtitle">Выберите размер:</h3>
+      <form action="#" class="modal__form">
+        <label class="modal__item">
+          <input type="radio" class="modal__input visually-hidden" name="size" value="Размер S">
+          <span class="modal__text">s</span>
+        </label>
+        <label class="modal__item">
+          <input type="radio" class="modal__input visually-hidden" name="size" value="Размер M">
+          <span class="modal__text">m</span>
+        </label>
+        <label class="modal__item">
+          <input type="radio" class="modal__input visually-hidden" name="size" value="Размер L">
+          <span class="modal__text">l</span>
+        </label>
+      <button class="btn modal__btn">Добавить</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/modal.js"></script>
 </body>
 </html>

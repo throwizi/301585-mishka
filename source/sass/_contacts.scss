@@ -85,9 +85,14 @@
     padding-top: 70px;
     padding-bottom: 57px;
 
+    &__wrapper {
+      padding-left: 15px;
+      max-width: $tablet-width;
+    }
+
     &__title {
       position: relative;
-      margin-bottom: 46px;
+      margin-bottom: 45px;
 
       font-size: 43px;
       line-height: 50px;
@@ -96,8 +101,8 @@
       &::after {
         content: "";
         position: absolute;
-        top: -14px;
-        right: 51px;
+        top: -15px;
+        right: -28px;
         width: 47px;
         height: 82px;
         background: url("../img/icon-flag.svg");
@@ -105,8 +110,6 @@
     }
 
     &-list {
-      width: 100%;
-      padding: 0 80px 0 50px;
       max-width: 800px;
       margin-bottom: 50px;
 
@@ -120,12 +123,12 @@
     }
 
     &__property {
-      width: 72px;
+      width: 77px;
     }
 
     &__value {
       text-align: left;
-      width: 276px;
+      width: 230px;
 
       address {
         padding-right: 20px;
