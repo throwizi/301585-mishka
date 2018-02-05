@@ -20,3 +20,12 @@
     color: #7c7c7c;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .btn {
+    &:hover {
+      color: #ffffff;
+      background-color: $text-color;
+    }
+  }
+}

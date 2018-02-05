@@ -29,6 +29,14 @@
       line-height: 24px;
       font-weight: bold;
 
+      &:focus {
+        color: #666666;
+      }
+
+      &:active {
+        color: #b2b2b2;
+      }
+
       &--active {
         color: #666666;
       }
@@ -61,6 +69,10 @@
     &__link {
       font-size: 15px;
       line-height: 24px;
+
+      &:hover {
+        color: #666666;
+      }
     }
   }
 }

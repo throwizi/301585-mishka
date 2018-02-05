@@ -183,6 +183,14 @@
     &__link {
       width: auto;
 
+      &:hover {
+        color: #666666;
+
+        path {
+          fill: #63d1bb;
+        }
+      }
+
       &--search {
         padding: 0 30px;
       }

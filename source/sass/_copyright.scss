@@ -13,6 +13,12 @@
     font-size: 19px;
     font-weight: bold;
 
+    &:focus {
+      path {
+        fill: #46c1ae;
+      }
+    }
+
     &:active {
       color: #a8a8a8;
 

@@ -147,29 +147,31 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    padding: 73px 100px 0;
+    position: relative;
+    padding: 75px 100px 105px;
 
     max-width: $desktop-width;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 
     &__wrapper {
       padding-top: 70px;
+      margin: 0;
       margin-right: 36px;
       height: auto;
     }
 
     &__title {
       padding-right: 0;
-      padding-left: 173px;
+      padding-left: 155px;
       margin-bottom: 41px;
 
       font-size: 53px;
       line-height: 57px;
 
       &::after {
-        top: -9px;
-        left: 63px;
+        top: -10px;
+        left: 50px;
       }
     }
 
@@ -178,7 +180,7 @@
       max-width: 325px;
       padding: 0;
       margin-right: 0;
-      margin-bottom: 33px;
+      margin-bottom: 70px;
 
       font-size: 15px;
       line-height: 30px;
@@ -216,7 +218,16 @@
     }
 
     &__map {
+      position: absolute;
+      top: 75px;
+      right: 100px;
       width: 525px;
+      height: 455px;
+    }
+
+    &__btn {
+      margin-left: 175px;
+      align-self: flex-start;
     }
   }
 }

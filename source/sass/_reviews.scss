@@ -208,5 +208,14 @@
       bottom: 146px;
       right: 100px;
     }
+
+    &__prev,
+    &__next {
+      &:hover {
+        polygon {
+          fill: #666666;
+        }
+      }
+    }
   }
 }
