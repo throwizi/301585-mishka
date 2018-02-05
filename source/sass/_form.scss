@@ -1,9 +1,15 @@
 .order-options {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 0 auto;
+
   background-color: #ffffff;
 
   &__title {
     margin: 0;
-    padding: 73.5px 0;
+    padding: 71px 0 75px;
+
     font-size: 27px;
     line-height: 30px;
     text-align: center;
@@ -11,27 +17,26 @@
     background-color: #f1f1f1;
   }
 
-  &__wrapper {
+  &__form-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 30px 56px;
+    max-width: 260px;
+    margin: 0 auto 0;
+    padding-bottom: 55px;
   }
 
   &__slogan {
     max-width: 260px;
-    margin: 23px auto 24px auto;
+    margin: 23px auto 32px auto;
     font-size: 13px;
     color: $text-color;
   }
 
   &__elem {
+    position: relative;
     display: flex;
     flex-direction: column;
     max-width: 260px;
-    margin: 0 auto 0;
-    width: 100%;
     padding: 0;
     border: 1px solid #62d1ba;
     border-left: none;
@@ -40,18 +45,18 @@
 
 
     &--radio {
-      padding-top: 33px;
-      padding-bottom: 42px;
+      padding-top: 41px;
+      padding-bottom: 52px;
     }
 
     &--checkbox {
-      padding-top: 36px;
-      padding-bottom: 0;
+      padding-top: 42px;
+      padding-bottom: 7px;
     }
 
     &--initials {
-      padding-top: 27.5px;
-      margin-bottom: 12px;
+      padding-top: 36px;
+      padding-bottom: 19px;
     }
 
     &--phone {
@@ -59,18 +64,21 @@
     }
 
     &--email {
-      margin-bottom: 38px;
-      padding-top: 1px;
+      padding-bottom: 41px;
     }
 
     &--addit-info {
-      padding-top: 18px;
+      padding-top: 30px;
     }
   }
 
   &__subtitle {
-    align-self: flex-start;
+    position: absolute;
+    top: -10px;
+    left: -1px;
+
     padding-right: 28px;
+    margin: 0;
 
     font-size: 17px;
     font-weight: bold;
@@ -79,6 +87,13 @@
     text-transform: uppercase;
 
     background-color: #ffffff;
+  }
+
+  &__elems-wrapper {
+    position: relative;
+    display: flex;
+    max-width: 260px;
+    flex-direction: column;
   }
 
   &__label {
@@ -187,8 +202,9 @@
     &--underlined {
       border: none;
       width: 100%;
-      margin-top: 6px;
-      padding: 10.5px 0 14px 0;
+      margin-top: 5px;
+      padding-top: 10px;
+      padding-bottom: 15px;
       border-bottom: 2px solid #000000;
 
       @include placeholder {
@@ -206,6 +222,19 @@
       }
     }
 
+    &--phone {
+      margin-top: 15px;
+      padding-top: 15px;
+      padding-bottom: 17px;
+    }
+
+    &--message {
+      margin-top: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+
     &--area {
       width: 100%;
       max-width: 220px;
@@ -217,18 +246,35 @@
     }
   }
 
-  &__description {
-    font-size: 14px;
-    line-height: 16px;
-    color: $text-color;
-    margin-bottom: 31px;
-    text-align: center;
+  &__btn-message,
+  &__btn-phone {
+    position: absolute;
+    top: 26px;
+    right: 4px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:focus,
+    &:active {
+      g {
+        fill: #62d1ba;
+      }
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 16px;
+      color: $text-color;
+      margin-bottom: 31px;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .order-options {
-    width: $tablet-width;
+    max-width: $tablet-width;
 
     &__sub-list {
       margin: 0;
@@ -243,11 +289,9 @@
       padding-bottom: 70px;
     }
 
-    &__wrapper {
-      align-items: flex-start;
-      padding-top: 85px;
-      padding-right: 50px;
-      padding-left: 50px;
+    &__form-wrapper {
+      max-width: $tablet-width;
+      padding: 85px 50px 0;
     }
 
     &__slogan {
@@ -256,6 +300,62 @@
 
       font-size: 17px;
       line-height: 30px;
+    }
+
+    &__elem {
+      max-width: $tablet-width;
+      flex-direction: row;
+      border: none;
+
+      &--radio {
+        padding-top: 75px;
+        padding-bottom: 67px;
+      }
+    }
+
+    &__subtitle {
+      position: static;
+      margin-right: 136px;
+      padding: 0;
+
+      &--checkbox {
+        margin-top: 25px;
+      }
+    }
+
+    &__label {
+
+      font-size: 19px;
+      line-height: 18px;
+
+      &--radio {
+
+        margin-left: 15px;
+        margin-bottom: 57px;
+
+        span::before {
+          top: -19px;
+          left: -22px;
+          width: 50px;
+          height: 50px;
+          border-width: 2px;
+        }
+
+        span::after {
+          top: -3px;
+          left: -6px;
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      &--checkbox {
+        width: 220px;
+      }
+    }
+
+    &__elems-wrapper {
+      max-width: 550px;
     }
   }
 }

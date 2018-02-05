@@ -163,7 +163,7 @@
 
     &__title {
       padding-right: 0;
-      padding-left: 155px;
+      padding-left: 105px;
       margin-bottom: 41px;
 
       font-size: 53px;
@@ -171,12 +171,12 @@
 
       &::after {
         top: -10px;
-        left: 50px;
+        left: 0;
       }
     }
 
     &-list {
-      margin-left: 170px;
+      margin-left: 105px;
       max-width: 325px;
       padding: 0;
       margin-right: 0;
@@ -220,13 +220,13 @@
     &__map {
       position: absolute;
       top: 75px;
-      right: 100px;
+      right: 50px;
       width: 525px;
       height: 455px;
     }
 
     &__btn {
-      margin-left: 175px;
+      margin-left: 125px;
       align-self: flex-start;
     }
   }

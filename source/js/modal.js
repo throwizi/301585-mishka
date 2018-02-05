@@ -2,6 +2,9 @@ var btn__modal = document.querySelector(".btn-modal"),
     modal = document.querySelector(".modal"),
     modal__closeBtn = document.querySelector(".modal__close-btn");
 
+    //querySelectorAll пройтись по каждой кнопке циклом и дать событие
+    // либо evt.target
+
 //Открытие модального окна
 btn__modal.addEventListener("click", function (evt) {
   evt.preventDefault();
