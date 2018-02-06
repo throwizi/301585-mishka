@@ -31,7 +31,7 @@
     color: $text-color;
   }
 
-  &__fieldset{
+  &__fieldset {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -41,7 +41,6 @@
     border-left: none;
     border-right: none;
     border-bottom: none;
-
   }
 
   &__subtitle {
@@ -302,7 +301,7 @@
       line-height: 30px;
     }
 
-    &__fieldset{
+    &__fieldset {
       max-width: $tablet-width;
       flex-direction: row;
       border: none;

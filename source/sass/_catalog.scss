@@ -52,10 +52,10 @@
 @media (min-width: $desktop-width) {
   .catalog {
     margin: 0;
-    max-width: $desktop-width;
+    max-width: 1500px;
 
     &__sub-list {
-      max-width: $desktop-width;
+      max-width: 1500px;
     }
 
     &__title {
@@ -67,6 +67,7 @@
 
     &-list {
       max-width: $desktop-width;
+      margin: 0 auto;
       padding-top: 132px;
       flex-direction: row;
       align-items: flex-start;
