@@ -116,22 +116,22 @@
         </div>
 
         <div class="order-options__fieldset order-options__fieldset--initials">
-          <h3 class="order-options__subtitle">ФИО</h3>
+          <h3 class="order-options__subtitle order-options__subtitle--initials">ФИО</h3>
             <div class="order-options__fieldset-wrapper order-options__fieldset-wrapper--initials">
-              <label class="order-options__label order-options__label--initials">Имя:
+              <label class="order-options__label order-options__label--initials"><span>Имя:</span>
                 <input class="order-options__input order-options__input--underlined" type="text" name="Name" placeholder="Введите ваше имя*" required>
               </label>
-              <label class="order-options__label order-options__label--initials">Фамилия:
+              <label class="order-options__label order-options__label--initials"><span>Фамилия:</span>
                 <input class="order-options__input order-options__input--underlined" type="text" name="Surname" placeholder="Укажите фамилию*" required>
               </label>
-              <label class="order-options__label order-options__label--initials">Отчество:
+              <label class="order-options__label order-options__label--initials"><span>Отчество:</span>
                 <input class="order-options__input order-options__input--underlined" type="text" name="Patronym" placeholder="Отчество, если желаете">
               </label>
             </div>
         </div>
 
         <div class="order-options__fieldset order-options__fieldset--phone">
-          <h3 class="order-options__subtitle">Тел</h3>
+          <h3 class="order-options__subtitle order-options__subtitle--phone">Тел</h3>
           <div class="order-options__fieldset-wrapper
           order-options__fieldset-wrapper--phone">
             <input class="order-options__input order-options__input--underlined order-options__input--phone"
@@ -155,9 +155,9 @@
         </div>
 
         <div class="order-options__fieldset order-options__fieldset--email">
-          <h3 class="order-options__subtitle">e-mail</h3>
+          <h3 class="order-options__subtitle order-options__subtitle--email">e-mail</h3>
           <div class="order-options__fieldset-wrapper order-options__fieldset-wrapper--email">
-            <input class="order-options__input order-options__input--underlined order-options__input--message" type="email" placeholder="Ваш Email*" required>
+            <input class="order-options__input order-options__input--underlined order-options__input--email" type="email" placeholder="Ваш Email*" required>
             <button class="order-options__btn-message" type="button">
               <span class="visually-hidden">Email</span>
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
@@ -168,15 +168,19 @@
         </div>
 
         <div class="order-options__fieldset order-options__fieldset--addit-info">
-          <h3 class="order-options__subtitle">Доп</h3>
+          <h3 class="order-options__subtitle order-options__subtitle--addit-info">Доп</h3>
           <div class="order-options__fieldset-wrapper
           order-options__fieldset-wrapper--addit-info">
             <textarea class="order-options__input order-options__input--underlined order-options__input--area" name="Additional information"
             placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
         </div>
-        <small class="order-options__description">*Поля обязательны для заполнения</small>
-        <button class="btn form__btn" type="submit" title="Оформить заказ">Отправить заказ</button>
+
+        <footer class="order-options__form-footer">
+          <small class="order-options__description">*Поля обязательны для заполнения</small>
+          <button class="btn order-options__form-btn" type="submit" title="Оформить заказ">Отправить заказ</button>
+        </footer>
+
       </div>
     </form>
     <!-- /form: order-options -->
