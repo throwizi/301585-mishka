@@ -31,8 +31,6 @@
     color: $text-color;
   }
 
-
-
   &__fieldset{
     position: relative;
     display: flex;
@@ -44,33 +42,6 @@
     border-right: none;
     border-bottom: none;
 
-
-    &--radio {
-      padding-top: 41px;
-      padding-bottom: 52px;
-    }
-
-    &--checkbox {
-      padding-top: 42px;
-      padding-bottom: 7px;
-    }
-
-    &--initials {
-      padding-top: 36px;
-      padding-bottom: 19px;
-    }
-
-    &--phone {
-      margin-bottom: 37px;
-    }
-
-    &--email {
-      padding-bottom: 41px;
-    }
-
-    &--addit-info {
-      padding-top: 30px;
-    }
   }
 
   &__subtitle {
@@ -90,11 +61,39 @@
     background-color: #ffffff;
   }
 
-  &__elems-wrapper {
+  &__fieldset-wrapper {
     position: relative;
     display: flex;
-    max-width: 260px;
     flex-direction: column;
+
+    &--radio {
+      padding-top: 40px;
+      padding-bottom: 52px;
+    }
+
+    &--checkbox {
+      padding-top: 42px;
+      padding-bottom: 8px;
+    }
+
+    &--initials {
+      padding-top: 35px;
+      padding-bottom: 21px;
+    }
+
+    &--phone {
+      padding-bottom: 38px;
+    }
+
+    &--email {
+      padding-bottom: 40px;
+    }
+
+
+    &--addit-info {
+      padding-top: 33px;
+      padding-bottom: 15px;
+    }
   }
 
   &__label {
@@ -239,11 +238,11 @@
     &--area {
       width: 100%;
       max-width: 220px;
+      margin: 0;
       height: 114px;
       padding: 12px 18px 12px 18px;
       border: 2px solid $text-color;
       resize: none;
-      margin-bottom: 15px;
     }
   }
 
@@ -263,13 +262,13 @@
         fill: #62d1ba;
       }
     }
+  }
 
-    &__description {
-      font-size: 14px;
-      line-height: 16px;
-      color: $text-color;
-      margin-bottom: 31px;
-    }
+  &__description {
+    font-size: 14px;
+    line-height: 16px;
+    color: $text-color;
+    margin-bottom: 31px;
   }
 }
 

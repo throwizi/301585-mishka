@@ -87,7 +87,7 @@
 
         <div class="order-options__fieldset order-options__fieldset--checkbox">
           <h3 class="order-options__subtitle order-options__subtitle--checkbox">Цвет</h3>
-          <div class="order-options__fieldset-wrapper">
+          <div class="order-options__fieldset-wrapper order-options__fieldset-wrapper--checkbox">
             <label class="order-options__label order-options__label--checkbox">
               <input class="visually-hidden order-options__input order-options__input--checkbox" type="checkbox" name="color" value="white" checked>
               <span>Белый</span>
@@ -117,7 +117,7 @@
 
         <div class="order-options__fieldset order-options__fieldset--initials">
           <h3 class="order-options__subtitle">ФИО</h3>
-            <div class="order-options__fieldset-wrapper">
+            <div class="order-options__fieldset-wrapper order-options__fieldset-wrapper--initials">
               <label class="order-options__label order-options__label--initials">Имя:
                 <input class="order-options__input order-options__input--underlined" type="text" name="Name" placeholder="Введите ваше имя*" required>
               </label>
@@ -132,7 +132,8 @@
 
         <div class="order-options__fieldset order-options__fieldset--phone">
           <h3 class="order-options__subtitle">Тел</h3>
-          <div class="order-options__fieldset-wrapper">
+          <div class="order-options__fieldset-wrapper
+          order-options__fieldset-wrapper--phone">
             <input class="order-options__input order-options__input--underlined order-options__input--phone"
             type="tel" pattern="[+]{1}7\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" name="telephone" placeholder="+7 ХХХ ХХ ХХ*" required>
             <button class="order-options__btn-phone" type="button">
@@ -155,7 +156,7 @@
 
         <div class="order-options__fieldset order-options__fieldset--email">
           <h3 class="order-options__subtitle">e-mail</h3>
-          <div class="order-options__fieldset-wrapper">
+          <div class="order-options__fieldset-wrapper order-options__fieldset-wrapper--email">
             <input class="order-options__input order-options__input--underlined order-options__input--message" type="email" placeholder="Ваш Email*" required>
             <button class="order-options__btn-message" type="button">
               <span class="visually-hidden">Email</span>
@@ -168,7 +169,8 @@
 
         <div class="order-options__fieldset order-options__fieldset--addit-info">
           <h3 class="order-options__subtitle">Доп</h3>
-          <div class="order-options__fieldset-wrapper">
+          <div class="order-options__fieldset-wrapper
+          order-options__fieldset-wrapper--addit-info">
             <textarea class="order-options__input order-options__input--underlined order-options__input--area" name="Additional information"
             placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>

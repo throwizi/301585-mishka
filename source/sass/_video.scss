@@ -144,11 +144,44 @@
 
 @media (min-width: $desktop-width) {
   .video {
+    width: 1050px;
     max-width: $desktop-width;
     margin: 0;
 
     &__wrapper {
-      flex-direction: row;
+      width: 100%;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 456px;
+    }
+
+    &__frame {
+      width: 680px;
+    }
+
+    &__title {
+      margin: 0;
+      margin-top: 96px;
+      margin-left: 48px;
+      margin-bottom: 34px;
+      width: 236px;
+
+      &::before {
+        top: -51px;
+        left: -9px;
+      }
+    }
+
+    &__description {
+      padding: 0;
+      margin: 0;
+      margin-left: 48px;
+      width: 236px;
+      margin-bottom: 42px;
+    }
+
+    &__btn {
+      width: 236px;
     }
   }
 }
