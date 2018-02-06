@@ -303,8 +303,8 @@
 
     &__form-wrapper {
       padding-top: 50px;
-      margin: 0;
       max-width: $tablet-width;
+      margin: 0 auto;
     }
 
     &__fieldset {
@@ -516,6 +516,123 @@
     &__btn-message {
       top: 10px;
       right: 19px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-options {
+    &__title {
+      font-size: 53px;
+      line-height: 57px;
+    }
+
+    &__form-wrapper {
+      padding-top: 126px;
+      padding-bottom: 49px;
+      max-width: 1500px;
+      margin: 0;
+    }
+
+    &__slogan {
+      max-width: 700px;
+    }
+
+    &__fieldset {
+      max-width: 1050px;
+
+      &--addit-info {
+        margin-bottom: 35px;
+      }
+    }
+
+    &__subtitle {
+      &--radio {
+        margin-top: 39px;
+        margin-right: 96px;
+        margin-left: 63px;
+      }
+
+      &--checkbox {
+        margin-top: 65px;
+        margin-right: 97px;
+        margin-left: 60px;
+      }
+
+      &--initials {
+        margin-top: 68px;
+        margin-right: 74px;
+        margin-left: 61px;
+      }
+
+      &--phone {
+        margin-top: 64px;
+        margin-right: 82px;
+        margin-left: 62px;
+      }
+
+      &--email {
+        margin-top: 17px;
+        margin-right: 36px;
+        margin-left: 61px;
+      }
+
+      &--addit-info {
+        margin-top: 66px;
+        margin-right: 74px;
+        margin-left: 63px;
+      }
+    }
+
+    &__fieldset-wrapper {
+      &--radio {
+        padding-top: 39px;
+      }
+
+      &--checkbox {
+        width: 700px;
+      }
+
+      &--initials {
+        width: 700px;
+      }
+
+      &--phone {
+        width: 700px;
+      }
+
+      &--email {
+        width: 700px;
+      }
+
+      &--addit-info {
+        width: 700px;
+      }
+    }
+
+    &__label {
+      &--checkbox {
+        width: 17%;
+      }
+    }
+
+    &__input {
+      &--area {
+        max-width: 658px;
+      }
+    }
+
+    &__form-footer {
+      width: 700px;
+      margin: 0 auto;
+    }
+
+    &__btn-phone {
+      right: 10px;
+    }
+
+    &__btn-message {
+      right: 7px;
     }
   }
 }
