@@ -3,31 +3,40 @@
   flex-direction: column;
   max-width: 260px;
   margin: 0 auto;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   color: #000000;
   border: 1px solid $border-color;
 
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 21px;
+  }
+
+  &__header {
+    display: flex;
+    padding: 0 28px;
+    margin-bottom: 20px;
+  }
+
   &__title {
-    margin-top: 20.5px;
-    margin-bottom: 4px;
-    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
     font-size: 17px;
     line-height: 24px;
   }
 
   &__link {
-    display: block;
-    margin-bottom: 4px;
 
-    &--img {
-      margin-bottom: 0;
+    &--source {
+      margin-bottom: 5px;
     }
   }
 
   &__description {
-    margin-top: 0;
-    margin-bottom: 20px;
-
     font-size: 13px;
     line-height: 30px;
     color: $text-color;
@@ -36,7 +45,7 @@
   &__footer {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 27px;
   }
 
   &__wrapper {
@@ -44,7 +53,7 @@
     justify-content: space-between;
     width: 100%;
     max-width: 260px;
-    padding-top: 20.5px;
+    padding-top: 20px;
     padding-bottom: 26px;
     border-top: 1px solid $border-color;
   }
@@ -56,6 +65,7 @@
   }
 
   &__order {
+    margin-right: -7px;
     background-color: #ffffff;
     border: none;
     cursor: pointer;
@@ -84,71 +94,93 @@
 
 @media (min-width: $tablet-width) {
   .product {
-
+    max-width: 668px;
     flex-direction: row;
-    max-width: $tablet-width;
-    margin: 0 auto 0 auto;
-    height: 330px;
-    margin-bottom: 56px;
+    justify-content: space-between;
+
+    margin: 0;
+    margin-bottom: 50px;
 
     &__img {
+      width: 330px;
       height: 330px;
     }
 
     &__content {
-      display: flex;
-      flex-direction: column;
+      width: 50%;
       justify-content: space-between;
+      padding-top: 23px;
     }
 
     &__title {
-      width: 306px;
-      padding: 0;
-      margin-bottom: 8px;
-
       font-size: 20px;
     }
 
     &__link {
-      display: block;
-      margin-bottom: 7px;
 
-      &--img {
-        margin-right: 28px;
-      }
-
-      &--source:last-of-type {
-        margin-right: 64px;
+      &--source {
+        padding-right: 35px;
       }
     }
 
     &__description {
-      width: 306px;
-      padding: 0;
-
       font-size: 15px;
+      line-height: 30px;
     }
 
     &__footer {
-      width: 270px;
-      padding: 0;
-      padding-bottom: 1px;
-      margin-bottom: 22px;
-      margin-right: 30px;
+      padding-left: 32px;;
     }
 
     &__wrapper {
-      width: 100%;
-      padding: 0;
-      padding-top: 23px;
+      padding-top: 20px;
+      padding-bottom: 33px;
     }
 
     &__price {
-      font-size: 17px;
+      font-size: 17px
     }
 
     &__order {
-      padding: 0;
+      margin-right: -15px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product {
+    flex-basis: 315px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__img {
+      width: 315px;
+      height: 460px;
+    }
+
+    &__link {
+
+      &--source {
+        padding-right: 29px;
+      }
+    }
+
+    &__content {
+      width: 100%;
+      padding-top: 20px;
+    }
+
+    &__header {
+      margin-bottom: 40px;
+    }
+
+    &:last-child &__header {
+      margin-bottom: 15px;
+    }
+
+    &__order{
+      margin-right: 0;
     }
   }
 }

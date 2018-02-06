@@ -1,6 +1,9 @@
 .video {
+  align-self: center;
+  max-width: 260px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 60px;
   background-color: #ffffff;
@@ -16,8 +19,8 @@
   &__title {
     position: relative;
     align-self: center;
-    margin-top: 20px;
-    margin-bottom: 22px;
+    margin-top: 23px;
+    margin-bottom: 25px;
     margin-left: 50px;
     width: 130px;
     font-size: 17px;
@@ -26,7 +29,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 12px;
+      top: 9px;
       left: -59px;
       width: 36px;
       height: 27px;
@@ -36,13 +39,13 @@
 
   &__frame {
     position: relative;
-    width: 105%;
+    width: 100%;
     max-width: 300px;
-    margin-bottom: 8px;
+    margin-bottom: 22px;
     text-align: center;
 
     img {
-      width: 96%;
+      width: 100%;
       z-index: 1;
     }
   }
@@ -65,9 +68,11 @@
   }
 
   &__description {
-    padding-left: 30px;
-    padding-right: 42px;
-    margin-bottom: 27px;
+    padding-left: 33px;
+    padding-right: 40px;
+
+    margin-top: 0;
+    margin-bottom: 23px;
 
     font-size: 13px;
     line-height: 24px;
@@ -81,10 +86,10 @@
 
 @media (min-width: $tablet-width) {
   .video {
+    max-width: $tablet-width;
     margin-bottom: 65px;
 
     &__wrapper {
-      max-width: $tablet-width;
       margin: 0 auto;
       align-items: flex-start;
       padding-bottom: 43px;
@@ -93,7 +98,7 @@
     &__frame {
       width: 100%;
       max-width: $tablet-width;
-      margin-bottom: 12px;
+      margin-bottom: 5px;
       order: 1;
 
       img {
@@ -106,13 +111,13 @@
       align-self: flex-start;
       width: 250px;
       margin-left: 104px;
-      margin-bottom: 20px;
+      margin-bottom: 31px;
 
       font-size: 20px;
       order: 2;
 
       &::before {
-        top: 0;
+        top: -4px;
         left: -66px;
       }
     }
@@ -120,7 +125,7 @@
     &__description {
       padding-left: 38px;
       padding-right: 36px;
-      margin-bottom: 30px;
+      margin-bottom: 32px;
 
       font-size: 15px;
       line-height: 30px;
@@ -132,6 +137,18 @@
       max-width: $tablet-width;
       margin: 0 auto;
       order: 4;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .video {
+    max-width: $desktop-width;
+    margin: 0;
+
+    &__wrapper {
+      flex-direction: row;
     }
   }
 }
