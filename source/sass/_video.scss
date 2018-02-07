@@ -1,5 +1,5 @@
 .video {
-  align-self: center;
+  margin: 0 auto;
   max-width: 260px;
   display: flex;
   flex-direction: column;
@@ -86,7 +86,7 @@
 
 @media (min-width: $tablet-width) {
   .video {
-    max-width: $tablet-width;
+    max-width: $tablet-width - 100px;
     margin-bottom: 65px;
 
     &__wrapper {
