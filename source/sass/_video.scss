@@ -98,7 +98,7 @@
     &__frame {
       width: 100%;
       max-width: $tablet-width;
-      margin-bottom: 5px;
+      margin-bottom: 11px;
       order: 1;
 
       img {
@@ -144,7 +144,7 @@
 
 @media (min-width: $desktop-width) {
   .video {
-    max-width: 1050px;
+    max-width: $desktop-width - 100px;
     margin: 0 auto 0;
     padding-bottom: 103px;
 
@@ -152,7 +152,7 @@
       width: 100%;
       flex-direction: column;
       flex-wrap: wrap;
-      height: 456px;
+      height: 454px;
       padding-bottom: 0;
     }
 

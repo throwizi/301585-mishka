@@ -1,7 +1,7 @@
 .product {
   display: flex;
   flex-direction: column;
-  max-width: 260px;
+
   margin: 0 auto;
   margin-bottom: 30px;
   color: #000000;
@@ -93,16 +93,15 @@
 
 @media (min-width: $tablet-width) {
   .product {
-    max-width: 668px;
     flex-direction: row;
     justify-content: space-between;
 
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 56px;
 
     &__img {
       width: 330px;
-      height: 330px;
+      height: 100%;
     }
 
     &__content {
@@ -116,6 +115,10 @@
     }
 
     &__link {
+
+      &--img {
+        height: 330px;
+      }
       &--source {
         padding-right: 35px;
       }
@@ -151,14 +154,18 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-right: 30px;
 
     &__img {
       width: 315px;
-      height: 460px;
+      height: 100%;
     }
 
     &__link {
+
+      &--img {
+        height: 460px;
+      }
+
       &--source {
         padding-right: 29px;
       }
@@ -166,7 +173,7 @@
 
     &__content {
       width: 100%;
-      padding-top: 20px;
+      padding-top: 27px;
     }
 
     &__header {

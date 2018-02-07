@@ -1,4 +1,7 @@
 .catalog {
+  max-width: 320px;
+  margin: 0 auto;
+
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -26,6 +29,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
+    max-width: $tablet-width;
     margin-bottom: 53px;
 
     &__sub-list {
@@ -42,7 +46,6 @@
     }
 
     &-list {
-      max-width: $tablet-width;
       margin: 0 auto;
       padding: 92px 50px 0 50px;
     }
@@ -51,7 +54,8 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    margin: 0;
+    max-width: $desktop-width;
+    margin-bottom: 1px;
 
     &__sub-list {
       max-width: 1500px;
@@ -65,8 +69,7 @@
     }
 
     &-list {
-      max-width: $desktop-width;
-      margin: 0 auto 7px;
+      margin: 0 auto;
       padding-top: 132px;
       flex-direction: row;
       align-items: flex-start;
