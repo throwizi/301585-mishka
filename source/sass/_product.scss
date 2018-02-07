@@ -93,6 +93,7 @@
 
 @media (min-width: $tablet-width) {
   .product {
+    max-width: $tablet-width - 100px;
     flex-direction: row;
     justify-content: space-between;
 
@@ -102,6 +103,7 @@
     &__img {
       width: 330px;
       height: 100%;
+      margin-right: 13px;
     }
 
     &__content {
@@ -135,7 +137,7 @@
 
     &__wrapper {
       padding-top: 20px;
-      padding-bottom: 33px;
+      padding-bottom: 25px;
     }
 
     &__price {
@@ -164,6 +166,10 @@
 
       &--img {
         height: 460px;
+      }
+
+      &--source {
+        padding-right: 28px;
       }
     }
 
