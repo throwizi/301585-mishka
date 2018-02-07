@@ -1,4 +1,5 @@
 .order-options {
+  max-width: 320px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -278,7 +279,8 @@
 
 @media (min-width: $tablet-width) {
   .order-options {
-    margin: 0;
+    max-width: $tablet-width;
+
 
     &__sub-list {
       margin: 0;
@@ -522,6 +524,8 @@
 
 @media (min-width: $desktop-width) {
   .order-options {
+    max-width: $desktop-width;
+
     &__title {
       font-size: 53px;
       line-height: 57px;
