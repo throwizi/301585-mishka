@@ -1,4 +1,7 @@
 .page-header {
+  max-width: 320px;
+  margin: 0 auto;
+
   position: relative;
   display: flex;
   flex-direction: column;
@@ -74,11 +77,16 @@
         background-color: #221f1f;
       }
     }
+
+    &--nojs {
+      display: none;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
+    max-width: $tablet-width;
     padding: 0 50px;
     flex-direction: row;
 
@@ -95,7 +103,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    position: relative;
+    max-width: $desktop-width;
 
     &__logo {
       position: absolute;

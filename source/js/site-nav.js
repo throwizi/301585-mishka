@@ -3,6 +3,7 @@ var menuBtn = document.querySelector(".page-header__toggle"),
     site_nav = document.querySelector(".site-nav");
 
     site_nav.classList.remove("site-nav--nojs");
+    menuBtn.classList.remove("page-header__toggle--nojs");
 
 menuBtn.addEventListener("click", function(evt) {
   evt.preventDefault();

@@ -1,4 +1,7 @@
 .contacts {
+  max-width: 320px;
+  margin: 0 auto;
+
   display: flex;
   flex-direction: column;
 
@@ -32,7 +35,7 @@
   }
 
   &__property {
-    width: 70px;
+    width: 80px;
     padding-bottom: 26px;
   }
 
@@ -41,7 +44,6 @@
     width: 180px;
 
     address {
-      padding-right: 20px;
       font-style: normal;
     }
 
@@ -80,7 +82,6 @@
 @media (min-width: $tablet-width) {
   .contacts {
     max-width: $tablet-width;
-    margin: 0 auto;
 
     padding-top: 70px;
     padding-bottom: 57px;
@@ -131,7 +132,7 @@
       width: 230px;
 
       address {
-        padding-right: 20px;
+        padding-right: 0;
       }
     }
 
@@ -151,6 +152,7 @@
     padding: 75px 100px 105px;
 
     max-width: $desktop-width;
+
     flex-direction: column;
     flex-wrap: wrap;
 

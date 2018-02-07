@@ -84,8 +84,7 @@
 @media (min-width: $tablet-width) {
   .feature {
     position: relative;
-    margin: 0 auto;
-    max-width: 768px;
+    max-width: $tablet-width;
     padding-top: 57px;
     padding-bottom: 54px;
 
