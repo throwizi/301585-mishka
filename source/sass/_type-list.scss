@@ -79,25 +79,16 @@
     padding: 0 50px;
     align-items: flex-end;
 
-    /*Ховер эффект для ссылки, при наведении на блочки они увеличиваются по высоте на 5px и поднимаются на 5px */
-
     &__link {
       margin-top: 5px;
 
       &--right {
         padding-top: 27px;
-
-        &:hover {
-          margin-top: 0;
-          padding-top: 32px;
-          transform: translateY(-5px);
-        }
       }
 
-      &--left:hover {
-        padding-top: 28px;
+      &:hover {
         margin-top: 0;
-        transform: translateY(-5px);
+        padding-bottom: 25px;
       }
     }
   }
