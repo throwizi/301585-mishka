@@ -170,6 +170,8 @@
   }
 
   &__input {
+    color: $text-color;
+
     @include placeholder {
       color: #d2d2d2;
       opacity: 1;
@@ -219,6 +221,10 @@
         @include placeholder {
           opacity: 0;
         }
+      }
+
+      &:active {
+        border-color: #62d1ba;
       }
     }
 
@@ -471,18 +477,24 @@
     }
 
     &__input {
+
+      cursor: pointer;
+
       &--initials {
         width: 100%;
+        padding-left: 15px;
       }
 
       &--phone {
         width: 100%;
+        padding-left: 15px;
         margin-top: 50px;
         background-color: #f1f1f1;
       }
 
       &--email {
         margin-top: 0;
+        padding-left: 15px;
         width: 100%;
         background-color: #f1f1f1;
       }
@@ -621,6 +633,14 @@
     }
 
     &__input {
+
+      &--underlined {
+
+        &:hover {
+          border-color: #62d1ba;
+        }
+      }
+
       &--area {
         max-width: 658px;
       }

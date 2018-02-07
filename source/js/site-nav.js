@@ -1,19 +1,19 @@
 var menuBtn = document.querySelector(".page-header__toggle"),
 
-    site_nav = document.querySelector(".site-nav");
+    siteNav = document.querySelector(".site-nav");
 
-    site_nav.classList.remove("site-nav--nojs");
+    siteNav.classList.remove("site-nav--nojs");
     menuBtn.classList.remove("page-header__toggle--nojs");
 
 menuBtn.addEventListener("click", function(evt) {
   evt.preventDefault();
 
-  if (site_nav.classList.contains("site-nav--closed")) {
-    site_nav.classList.remove("site-nav--closed");
-    site_nav.classList.add("site-nav--opened");
+  if (siteNav.classList.contains("site-nav--closed")) {
+    siteNav.classList.remove("site-nav--closed");
+    siteNav.classList.add("site-nav--opened");
   } else {
-    site_nav.classList.add("site-nav--closed");
-    site_nav.classList.remove("site-nav--opened");
+    siteNav.classList.add("site-nav--closed");
+    siteNav.classList.remove("site-nav--opened");
   }
 });
 

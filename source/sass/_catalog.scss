@@ -69,7 +69,7 @@
     }
 
     &-list {
-      margin: 0 auto;
+      width: $desktop-width - 100px;
       padding-top: 132px;
       flex-direction: row;
       align-items: flex-start;
