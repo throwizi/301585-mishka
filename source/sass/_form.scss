@@ -78,7 +78,7 @@
 
     &--initials {
       padding-top: 35px;
-      padding-bottom: 21px;
+      padding-bottom: 18px;
     }
 
     &--phone {
@@ -206,7 +206,7 @@
       width: 100%;
       margin-top: 5px;
       padding-top: 10px;
-      padding-bottom: 15px;
+      padding-bottom: 16px;
       border-bottom: 2px solid #000000;
 
       @include placeholder {
@@ -341,7 +341,7 @@
 
       &--addit-info {
         padding: 0 50px;
-        margin-bottom: 37px;
+        margin-bottom: 39px;
       }
     }
 
@@ -354,6 +354,7 @@
 
       &--checkbox {
         margin-top: 67px;
+        margin-right: 145px;
         background-color: #f1f1f1;
       }
 
@@ -440,12 +441,12 @@
       }
 
       &--checkbox {
-        width: 32%;
+        width: 159px;
         margin-bottom: 58px;
 
         span::before {
           top: -16px;
-          left: -26px;
+          left: -21px;
           width: 49px;
           height: 49px;
           border-width: 2px;
@@ -453,7 +454,7 @@
 
         span::after {
           top: -2px;
-          left: -17px;
+          left: -12px;
           width: 35px;
           height: 25px;
         }
@@ -556,7 +557,7 @@
 
       &--checkbox {
         margin-top: 65px;
-        margin-right: 97px;
+        margin-right: 92px;
         margin-left: 60px;
       }
 
@@ -614,7 +615,7 @@
 
     &__label {
       &--checkbox {
-        width: 17%;
+        width: 116px;
       }
 
       &--phone,

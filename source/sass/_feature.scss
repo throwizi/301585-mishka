@@ -6,6 +6,7 @@
   align-content: flex-start;
 
   max-width: 320px;
+  box-sizing: border-box;
   margin: 0 auto;
 
   background-color: #ffffff;
@@ -36,7 +37,7 @@
 
   &__text {
     margin-top: 0;
-    margin-bottom: 20.5px;
+    margin-bottom: 20px;
     padding-right: 11px;
     font-size: 15px;
     line-height: 24px;
@@ -52,7 +53,7 @@
     align-self: center;
 
     width: 260px;
-    margin-bottom: 26.5px;
+    margin-bottom: 24px;
   }
 
   &__footer {
@@ -64,7 +65,7 @@
 
   &__price {
     align-self: center;
-    margin-bottom: 24.5px;
+    margin-bottom: 24px;
 
     color: $text-color;
     font-weight: bold;
@@ -85,7 +86,7 @@
   .feature {
     position: relative;
     max-width: $tablet-width;
-    padding-top: 57px;
+    padding-top: 58px;
     padding-bottom: 54px;
 
     &__header {
@@ -98,6 +99,7 @@
     }
 
     &__title {
+      margin-bottom: 4px;
       font-size: 43px;
       line-height: 50px;
     }

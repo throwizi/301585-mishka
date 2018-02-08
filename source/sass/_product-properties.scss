@@ -1,6 +1,6 @@
 .product-properties {
   width: 260px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   font-size: 15px;
   border-collapse: collapse;
@@ -9,8 +9,8 @@
 
   &__property,
   &__value {
-    padding-top: 7.5px;
-    padding-bottom: 6px;
+    padding-top: 7px;
+    padding-bottom: 8px;
     border-bottom: 1px solid $border-color;
   }
 
@@ -21,7 +21,7 @@
 
 @media (min-width: $tablet-width) {
   .product-properties {
-    margin-bottom: 58px;
+    margin-bottom: 53px;
     order: 2;
 
     &__property,
@@ -33,7 +33,7 @@
 
 @media (min-width: $desktop-width) {
   .product-properties {
-    margin-bottom: 113px;
+    margin-bottom: 106px;
     order: 2;
 
     &__property,

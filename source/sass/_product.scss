@@ -101,15 +101,18 @@
     margin-bottom: 56px;
 
     &__img {
-      width: 330px;
+      width: 100%;
       height: 100%;
-      margin-right: 13px;
     }
 
     &__content {
-      width: 50%;
+      width: 330px;
       justify-content: space-between;
       padding-top: 23px;
+    }
+
+    &__header {
+      padding-left: 26px;
     }
 
     &__title {
@@ -118,17 +121,15 @@
 
     &__link {
       &--img {
+        width: 330px;
         height: 330px;
-      }
-
-      &--source {
-        padding-right: 35px;
       }
     }
 
     &__description {
       font-size: 15px;
       line-height: 30px;
+      font-weight: normal;
     }
 
     &__footer {
@@ -157,13 +158,9 @@
     justify-content: flex-start;
     align-items: center;
 
-    &__img {
-      width: 315px;
-      height: 100%;
-    }
-
     &__link {
       &--img {
+        width: 315px;
         height: 460px;
       }
 
@@ -179,6 +176,10 @@
 
     &__header {
       margin-bottom: 40px;
+    }
+
+    &__footer {
+      padding-left: 27px;
     }
 
     &__wrapper {

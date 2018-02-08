@@ -88,6 +88,7 @@
 @media (min-width: $tablet-width) {
   .page-header {
     max-width: $tablet-width;
+    box-sizing: border-box;
     padding: 0 50px;
     flex-direction: row;
 
