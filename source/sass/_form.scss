@@ -229,39 +229,26 @@
     }
 
     &--phone {
-      position: relative;
-
       margin-top: 15px;
       padding-top: 15px;
       padding-bottom: 17px;
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 50px;
-        height: 50px;
-        background-color: red;
+      background: url("../img/icon-phone.svg") 97% 40% no-repeat;
+
+      &:focus {
+        background-image: url("../img/icon-phone-hover.svg");
       }
     }
 
     &--email {
-      position: relative;
-
       margin-top: 15px;
       padding-top: 15px;
       padding-bottom: 15px;
 
-      &::before {
-        content: "";
-        position: absolute;
-        display: block;
-        top: 0;
-        right: 0;
-        width: 50px;
-        height: 50px;
-        background-color: red;
+      background: url("../img/icon-mail.svg") 98% 61% no-repeat;
+
+      &:focus {
+        background-image: url("../img/icon-mail-hover.svg");
       }
     }
 
@@ -414,7 +401,7 @@
       }
 
       &--phone {
-        padding-bottom: 20px;
+        padding-bottom: 25px;
         width: 500px;
       }
 
@@ -484,7 +471,6 @@
     }
 
     &__input {
-
       &--initials {
         width: 100%;
         padding-left: 15px;
@@ -495,6 +481,8 @@
         padding-left: 15px;
         margin-top: 47px;
         background-color: #f1f1f1;
+
+        background-position: 95% 54%;
       }
 
       &--email {
@@ -502,6 +490,8 @@
         padding-left: 15px;
         width: 97%;
         background-color: #f1f1f1;
+
+        background-position: 95% 84%;
       }
 
       &--area {
@@ -617,6 +607,7 @@
       }
 
       &--addit-info {
+        padding-top: 50px;
         width: 700px;
       }
     }
@@ -642,14 +633,12 @@
     }
 
     &__input {
-
       &--radio:hover + span::before,
       &--checkbox:hover + span::before {
         border-color: #62d1ba;
       }
 
       &--underlined {
-
         &:hover {
           border-color: #62d1ba;
         }
@@ -657,18 +646,20 @@
 
       &--phone {
         width: 98%;
-        //
-        // &:hover + span::before {
-        //   background-image: url("../img/icon-phone-hover.svg");
-        // }
+        background-position: 99% 45%;
+
+        &:hover {
+          background-image: url("../img/icon-phone-hover.svg");
+        }
       }
 
       &--email {
         width: 98%;
+        background-position: 99% 80%;
 
-        // &:hover + span::before {
-        //   background-image: url("../img/icon-mail-hover.svg");
-        // }
+        &:hover {
+          background-image: url("../img/icon-mail-hover.svg");
+        }
       }
 
       &--area {
