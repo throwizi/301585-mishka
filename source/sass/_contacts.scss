@@ -200,6 +200,11 @@
       vertical-align: top;
     }
 
+    &__link:hover {
+      color: #77d2c4;
+      border-color: #77d2c4;
+    }
+
     &__property {
       text-align: left;
       width: 75px;

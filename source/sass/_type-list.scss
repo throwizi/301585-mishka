@@ -86,7 +86,9 @@
         padding-top: 27px;
       }
 
-      &:hover {
+      &:hover,
+      &:focus,
+      &:active {
         margin-top: 0;
         padding-bottom: 25px;
       }

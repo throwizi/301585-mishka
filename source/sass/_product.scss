@@ -192,6 +192,14 @@
 
     &__order {
       margin-right: 0;
+
+      &:hover {
+        color: #666666;
+
+        path {
+          fill: #63d1bb;
+        }
+      }
     }
   }
 }

@@ -167,30 +167,6 @@
     &--initials {
       margin-bottom: 22px;
     }
-
-    &--phone {
-      span::before {
-        content: "";
-        position: absolute;
-        bottom: 14px;
-        right: 3px;
-        width: 35px;
-        height: 35px;
-        background: url("../img/icon-phone.svg") 50% 50% no-repeat;
-      }
-    }
-
-    &--email {
-      span::before {
-        content: "";
-        position: absolute;
-        bottom: 14px;
-        right: 3px;
-        width: 35px;
-        height: 35px;
-        background: url("../img/icon-mail.svg") 50% 50% no-repeat;
-      }
-    }
   }
 
   &__input {
@@ -253,24 +229,39 @@
     }
 
     &--phone {
+      position: relative;
+
       margin-top: 15px;
       padding-top: 15px;
       padding-bottom: 17px;
 
-      &:focus + span::before,
-      &:active + span::before {
-        background-image: url("../img/icon-phone-hover.svg");
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        background-color: red;
       }
     }
 
     &--email {
+      position: relative;
+
       margin-top: 15px;
       padding-top: 15px;
       padding-bottom: 15px;
 
-      &:focus + span::before,
-      &:active + span::before {
-        background-image: url("../img/icon-mail-hover.svg");
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        background-color: red;
       }
     }
 
@@ -490,24 +481,9 @@
           margin-right: 22px;
         }
       }
-
-      &--phone {
-        span::before {
-          right: 20px;
-        }
-      }
-
-      &--email {
-        span::before {
-          bottom: 4px;
-          right: 20px;
-        }
-      }
     }
 
     &__input {
-
-      cursor: pointer;
 
       &--initials {
         width: 100%;
@@ -667,6 +643,11 @@
 
     &__input {
 
+      &--radio:hover + span::before,
+      &--checkbox:hover + span::before {
+        border-color: #62d1ba;
+      }
+
       &--underlined {
 
         &:hover {
@@ -676,18 +657,18 @@
 
       &--phone {
         width: 98%;
-
-        &:hover + span::before {
-          background-image: url("../img/icon-phone-hover.svg");
-        }
+        //
+        // &:hover + span::before {
+        //   background-image: url("../img/icon-phone-hover.svg");
+        // }
       }
 
       &--email {
         width: 98%;
 
-        &:hover + span::before {
-          background-image: url("../img/icon-mail-hover.svg");
-        }
+        // &:hover + span::before {
+        //   background-image: url("../img/icon-mail-hover.svg");
+        // }
       }
 
       &--area {
