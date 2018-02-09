@@ -1,12 +1,48 @@
 .about {
-  padding: 35px 30px;
+  display: flex;
+  flex-direction: column;
+
+  max-width: 320px;
+  margin: 0 auto;
+
+  padding-top: 29px;
+  padding-bottom: 36px;
   background-color: #ffffff;
-  outline: 1px solid blue;
 
   &__title {
     margin-top: 0;
+    margin-bottom: 27.5px;
     font-size: 25px;
     line-height: 30px;
     color: #000000;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    max-width: $tablet-width;
+    padding-top: 65px;
+    padding-bottom: 25px;
+
+    &__title {
+      font-size: 43px;
+      line-height: 50px;
+      margin-bottom: 47px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    max-width: $desktop-width;
+
+    padding-top: 60px;
+    padding-bottom: 33px;
+
+    &__title {
+      margin-left: 172px;
+      font-size: 53px;
+      line-height: 57px;
+    }
   }
 }

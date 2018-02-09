@@ -1,12 +1,38 @@
 .product {
-  //Чтобы не ругался трэвис
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  margin-bottom: 30px;
   color: #000000;
+  border: 1px solid $border-color;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 21px;
+  }
+
+  &__header {
+    display: flex;
+    padding: 0 28px;
+    margin-bottom: 20px;
+  }
 
   &__title {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
     font-size: 17px;
     line-height: 24px;
+  }
 
-    text-align: center;
+  &__link {
+    &--source {
+      margin-bottom: 5px;
+    }
   }
 
   &__description {
@@ -15,7 +41,165 @@
     color: $text-color;
   }
 
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 27px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 260px;
+    padding-top: 20px;
+    padding-bottom: 26px;
+    border-top: 1px solid $border-color;
+  }
+
   &__price {
     font-size: 15px;
+    font-weight: bold;
+    line-height: 24px;
+  }
+
+  &__order {
+    margin-right: -7px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+
+    &:focus {
+      color: #666666;
+
+      path {
+        fill: #63d1bb;
+      }
+    }
+
+    &:active {
+      color: #b2b2b2;
+
+      path {
+        fill: #d0f1ea;
+      }
+    }
+  }
+}
+
+.product:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    max-width: $tablet-width - 100px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 0;
+    margin-bottom: 56px;
+
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__content {
+      width: 330px;
+      justify-content: space-between;
+      padding-top: 23px;
+    }
+
+    &__header {
+      padding-left: 26px;
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__link {
+      &--img {
+        width: 330px;
+        height: 330px;
+      }
+    }
+
+    &__description {
+      font-size: 15px;
+      line-height: 30px;
+      font-weight: normal;
+    }
+
+    &__footer {
+      padding-left: 32px;
+    }
+
+    &__wrapper {
+      padding-top: 20px;
+      padding-bottom: 25px;
+    }
+
+    &__price {
+      font-size: 17px;
+    }
+
+    &__order {
+      margin-right: -15px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product {
+    width: 315px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__link {
+      &--img {
+        width: 315px;
+        height: 460px;
+      }
+
+      &--source {
+        padding-right: 28px;
+      }
+    }
+
+    &__content {
+      width: 100%;
+      padding-top: 27px;
+    }
+
+    &__header {
+      margin-bottom: 40px;
+    }
+
+    &__footer {
+      padding-left: 27px;
+    }
+
+    &__wrapper {
+      padding-bottom: 25px;
+    }
+
+    &:last-child &__header {
+      margin-bottom: 15px;
+    }
+
+    &__order {
+      margin-right: 0;
+
+      &:hover {
+        color: #666666;
+
+        path {
+          fill: #63d1bb;
+        }
+      }
+    }
   }
 }

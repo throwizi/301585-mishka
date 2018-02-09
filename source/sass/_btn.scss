@@ -1,19 +1,33 @@
 .btn {
+  width: 260px;
+  padding: 17.5px 0;
+  padding-bottom: 11px;
   border: 2px solid $text-color;
   background-color: #ffffff;
 
+  text-align: center;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
   text-transform: uppercase;
+  cursor: pointer;
 
-  &:hover,
   &:focus {
     color: #ffffff;
     background-color: $text-color;
   }
 
   &:active {
+    background-color: $text-color;
     color: #7c7c7c;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .btn {
+    &:hover {
+      color: #ffffff;
+      background-color: $text-color;
+    }
   }
 }

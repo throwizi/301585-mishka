@@ -1,19 +1,240 @@
 .contacts {
-  padding: 40px 0 42px 0;
+  max-width: 320px;
+  margin: 0 auto;
 
-  //grid
-  outline: 1px solid aqua;
+  display: flex;
+  flex-direction: column;
+
+  padding: 39px 0;
 
   &__title {
+    margin-top: 0;
+    margin-bottom: 23px;
     font-size: 18px;
     line-height: 30px;
   }
 
+  &__wrapper {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
   &-list {
-    padding: 0 30px;
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 33px;
 
     font-size: 15px;
     line-height: 30px;
     color: $text-color;
+  }
+
+  &__property,
+  &__value {
+    vertical-align: top;
+  }
+
+  &__property {
+    width: 80px;
+    padding-bottom: 26px;
+  }
+
+  &__value {
+    text-align: right;
+    width: 180px;
+
+    address {
+      font-style: normal;
+    }
+
+    &--align-left {
+      text-align: left;
+    }
+  }
+
+  &__link {
+    color: $text-color;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #46c1ae;
+  }
+
+  &__link:focus {
+    color: #d6f1ed;
+    border-color: #d6f1ed;
+  }
+
+  &__link:active {
+    color: #c7ece7;
+    border-color: #c7ece7;
+  }
+
+  &__map {
+    margin-bottom: 42px;
+  }
+
+  &__btn {
+    align-self: center;
+    max-width: 260px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    max-width: $tablet-width;
+
+    padding-top: 70px;
+    padding-bottom: 57px;
+
+    &__wrapper {
+      padding-left: 15px;
+      max-width: $tablet-width;
+    }
+
+    &__title {
+      position: relative;
+      margin-bottom: 45px;
+
+      font-size: 43px;
+      line-height: 50px;
+      letter-spacing: -1px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -15px;
+        right: -28px;
+        width: 47px;
+        height: 82px;
+        background: url("../img/icon-flag.svg");
+      }
+    }
+
+    &-list {
+      max-width: 800px;
+      margin-bottom: 50px;
+
+      font-size: 17px;
+      line-height: 30px;
+
+      tbody {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    &__property {
+      width: 77px;
+    }
+
+    &__value {
+      text-align: left;
+      width: 230px;
+
+      address {
+        padding-right: 0;
+      }
+    }
+
+    &__map {
+      margin-bottom: 54px;
+    }
+
+    &__btn {
+      max-width: 228px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+    padding: 75px 100px 105px;
+
+    max-width: $desktop-width;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    &__wrapper {
+      padding-top: 70px;
+      margin: 0;
+      margin-right: 36px;
+      height: auto;
+    }
+
+    &__title {
+      padding-right: 0;
+      padding-left: 105px;
+      margin-bottom: 41px;
+
+      font-size: 53px;
+      line-height: 57px;
+
+      &::after {
+        top: -10px;
+        left: 0;
+      }
+    }
+
+    &-list {
+      margin-left: 105px;
+      max-width: 325px;
+      padding: 0;
+      margin-right: 0;
+      margin-bottom: 70px;
+
+      font-size: 15px;
+      line-height: 30px;
+      color: $text-color;
+
+      tbody {
+        display: table;
+      }
+    }
+
+    &__property,
+    &__value {
+      font-size: 17px;
+      font-style: normal;
+      vertical-align: top;
+    }
+
+    &__link:hover {
+      color: #77d2c4;
+      border-color: #77d2c4;
+    }
+
+    &__property {
+      text-align: left;
+      width: 75px;
+      padding-bottom: 30px;
+    }
+
+    &__value {
+      text-align: left;
+      width: 230px;
+
+      address {
+        padding-right: 8px;
+      }
+
+      &--align-left {
+        text-align: left;
+      }
+    }
+
+    &__map {
+      position: absolute;
+      top: 75px;
+      right: 50px;
+      width: 525px;
+      height: 455px;
+    }
+
+    &__btn {
+      margin-left: 125px;
+      align-self: flex-start;
+    }
   }
 }

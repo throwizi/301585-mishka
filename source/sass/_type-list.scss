@@ -1,23 +1,97 @@
 .type-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
   padding-left: 0;
   list-style-type: none;
 
   &__item {
-    //Чтобы не ругался трэвис
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
     color: #000000;
-
-    &--left {
-      background-color: #63d1bb;
-    }
-
-    &--right {
-      background-color: #46c1ae;
-    }
   }
 
   &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+    padding: 21px 30px;
+
     font-size: 19px;
     font-weight: bold;
     color: #ffffff;
+
+    transition: all 0.3s;
+
+    span {
+      flex-basis: 130px;
+    }
+
+    &--left {
+      padding-right: 36px;
+      background-color: #63d1bb;
+
+      &:active {
+        color: #8be2d0;
+
+        path {
+          fill: #44c0aa;
+        }
+      }
+    }
+
+    &--right {
+      padding-top: 20px;
+      background-color: #46c1ae;
+
+      &:active {
+        color: #7ed4c6;
+
+        path {
+          fill: #37b2a0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .type-list {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0 50px;
+
+    &__item {
+      flex-basis: 50%;
+    }
+
+    &__link {
+      padding: 23px 27px 20px 34px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .type-list {
+    padding: 0 50px;
+    align-items: flex-end;
+
+    &__link {
+      margin-top: 5px;
+
+      &--right {
+        padding-top: 27px;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        margin-top: 0;
+        padding-bottom: 25px;
+      }
+    }
   }
 }

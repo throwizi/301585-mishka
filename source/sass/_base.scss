@@ -1,7 +1,24 @@
+@font-face {
+  font-weight: normal;
+  font-family: "Open-Sans";
+  font-style: normal;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "Open-Sans";
+  font-style: normal;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+
 body {
+  position: relative;
+  min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: "OpenSans", "Arial", sans-serif;
+
+  font-family: "Open-Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: normal;
   line-height: 24px;
@@ -11,6 +28,11 @@ body {
 a {
   text-decoration: none;
   color: #000000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),

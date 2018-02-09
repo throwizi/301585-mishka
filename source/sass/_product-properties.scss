@@ -1,4 +1,44 @@
 .product-properties {
+  width: 260px;
+  margin-bottom: 28px;
+
   font-size: 15px;
+  border-collapse: collapse;
   color: $text-color;
+
+
+  &__property,
+  &__value {
+    padding-top: 7px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__value {
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product-properties {
+    margin-bottom: 53px;
+    order: 2;
+
+    &__property,
+    &__value {
+      padding-top: 8px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-properties {
+    margin-bottom: 106px;
+    order: 2;
+
+    &__property,
+    &__value {
+      padding-top: 8px;
+    }
+  }
 }

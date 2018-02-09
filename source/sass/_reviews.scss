@@ -1,28 +1,225 @@
 .reviews {
-  padding: 35px 30px 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-  //grid
-  outline: 1px solid pink;
+  max-width: 320px;
+  margin: 0 auto;
+
+  padding-top: 17px;
+  padding-bottom: 47px;
 
   &__title {
     margin-top: 0;
+    margin-bottom: 23px;
 
     font-size: 25px;
     line-height: 30px;
   }
 
   &__slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 0;
     padding-left: 0;
     list-style-type: none;
   }
 
   &__description {
+    margin-top: 0;
+    margin-bottom: 27px;
+
     font-size: 15px;
     line-height: 30px;
     color: $text-color;
   }
 
+  &__author-name {
+    display: block;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 7px;
+  }
+
   &__link {
+    display: block;
+    margin-bottom: 30px;
     color: $text-color;
+  }
+
+  &__slider-toggles {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+  }
+
+  &__prev,
+  &__next {
+    position: relative;
+    flex-basis: 130px;
+    padding: 11px 0;
+    border: 1px solid $border-color;
+
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+
+  &__prev {
+    &:focus {
+      polygon {
+        fill: #666666;
+      }
+    }
+
+    &:active {
+      polygon {
+        fill: #b2b2b2;
+      }
+    }
+  }
+
+  &__next {
+    border-left: none;
+
+    &:focus {
+      polygon {
+        fill: #666666;
+      }
+    }
+
+    &:active {
+      polygon {
+        fill: #b2b2b2;
+      }
+    }
+  }
+
+  &__btn {
+    width: 255px;
+    margin: 0 auto;
+    padding: 13.5px 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    box-sizing: border-box;
+    position: relative;
+
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+    max-width: $tablet-width;
+
+    padding-top: 80px;
+    padding-bottom: 124px;
+    background: #ffffff url("../img/review@1x.jpg") 0% 0% no-repeat;
+
+    &__title {
+      margin-bottom: 0;
+
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &__slider {
+      margin-top: 45px;
+      order: 2;
+    }
+
+    &__description {
+      padding-right: 25px;
+      margin-bottom: 58px;
+
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    &__author-name {
+      font-size: 18px;
+      font-style: normal;
+    }
+
+    &__link {
+      margin-bottom: 0;
+    }
+
+    &__slider-toggles {
+      position: absolute;
+      bottom: 84px;
+      right: 50px;
+      width: 175px;
+      order: 3;
+    }
+
+    &__prev,
+    &__next {
+      border: none;
+    }
+
+    &__btn {
+      width: 172px;
+      margin: 0;
+      margin-left: auto;
+      order: 1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    max-width: $desktop-width;
+
+    padding-top: 70px;
+    background-position: 50px 0;
+
+    &__title {
+      margin-left: 173px;
+      font-size: 53px;
+      line-height: 57px;
+    }
+
+    &__btn {
+      margin-top: 10px;
+    }
+
+    &__slider {
+      margin-bottom: 61px;
+    }
+
+    &__slide {
+      padding-left: 177px;
+    }
+
+    &__description {
+      max-width: 800px;
+      padding-right: 100px;
+      line-height: 30px;
+      margin-bottom: 39px;
+    }
+
+    &__author-name {
+      font-size: 17px;
+    }
+
+    &__slider-toggles {
+      bottom: 146px;
+      right: 50px;
+    }
+
+    &__prev,
+    &__next {
+      &:hover {
+        polygon {
+          fill: #666666;
+        }
+      }
+    }
   }
 }
