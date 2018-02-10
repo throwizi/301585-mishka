@@ -21,10 +21,7 @@ body.onclick = function (event) {
 
 modal__closeBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
-
-  if(modal.classList.contains("modal--open")) {
-    modal.classList.remove("modal--open");
-  }
+  modal.classList.remove("modal--open");
 });
 
 

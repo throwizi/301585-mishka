@@ -103,7 +103,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-bottom: 30px;
     text-align: center;
 
     cursor: pointer;
@@ -112,7 +112,6 @@
   &__text {
     width: 80px;
     padding: 18px 0;
-    margin-bottom: 30px;
 
     font-size: 17px;
     line-height: 16px;
@@ -191,6 +190,7 @@
 
       &::before {
         width: 110px;
+        border-width: 2px;
       }
     }
 
