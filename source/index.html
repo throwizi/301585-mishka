@@ -69,7 +69,7 @@
 
         <h1 class="intro__title">Милые&nbsp;штуки ручной работы&nbsp;для&nbsp;дома</h1>
         <ul class="intro-list type-list">
-          <li class="type-list__item type-list__item--left">
+          <li class="type-list__item">
             <a class="type-list__link type-list__link--left" href="#" title="Раздел: предметы интерьера">
               <span>Предметы интерьера</span>
               <svg version="1.1" id="svg4488" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="42px" height="64px" viewBox="-259.404 -19.675 40.219 62.411" enable-background="new -259.404 -19.675 40.219 62.411" xml:space="preserve">
@@ -169,8 +169,8 @@
       <!-- /section: reviews -->
 
       <!-- section: contacts -->
-      <section class="contacts">
-        <div class="contacts__wrapper container">
+      <section class="contacts container">
+        <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
           <table class="contacts-list">
             <tr>
@@ -179,12 +179,12 @@
             </tr>
             <tr>
               <td class="contacts__property">адрес:</td>
-              <td class="contacts__value contacts__value--align-left"><address>г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная,
+              <td class="contacts__value"><address>г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная,
               д.&nbsp;19/8,&nbsp;офис&nbsp;101</address></td>
             </tr>
           </table>
         </div>
-        <img class="contacts__map" src="img/map-mobile@1x.jpg" alt="Наше местоположение">
+        <div id="map" class="contacts__map"></div>
         <a class="btn contacts__btn" href="form.html" title="Перейти на страницу для оформления заказа">Напишите нам</a>
       </section>
       <!-- /section: contacts -->
@@ -256,7 +256,7 @@
         </button>
         <h2 class="modal__title">Добавить в корзину</h2>
         <h3 class="modal__subtitle">Выберите размер:</h3>
-        <form action="#" class="modal__form">
+        <form action="echo.htmlacademy.ru " class="modal__form">
           <label class="modal__item">
             <input type="radio" class="modal__input visually-hidden" name="size" value="Размер S">
             <span class="modal__text">s</span>
@@ -269,7 +269,7 @@
             <input type="radio" class="modal__input visually-hidden" name="size" value="Размер L">
             <span class="modal__text">l</span>
           </label>
-        <button class="btn modal__btn">Добавить</button>
+        <button type="submit" class="btn modal__btn">Добавить</button>
         </form>
       </div>
     </div>
@@ -277,5 +277,9 @@
 
     <script src="js/site-nav.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/contacts.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0RAwqXKOHJBWCIuM_85FuXTTrg65BYMM&callback=initMap">
+    </script>
   </body>
 </html>

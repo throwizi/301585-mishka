@@ -174,7 +174,7 @@
   &__input {
     color: $text-color;
 
-    @include placeholder {
+    &::placeholder {
       color: #d2d2d2;
       opacity: 1;
       transition: opacity 0.3s;
@@ -183,7 +183,7 @@
     &:focus {
       border-color: #62d1ba;
 
-      @include placeholder {
+      &::placeholder {
         opacity: 0;
       }
     }
@@ -211,7 +211,7 @@
       padding-bottom: 16px;
       border-bottom: 2px solid #000000;
 
-      @include placeholder {
+      &:placeholder {
         color: #d2d2d2;
         opacity: 1;
         transition: opacity 0.3s;
@@ -220,7 +220,7 @@
       &:focus {
         border-color: #62d1ba;
 
-        @include placeholder {
+        &:placeholder {
           opacity: 0;
         }
       }
@@ -310,7 +310,7 @@
     }
 
     &__form-wrapper {
-      padding-top: 50px;
+      padding: 50px 0;
       max-width: $tablet-width;
       margin: 0 auto;
     }

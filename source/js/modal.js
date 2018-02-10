@@ -1,12 +1,35 @@
-var btn__modal = document.querySelector(".btn-modal"),
+var body = document.querySelector("body"),
+    btn__modal = document.querySelector(".btn-modal"),
     modal = document.querySelector(".modal"),
     modal__closeBtn = document.querySelector(".modal__close-btn");
 
-    //querySelectorAll пройтись по каждой кнопке циклом и дать событие
-    // либо evt.target
 
-//Открытие модального окна
-btn__modal.addEventListener("click", function (evt) {
+body.onclick = function (event) {
+  var target = event.target;
+
+  if(target.classList.contains("btn-modal")) {
+    target.addEventListener("click", function () {
+
+      if(modal.classList.contains("modal--open")){
+        modal.classList.remove("modal--open");
+      } else {
+        modal.classList.add("modal--open");
+      }
+    });
+  }
+};
+
+modal__closeBtn.addEventListener("click", function (evt) {
+  evt.preventDefault();
+
+  if(modal.classList.contains("modal--open")) {
+    modal.classList.remove("modal--open");
+  }
+});
+
+
+/* //Открытие модального окна
+btn__modalbtn__modal.addEventListener("click", function (evt) {
   evt.preventDefault();
 
   if(modal.classList.contains("modal--open")){
@@ -24,3 +47,5 @@ modal__closeBtn.addEventListener("click", function (evt) {
     modal.classList.remove("modal--open");
   }
 });
+
+*/

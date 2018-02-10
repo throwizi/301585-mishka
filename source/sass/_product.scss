@@ -7,6 +7,10 @@
   color: #000000;
   border: 1px solid $border-color;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -89,10 +93,6 @@
       }
     }
   }
-}
-
-.product:last-child {
-  margin-bottom: 0;
 }
 
 @media (min-width: $tablet-width) {

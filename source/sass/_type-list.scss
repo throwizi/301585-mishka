@@ -23,23 +23,20 @@
     font-weight: bold;
     color: #ffffff;
 
+    background-color: #63d1bb;
+
+    &:active {
+      color: #8be2d0;
+
+      path {
+        fill: #44c0aa;
+      }
+    }
+
     transition: all 0.3s;
 
     span {
       flex-basis: 130px;
-    }
-
-    &--left {
-      padding-right: 36px;
-      background-color: #63d1bb;
-
-      &:active {
-        color: #8be2d0;
-
-        path {
-          fill: #44c0aa;
-        }
-      }
     }
 
     &--right {
