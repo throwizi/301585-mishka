@@ -1,6 +1,7 @@
 .video {
+  box-sizing: border-box;
   margin: 0 auto;
-  max-width: 260px;
+  max-width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -14,6 +15,10 @@
     align-items: center;
     padding-bottom: 32px;
     border: 1px solid $border-color;
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
   }
 
   &__title {
@@ -86,11 +91,12 @@
 
 @media (min-width: $tablet-width) {
   .video {
-    max-width: $tablet-width - 100px;
+    max-width: $tablet-width;
+    margin: 0 auto;
     margin-bottom: 65px;
 
     &__wrapper {
-      margin: 0 auto;
+      width: 100%;
       align-items: flex-start;
       padding-bottom: 43px;
     }
@@ -123,6 +129,7 @@
     }
 
     &__description {
+      max-width: 585px;
       padding-left: 38px;
       padding-right: 36px;
       margin-bottom: 32px;
@@ -144,7 +151,7 @@
 
 @media (min-width: $desktop-width) {
   .video {
-    max-width: $desktop-width - 100px;
+    max-width: $desktop-width;
     margin: 0 auto 0;
     padding-bottom: 103px;
 
@@ -154,6 +161,10 @@
       flex-wrap: wrap;
       height: 454px;
       padding-bottom: 0;
+
+      &:hover {
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      }
     }
 
     &__frame {

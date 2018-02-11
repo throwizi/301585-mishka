@@ -13,8 +13,7 @@
     <a class="page-header__logo" href="index.html" title="Главная страница интернет-магазина Mishka ">
       <img src="img/logo-mobile.svg" width="90" height="37" alt="Интернет-магазин милых вещиц для дома 'Мишка' ">
     </a>
-    <button class="page-header__toggle page-header__toggle--closed page-header__toggle--nojs" type="button">
-      <span class="visually-hidden">Открыть меню</span>
+    <button class="page-header__toggle page-header__toggle--closed page-header__toggle--nojs" type="button" title="Открыть/закрыть меню">
     </button>
     <nav class="site-nav site-nav--closed site-nav--nojs">
       <ul class="site-list">
@@ -47,7 +46,8 @@
 
   <main>
     <!-- form: order-options -->
-    <form class="order-options" action="https://echo.htmlacademy.ru" method="post">
+
+    <section class="order-options">
       <ul class="container sub-list order-options__sub-list">
         <li class="sub-list__item sub-list__item--tablet">
           <a href="catalog.html" class="sub-list__link" title="Перейте на страницу каталога">Каталог товаров</a>
@@ -67,7 +67,7 @@
       </ul>
 
       <h1 class="order-options__title">Вязание на заказ</h1>
-      <div class="order-options__form-wrapper">
+      <form class="order-options__form" action="https://echo.htmlacademy.ru" method="post">
         <p class="order-options__slogan">Мы будем рады воплотить в жизнь ваши пожелания!
           Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
@@ -131,26 +131,26 @@
         </div>
 
         <div class="order-options__fieldset order-options__fieldset--phone">
-          <h3 class="order-options__subtitle order-options__subtitle--phone">Тел</h3>
+          <label class="order-options__subtitle order-options__subtitle--phone" for="telephone">Тел</label>
           <div class="order-options__fieldset-wrapper
           order-options__fieldset-wrapper--phone">
-            <input class="order-options__input order-options__input--underlined order-options__input--phone"
+            <input class="order-options__input order-options__input--underlined order-options__input--phone" id="telephone"
             type="tel" pattern="[+]{1}7\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" name="telephone" placeholder="+7 ХХХ ХХ ХХ*" required>
           </div>
         </div>
 
         <div class="order-options__fieldset order-options__fieldset--email">
-          <h3 class="order-options__subtitle order-options__subtitle--email">e-mail</h3>
+          <label class="order-options__subtitle order-options__subtitle--email" for="email">e-mail</label>
           <div class="order-options__fieldset-wrapper order-options__fieldset-wrapper--email">
-            <input class="order-options__input order-options__input--underlined order-options__input--email" type="email" placeholder="Ваш Email*" required>
+            <input class="order-options__input order-options__input--underlined order-options__input--email" id="email" type="email" placeholder="Ваш Email*" required>
           </div>
         </div>
 
         <div class="order-options__fieldset order-options__fieldset--addit-info">
-          <h3 class="order-options__subtitle order-options__subtitle--addit-info">Доп</h3>
+          <label class="order-options__subtitle order-options__subtitle--addit-info" for="area">Доп</label>
           <div class="order-options__fieldset-wrapper
           order-options__fieldset-wrapper--addit-info">
-            <textarea class="order-options__input order-options__input--underlined order-options__input--area" name="Additional information"
+            <textarea class="order-options__input order-options__input--underlined order-options__input--area" id="area" name="Additional information"
             placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
         </div>
@@ -159,9 +159,10 @@
           <small class="order-options__description">*Поля обязательны для заполнения</small>
           <button class="btn order-options__form-btn" type="submit" title="Оформить заказ">Отправить заказ</button>
         </footer>
+      </form>
+    </section>
 
-      </div>
-    </form>
+
     <!-- /form: order-options -->
   </main>
 
@@ -174,7 +175,6 @@
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy/" title="HTML-Academy в интсаграмме">
-            <span class="visually-hidden">Мы в интсаграмме</span>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.769px" height="21.334px" viewBox="53.115 53.19 21.769 21.334" enable-background="new 53.115 53.19 21.769 21.334" xml:space="preserve">
               <g id="instagram">
                 <g>
@@ -186,7 +186,6 @@
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" title="HTML-Academy в фейсбуке">
-            <span class="visually-hidden">Мы в Фейсбуке</span>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.962px" height="27.718px" viewBox="56.519 49.996 14.962 27.718" enable-background="new 56.519 49.996 14.962 27.718" xml:space="preserve">
               <g id="facebook">
                 <g>
@@ -198,7 +197,6 @@
         </li>
         <li class="social__item">
           <a class="social__link social__link--instagram" href="https://twitter.com/htmlacademy_ru" title="HTML-Academy в твиттере">
-            <span class="visually-hidden">Мы в Твиттере</span>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.494px" height="20.168px" viewBox="52.253 53.771 23.494 20.168" enable-background="new 52.253 53.771 23.494 20.168" xml:space="preserve">
               <g id="twitter">
                 <g>

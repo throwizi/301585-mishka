@@ -10,14 +10,17 @@
   height: 100vh;
 
   background-color: rgba(255, 255, 255, 0.9);
+  z-index: 10;
 
   &--open {
     display: flex;
   }
 
   &__wrapper {
+    box-sizing: border-box;
+
     position: relative;
-    max-width: 260px;
+    max-width: 320px;
     padding: 30px 30px 0;
     display: flex;
     flex-direction: column;
@@ -39,6 +42,8 @@
     padding: 0;
     border: none;
 
+    cursor: pointer;
+
     background-color: #ffffff;
 
     &::before,
@@ -50,11 +55,18 @@
       width: 20px;
       height: 2px;
       transform: rotate(45deg);
-      background-color: red;
+      background-color: #d41616;
     }
 
     &::after {
       transform: rotate(-45deg);
+    }
+
+    &:hover {
+      &::before,
+      &::after {
+        background-color: #ff0000;
+      }
     }
   }
 
@@ -80,6 +92,7 @@
   }
 
   &__form {
+    max-width: 350px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -90,39 +103,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-bottom: 30px;
     text-align: center;
+
+    cursor: pointer;
   }
 
   &__text {
     width: 80px;
     padding: 18px 0;
-    margin-bottom: 30px;
 
     font-size: 17px;
     line-height: 16px;
     color: $text-color;
     text-transform: uppercase;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 81px;
-      height: 51px;
-      border: 1px solid $border-color;
-    }
+    border: 2px solid $border-color;
+
   }
 
   &__input {
-    &:focus + .modal__text::before,
-    &:hover + .modal__text::before {
+    &:focus + .modal__text{
       border-color: #c7c7c7;
     }
 
-    &:active + .modal__text::before,
-    &:checked + .modal__text::before {
+    &:active + .modal__text,
+    &:checked + .modal__text {
       border-color: #63d1bb;
     }
   }
@@ -148,18 +154,15 @@
 @media (min-width: $tablet-width) {
   .modal {
     &__wrapper {
-      max-width: 370px;
+      max-width: 570px;
       padding-top: 37px;
       padding-left: 100px;
       padding-right: 100px;
     }
 
     &__close-btn {
-      &::before,
-      &::after {
-        top: 20px;
-        left: -20px;
-      }
+      top: 30px;
+      right: 60px;
     }
 
     &__title {
@@ -177,8 +180,8 @@
     &__text {
       width: 110px;
 
-      &::before {
-        width: 110px;
+      &:hover {
+        border-color: #c7c7c7;
       }
     }
 

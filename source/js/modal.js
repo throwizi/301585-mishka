@@ -1,26 +1,13 @@
-var btn__modal = document.querySelector(".btn-modal"),
-    modal = document.querySelector(".modal"),
-    modal__closeBtn = document.querySelector(".modal__close-btn");
+var modal = document.querySelector(".modal");
 
-    //querySelectorAll пройтись по каждой кнопке циклом и дать событие
-    // либо evt.target
+document.addEventListener("click", function (event) {
+  if(!event.target.closest(".btn-modal")) return;
 
-//Открытие модального окна
-btn__modal.addEventListener("click", function (evt) {
-  evt.preventDefault();
-
-  if(modal.classList.contains("modal--open")){
-    modal.classList.remove("modal--open");
-  } else {
-    modal.classList.add("modal--open");
-  }
+  modal.classList.add("modal--open");
 });
 
-//Закрытие модального окна
-modal__closeBtn.addEventListener("click", function (evt) {
-  evt.preventDefault();
+document.addEventListener("click", function (event) {
+  if(!event.target.closest(".modal__close-btn")) return;
 
-  if(modal.classList.contains("modal--open")) {
-    modal.classList.remove("modal--open");
-  }
+  modal.classList.remove("modal--open");
 });

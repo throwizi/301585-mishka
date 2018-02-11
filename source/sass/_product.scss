@@ -7,11 +7,19 @@
   color: #000000;
   border: 1px solid $border-color;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 21px;
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
   }
 
   &__header {
@@ -85,10 +93,6 @@
       }
     }
   }
-}
-
-.product:last-child {
-  margin-bottom: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -172,6 +176,10 @@
     &__content {
       width: 100%;
       padding-top: 27px;
+
+      &:hover {
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      }
     }
 
     &__header {
