@@ -118,26 +118,20 @@
     color: $text-color;
     text-transform: uppercase;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 81px;
-      height: 51px;
-      border: 1px solid $border-color;
-    }
+    border: 1px solid $border-color;
   }
 
   &__input {
-    &:focus + .modal__text::before,
-    &:hover + .modal__text::before {
+    &:focus + .modal__text {
       border-color: #c7c7c7;
     }
 
-    &:active + .modal__text::before,
-    &:checked + .modal__text::before {
+    &:active + .modal__text,
+    &:checked + .modal__text {
       border-color: #63d1bb;
+    }
+    &:hover + .modal__text {
+      border-color: #c7c7c7;
     }
   }
 
@@ -187,10 +181,12 @@
 
     &__text {
       width: 110px;
+      border-width: 2px;
+    }
 
-      &::before {
-        width: 110px;
-        border-width: 2px;
+    &__input {
+      &:hover + .modal__text {
+        border-color: #c7c7c7;
       }
     }
 
