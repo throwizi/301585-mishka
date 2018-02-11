@@ -118,20 +118,18 @@
     color: $text-color;
     text-transform: uppercase;
 
-    border: 1px solid $border-color;
+    border: 2px solid $border-color;
+
   }
 
   &__input {
-    &:focus + .modal__text {
+    &:focus + .modal__text{
       border-color: #c7c7c7;
     }
 
     &:active + .modal__text,
     &:checked + .modal__text {
       border-color: #63d1bb;
-    }
-    &:hover + .modal__text {
-      border-color: #c7c7c7;
     }
   }
 
@@ -181,11 +179,8 @@
 
     &__text {
       width: 110px;
-      border-width: 2px;
-    }
 
-    &__input {
-      &:hover + .modal__text {
+      &:hover {
         border-color: #c7c7c7;
       }
     }
