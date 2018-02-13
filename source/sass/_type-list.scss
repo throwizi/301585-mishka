@@ -69,17 +69,6 @@
       padding: 23px 27px 31px 34px;
       line-height: 30px;
     }
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -12px;
-      left: 0;
-      width: 100%;
-      height: 22px;
-      background: url("../img/bg-zigzag-fill.svg") 50% 50% no-repeat;
-      background-size: cover;
-    }
   }
 }
 
@@ -87,11 +76,6 @@
   .type-list {
     padding: 0 50px;
     align-items: flex-end;
-
-    &::after {
-      bottom: -16px;
-      height: 37px;
-    }
 
     &__link {
       margin-top: 5px;

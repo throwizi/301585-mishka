@@ -37,6 +37,7 @@
   }
 
   &__text {
+    width: 260px;
     margin-top: 0;
     margin-bottom: 20px;
     padding-right: 11px;
@@ -201,6 +202,7 @@
 
     &__footer {
       margin-left: 175px;
+      flex-basis: auto;
     }
 
     &__price {
