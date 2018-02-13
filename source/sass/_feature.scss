@@ -59,6 +59,7 @@
   }
 
   &__footer {
+    flex-basis: auto;
     align-self: center;
     width: 260px;
     display: flex;
@@ -140,7 +141,7 @@
 
     &__footer {
       align-self: flex-start;
-      flex-basis: 100%;
+      flex-basis: auto;
       order: 3;
     }
 
@@ -201,8 +202,8 @@
     }
 
     &__footer {
-      margin-left: 175px;
       flex-basis: auto;
+      margin-left: 175px;
     }
 
     &__price {
