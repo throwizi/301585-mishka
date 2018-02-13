@@ -1,4 +1,5 @@
 .contacts {
+  position: relative;
   box-sizing: border-box;
 
   max-width: 320px;
@@ -10,8 +11,16 @@
   padding-top: 42px;
   padding-bottom: 39px;
 
-  background: url("../img/bg-zigzag-line.svg") 50% 0 no-repeat;
-  background-size: 100% 7px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: url("../img/bg-zigzag-line.svg") 50% 50% no-repeat;
+    background-size: cover;
+  }
 
   &__title {
     margin-top: 0;
@@ -85,12 +94,15 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    position: relative;
     max-width: $tablet-width;
-    background-size: 100% 17px;
 
-    padding-top: 85px;
+    padding-top: 80px;
     padding-bottom: 57px;
+
+    &::before {
+
+      height: 17px;
+    }
 
 
     &__wrapper {
@@ -100,11 +112,10 @@
 
     &__title {
       position: relative;
-      margin-bottom: 38px;
+      margin-bottom: 44px;
 
       font-size: 43px;
       line-height: 50px;
-      letter-spacing: -1px;
 
       &::after {
         content: "";
@@ -165,8 +176,15 @@
     flex-direction: column;
     flex-wrap: wrap;
 
+    &::before {
+      width: 1050px;
+      top: -9px;
+      left: 50px;
+      height: 23px;
+    }
+
     &__wrapper {
-      padding-top: 70px;
+      padding-top: 78px;
       margin: 0;
       margin-right: 36px;
       height: auto;
@@ -174,15 +192,15 @@
 
     &__title {
       padding-right: 0;
-      padding-left: 105px;
+      padding-left: 119px;
       margin-bottom: 41px;
 
       font-size: 53px;
       line-height: 57px;
 
       &::after {
-        top: -10px;
-        left: 0;
+        top: -8px;
+        left: 13px;
       }
     }
 
@@ -191,7 +209,7 @@
       max-width: 325px;
       padding: 0;
       margin-right: 0;
-      margin-bottom: 70px;
+      margin-bottom: 74px;
 
       font-size: 15px;
       line-height: 30px;
@@ -234,8 +252,9 @@
     }
 
     &__map {
+      margin: 0;
       position: absolute;
-      top: 75px;
+      top: 83px;
       right: 50px;
       width: 525px;
       height: 455px;
