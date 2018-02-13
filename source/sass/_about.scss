@@ -7,9 +7,12 @@
   max-width: 320px;
   margin: 0 auto;
 
-  padding-top: 29px;
+  padding-top: 34px;
   padding-bottom: 36px;
   background-color: #ffffff;
+
+  background: url("../img/bg-zigzag-line.svg") 50% 0 no-repeat;
+  background-size: 100% 7px;
 
   &__title {
     margin-top: 0;
@@ -26,6 +29,8 @@
     padding-top: 65px;
     padding-bottom: 25px;
 
+    background-size: 100% 17px;
+
     &__title {
       font-size: 43px;
       line-height: 50px;
@@ -37,6 +42,7 @@
 @media (min-width: $desktop-width) {
   .about {
     max-width: $desktop-width;
+    background-size: 1150px 17px;
 
     padding-top: 60px;
     padding-bottom: 33px;

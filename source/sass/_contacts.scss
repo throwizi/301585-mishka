@@ -7,7 +7,11 @@
   display: flex;
   flex-direction: column;
 
-  padding: 39px 0;
+  padding-top: 42px;
+  padding-bottom: 39px;
+
+  background: url("../img/bg-zigzag-line.svg") 50% 0 no-repeat;
+  background-size: 100% 7px;
 
   &__title {
     margin-top: 0;
@@ -68,6 +72,7 @@
   &__map {
     width: 320px;
     height: 457px;
+    margin-left: -30px;
     margin-bottom: 40px;
   }
 
@@ -80,20 +85,22 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
+    position: relative;
     max-width: $tablet-width;
+    background-size: 100% 17px;
 
-    padding-top: 70px;
+    padding-top: 85px;
     padding-bottom: 57px;
 
+
     &__wrapper {
-      padding-left: 15px;
-      padding-right: 50px;
+      padding-right: 32px;
       max-width: $tablet-width;
     }
 
     &__title {
       position: relative;
-      margin-bottom: 45px;
+      margin-bottom: 38px;
 
       font-size: 43px;
       line-height: 50px;
@@ -137,6 +144,7 @@
     }
 
     &__map {
+      margin-left: -50px;
       width: $tablet-width;
       margin-bottom: 54px;
     }

@@ -12,7 +12,7 @@
 
   background-color: #ffffff;
   padding-top: 27px;
-  padding-bottom: 40px;
+  padding-bottom: 36px;
 
   &__header {
     display: flex;
@@ -54,7 +54,7 @@
     align-self: center;
 
     width: 260px;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
   }
 
   &__footer {
@@ -87,8 +87,9 @@
   .feature {
     position: relative;
     max-width: $tablet-width;
-    padding-top: 58px;
+    padding-top: 47px;
     padding-bottom: 54px;
+
 
     &__header {
       width: 100%;
@@ -128,7 +129,7 @@
     &__img {
       position: absolute;
       width: 334px;
-      top: 164px;
+      top: 155px;
       right: 50px;
     }
 

@@ -56,6 +56,7 @@
 
 @media (min-width: $tablet-width) {
   .type-list {
+    position: relative;
     flex-direction: row;
     justify-content: flex-start;
     padding: 0 50px;
@@ -65,8 +66,18 @@
     }
 
     &__link {
-      padding: 23px 27px 20px 34px;
+      padding: 23px 27px 31px 34px;
       line-height: 30px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+      width: 100%;
+      height: 48px;
+      background: url("../img/bg-zigzag-fill.svg") 50% 50% no-repeat;
     }
   }
 }

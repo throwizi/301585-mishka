@@ -10,7 +10,13 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="index.html" title="Главная страница интернет-магазина Mishka ">
-      <img src="img/logo-mobile.svg" width="90" height="37" alt="Интернет-магазин милых вещиц для дома 'Мишка' ">
+      <picture>
+        <source media="(min-width: 1150px)"
+                srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)"
+                srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" alt="Логотоп интернет-магазина милых вещиц для дома 'Мишка' ">
+      </picture>
     </a>
     <button class="page-header__toggle page-header__toggle--closed page-header__toggle--nojs" type="button" title="Открыть/закрыть главное меню сайта">
     </button>
@@ -68,7 +74,14 @@
       <ul class="catalog-list">
         <li class="catalog-list__item product">
           <a class="product__link product__link--img" href="#" title="Cтраничка товара 'Зайчик-попрыгайчик'">
-            <img class="product__img" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+            <picture>
+              <source media="(min-width: 1150px)"
+              srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+              srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+              <img class="product__img" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик"
+              srcset="img/photo-hare-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <section class="product__content">
             <header class="product__header">
@@ -91,7 +104,14 @@
         </li>
         <li class="catalog-list__item product">
           <a class="product__link product__link--img" href="#" title="Cтраничка товара 'Корзинка для белья'">
-            <img class="product__img" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
+            <picture>
+              <source media="(min-width: 1150px)"
+              srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+              srcset="img/photo-bowl-tablete@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+              <img class="product__img" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья"
+              srcset="img/photo-bowl-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <section class="product__content">
             <header class="product__header">
@@ -114,7 +134,14 @@
         </li>
         <li class="catalog-list__item product">
           <a class="product__link product__link--img" href="#" title="Cтраничка товара 'Большая корзинка для игрушек'">
-            <img class="product__img" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
+            <picture>
+              <source media="(min-width: 1150px)"
+              srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+              srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+              <img class="product__img" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек"
+              srcset="img/photo-toys-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <section class="product__content">
             <header class="product__header">
@@ -144,7 +171,14 @@
       <div class="video__wrapper">
         <h2 class="video__title">Процесс производства</h2>
         <div class="video__frame">
-          <img src="img/video-mobile@1x.jpg" alt="Процесс производства">
+          <picture>
+            <source media="min-width: 1150px"
+            srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+            srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img src="img/video-mobile@1x.jpg" alt="Процесс производства"
+            srcset="img/video-mobile@2x.jpg 2x">
+          </picture>
           <button type="button" class="video__play-btn" title="Запустить/остановить видео">
             <svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100.678px" height="76.891px" viewBox="247.3 382.56 100.678 76.891" enable-background="new 247.3 382.56 100.678 76.891" xml:space="preserve">
               <g class="background">
@@ -169,7 +203,11 @@
   <!-- footer: page-footer -->
   <footer class="page-footer container">
     <a class="page-footer__logo" href="index.html" title="Главная страница интернет-магазина Mishka ">
-      <img src="img/logo-mobile.svg" width="90" height="37" alt="Логотип интернет-магазина милых вещиц для дома 'Мишка' ">
+      <picture>
+        <source media="(min-width: 768px)"
+                srcset="img/logo-footer.svg">
+        <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина милых вещиц для дома 'Мишка' ">
+      </picture>
     </a>
     <div class="page-footer__social social">
       <ul class="social__list">

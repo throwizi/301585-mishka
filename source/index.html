@@ -11,7 +11,13 @@
     <!-- header -->
     <header class="page-header">
       <a class="page-header__logo" title="Главная страница интернет-магазина Mishka ">
-        <img src="img/logo-mobile.svg" width="90" height="37" alt="Логотоп интернет-магазина милых вещиц для дома 'Мишка' ">
+        <picture>
+          <source media="(min-width: 1150px)"
+                  srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)"
+                  srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" alt="Логотоп интернет-магазина милых вещиц для дома 'Мишка' ">
+        </picture>
       </a>
       <button class="page-header__toggle page-header__toggle--closed page-header__toggle--nojs" type="button" title="Открыть/закрыть меню">
       </button>
@@ -117,7 +123,14 @@
             <td class="product-properties__value">15 см</td>
           </tr>
         </table>
-        <img class="feature__img" src="img/triple-set-mobile@1x.jpg" alt="Изображение товара недели" title="Изображение товара недели">
+        <picture>
+          <source media="(min-width: 1150px)"
+          srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+          srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img class="feature__img" src="img/triple-set-mobile@1x.jpg" alt="Изображение товара недели" title="Изображение товара недели"
+          srcset="img/triple-set-mobile@2x.jpg 2x">
+        </picture>
         <footer class="feature__footer">
           <span class="feature__price">Цена: 990 руб.</span>
           <button class="btn feature__btn btn-modal" type="button" title="Заказать данный товар">Заказать</button>
@@ -191,7 +204,11 @@
     <!-- footer: page-footer -->
     <footer class="page-footer container">
       <a class="page-footer__logo" title="Главная страница интернет-магазина Mishka ">
-        <img src="img/logo-mobile.svg" width="90" height="37" alt="Логотип интернет-магазина милых вещиц для дома 'Мишка' ">
+        <picture>
+          <source media="(min-width: 768px)"
+                  srcset="img/logo-footer.svg">
+          <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина милых вещиц для дома 'Мишка' ">
+        </picture>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
