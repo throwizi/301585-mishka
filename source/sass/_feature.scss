@@ -12,7 +12,7 @@
 
   background-color: #ffffff;
   padding-top: 27px;
-  padding-bottom: 40px;
+  padding-bottom: 36px;
 
   &__header {
     display: flex;
@@ -37,8 +37,9 @@
   }
 
   &__text {
+    width: 260px;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     padding-right: 11px;
     font-size: 15px;
     line-height: 24px;
@@ -54,10 +55,11 @@
     align-self: center;
 
     width: 260px;
-    margin-bottom: 24px;
+    margin-bottom: 19px;
   }
 
   &__footer {
+    flex-basis: auto;
     align-self: center;
     width: 260px;
     display: flex;
@@ -66,7 +68,7 @@
 
   &__price {
     align-self: center;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
 
     color: $text-color;
     font-weight: bold;
@@ -87,8 +89,9 @@
   .feature {
     position: relative;
     max-width: $tablet-width;
-    padding-top: 58px;
+    padding-top: 47px;
     padding-bottom: 54px;
+
 
     &__header {
       width: 100%;
@@ -128,7 +131,7 @@
     &__img {
       position: absolute;
       width: 334px;
-      top: 164px;
+      top: 155px;
       right: 50px;
     }
 
@@ -138,7 +141,7 @@
 
     &__footer {
       align-self: flex-start;
-      flex-basis: 100%;
+      flex-basis: auto;
       order: 3;
     }
 
@@ -160,7 +163,7 @@
 @media (min-width: $desktop-width) {
   .feature {
     max-width: $desktop-width;
-    padding-top: 135px;
+    padding-top: 120px;
     padding-bottom: 95px;
 
     &__header {
@@ -184,7 +187,7 @@
 
     &__img {
       width: 525px;
-      top: 85px;
+      top: 68px;
       right: 50px;
     }
 
@@ -199,6 +202,7 @@
     }
 
     &__footer {
+      flex-basis: auto;
       margin-left: 175px;
     }
 

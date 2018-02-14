@@ -1,4 +1,5 @@
 .about {
+  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -7,7 +8,7 @@
   max-width: 320px;
   margin: 0 auto;
 
-  padding-top: 29px;
+  padding-top: 34px;
   padding-bottom: 36px;
   background-color: #ffffff;
 
@@ -18,6 +19,19 @@
     line-height: 30px;
     color: #000000;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: url("../img/bg-zigzag-line.svg") 50% 50% no-repeat;
+    background-size: cover;
+
+    transform: rotate(180deg);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -25,6 +39,11 @@
     max-width: $tablet-width;
     padding-top: 65px;
     padding-bottom: 25px;
+
+    &::before {
+
+      height: 17px;
+    }
 
     &__title {
       font-size: 43px;
@@ -41,8 +60,17 @@
     padding-top: 60px;
     padding-bottom: 33px;
 
+    &::before {
+      width: 1050px;
+      top: -20px;
+      left: 50px;
+      height: 21px;
+
+      transform: rotate(180deg);
+    }
+
     &__title {
-      margin-left: 172px;
+      margin-left: 166px;
       font-size: 53px;
       line-height: 57px;
     }

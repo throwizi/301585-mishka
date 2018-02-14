@@ -11,7 +11,13 @@
     <!-- header -->
     <header class="page-header">
       <a class="page-header__logo" title="Главная страница интернет-магазина Mishka ">
-        <img src="img/logo-mobile.svg" width="90" height="37" alt="Логотоп интернет-магазина милых вещиц для дома 'Мишка' ">
+        <picture>
+          <source media="(min-width: 1150px)"
+                  srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)"
+                  srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" alt="Логотоп интернет-магазина милых вещиц для дома 'Мишка' ">
+        </picture>
       </a>
       <button class="page-header__toggle page-header__toggle--closed page-header__toggle--nojs" type="button" title="Открыть/закрыть меню">
       </button>
@@ -117,7 +123,14 @@
             <td class="product-properties__value">15 см</td>
           </tr>
         </table>
-        <img class="feature__img" src="img/triple-set-mobile@1x.jpg" alt="Изображение товара недели" title="Изображение товара недели">
+        <picture>
+          <source media="(min-width: 1150px)"
+          srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+          srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img class="feature__img" src="img/triple-set-mobile@1x.jpg" alt="Изображение товара недели" title="Изображение товара недели"
+          srcset="img/triple-set-mobile@2x.jpg 2x">
+        </picture>
         <footer class="feature__footer">
           <span class="feature__price">Цена: 990 руб.</span>
           <button class="btn feature__btn btn-modal" type="button" title="Заказать данный товар">Заказать</button>
@@ -169,17 +182,18 @@
       <section class="contacts container">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
-          <table class="contacts-list">
-            <tr>
-              <td class="contacts__property">email:</td>
-              <td class="contacts__value"><a class="contacts__link" href="mailto:info@mimimishkashop.ru" title="Почтовый ящик нашего интернет-магазина">info@mimimishkashop.ru</a></td>
-            </tr>
-            <tr>
-              <td class="contacts__property">адрес:</td>
-              <td class="contacts__value"><address>г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная,
-              д.&nbsp;19/8,&nbsp;офис&nbsp;101</address></td>
-            </tr>
-          </table>
+          <ul class="contacts-list">
+            <li>
+              <span class="contacts__property">email:</span>
+              <span class="contacts__value"><a class="contacts__link" href="mailto:info@mimimishkashop.ru" title="Почтовый ящик нашего интернет-магазина">info@mimimishkashop.ru</a></span>
+            </li>
+            <li>
+              <span class="contacts__property">адрес:</span>
+              <address class="contacts__value">
+                г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная,
+              д.&nbsp;19/8,&nbsp;офис&nbsp;101</address>
+            </li>
+          </ul>
         </div>
         <div id="map" class="contacts__map"></div>
         <a class="btn contacts__btn" href="form.html" title="Перейти на страницу для оформления заказа">Напишите нам</a>
@@ -191,7 +205,11 @@
     <!-- footer: page-footer -->
     <footer class="page-footer container">
       <a class="page-footer__logo" title="Главная страница интернет-магазина Mishka ">
-        <img src="img/logo-mobile.svg" width="90" height="37" alt="Логотип интернет-магазина милых вещиц для дома 'Мишка' ">
+        <picture>
+          <source media="(min-width: 768px)"
+                  srcset="img/logo-footer.svg">
+          <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина милых вещиц для дома 'Мишка' ">
+        </picture>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -268,6 +286,7 @@
     <!-- /div: modal -->
 
     <script src="js/polyfills.js"></script>
+    <script src="js/picturefill.js"></script>
     <script src="js/site-nav.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/contacts.js"></script>

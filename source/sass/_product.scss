@@ -45,6 +45,7 @@
 
   &__description {
     font-size: 13px;
+    font-weight: normal;
     line-height: 30px;
     color: $text-color;
   }
@@ -110,7 +111,7 @@
     }
 
     &__content {
-      width: 330px;
+      width: 333px;
       justify-content: space-between;
       padding-top: 23px;
     }

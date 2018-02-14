@@ -10,6 +10,7 @@
   background-color: #ffffff;
 
   &__wrapper {
+    width: 260px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,7 +46,7 @@
   &__frame {
     position: relative;
     width: 100%;
-    max-width: 300px;
+
     margin-bottom: 22px;
     text-align: center;
 
@@ -73,9 +74,9 @@
   }
 
   &__description {
-    padding-left: 33px;
+    width: 190px;
+    padding-left: 39px;
     padding-right: 40px;
-
     margin-top: 0;
     margin-bottom: 25px;
 
@@ -85,7 +86,9 @@
   }
 
   &__btn {
-    max-width: 192px;
+    padding-top: 15px;
+    padding-bottom: 13px;
+    max-width: 190px;
   }
 }
 
@@ -104,7 +107,7 @@
     &__frame {
       width: 100%;
       max-width: $tablet-width;
-      margin-bottom: 11px;
+      margin-bottom: 9px;
       order: 1;
 
       img {
@@ -116,23 +119,23 @@
     &__title {
       align-self: flex-start;
       width: 250px;
-      margin-left: 104px;
-      margin-bottom: 31px;
+      margin-left: 107px;
+      margin-bottom: 33px;
 
       font-size: 20px;
       order: 2;
 
       &::before {
-        top: -4px;
-        left: -66px;
+        top: -2px;
+        left: -67px;
       }
     }
 
     &__description {
-      max-width: 585px;
-      padding-left: 38px;
+      width: 585px;
+      padding-left: 40px;
       padding-right: 36px;
-      margin-bottom: 32px;
+      margin-bottom: 35px;
 
       font-size: 15px;
       line-height: 30px;
@@ -175,7 +178,7 @@
       margin: 0;
       margin-top: 96px;
       margin-left: 26px;
-      margin-bottom: 31px;
+      margin-bottom: 32px;
       width: 236px;
 
       &::before {
@@ -189,7 +192,7 @@
       margin: 0;
       margin-left: 25px;
       width: 236px;
-      margin-bottom: 46px;
+      margin-bottom: 44px;
     }
 
     &__play-btn {
