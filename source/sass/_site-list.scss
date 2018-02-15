@@ -31,32 +31,29 @@
 
     &:focus {
       color: #666666;
+    }
 
-      path {
-        fill: #63d1bb;
-      }
+    &:focus .site-list__icon {
+      fill: #63d1bb;
     }
 
     &:active {
       color: #b2b2b2;
+    }
 
-      path {
-        fill: #d0f1ea;
-      }
+    &:active .site-list__icon {
+      fill: #d0f1ea;
     }
 
     &--active {
       color: #666666;
     }
+  }
 
-    &--search,
-    &--bucket {
-      svg {
-        position: absolute;
-        top: 32px;
-        left: 30px;
-      }
-    }
+  &__icon {
+    position: absolute;
+    top: 32px;
+    left: 30px;
   }
 }
 
@@ -102,25 +99,23 @@
       padding: 0;
 
       &--search {
-        svg {
-          position: static;
-        }
 
         span {
           display: none;
         }
       }
+    }
 
-      &--bucket {
-        svg {
-          position: absolute;
-          top: 5px;
-          left: -52px;
-        }
+    &__icon {
+
+      &--search {
+        position: static;
       }
 
-      span {
-        padding: 0;
+      &--bucket {
+        position: absolute;
+        top: 5px;
+        left: -52px;
       }
     }
   }
