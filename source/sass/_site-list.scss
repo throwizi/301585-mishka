@@ -18,6 +18,14 @@
     border-bottom: 1px solid $border-color;
   }
 
+  &__icon {
+    position: absolute;
+    top: 32px;
+    left: 30px;
+
+    fill: #d3d2d2;
+  }
+
   &__link {
     position: relative;
     width: 100%;
@@ -31,25 +39,23 @@
 
     &:focus {
       color: #666666;
-    }
 
-    &:focus .site-list__icon {
-      fill: #63d1bb;
+      .site-list__icon {
+        fill: #63d1bb;
+      }
     }
 
     &:active {
       color: #b2b2b2;
+
+      .site-list__icon {
+        fill: #e2f6f2;
+      }
     }
 
     &--active {
       color: #666666;
     }
-  }
-
-  &__icon {
-    position: absolute;
-    top: 32px;
-    left: 30px;
   }
 }
 
@@ -158,7 +164,7 @@
       &:hover {
         color: #666666;
 
-        path {
+        .site-list__icon {
           fill: #63d1bb;
         }
       }
@@ -166,19 +172,21 @@
       &--search {
         padding: 0 41px;
 
-        svg {
-          position: absolute;
-          top: 7px;
-          left: 33px;
-        }
+      }
+    }
+
+    &__icon {
+
+      &--search {
+        position: absolute;
+        top: 7px;
+        left: 33px;
       }
 
       &--bucket {
-        svg {
-          position: absolute;
-          top: 4px;
-          left: -52px;
-        }
+        position: absolute;
+        top: 4px;
+        left: -52px;
       }
     }
   }

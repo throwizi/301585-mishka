@@ -72,15 +72,20 @@
     cursor: pointer;
   }
 
-  &__prev {
+  &__slider-toggle {
+    fill: #000000;
+  }
+
+  &__prev,
+  &__next {
     &:focus {
-      polygon {
+      .reviews__slider-toggle {
         fill: #666666;
       }
     }
 
     &:active {
-      polygon {
+      .reviews__slider-toggle {
         fill: #b2b2b2;
       }
     }
@@ -88,18 +93,6 @@
 
   &__next {
     border-left: none;
-
-    &:focus {
-      polygon {
-        fill: #666666;
-      }
-    }
-
-    &:active {
-      polygon {
-        fill: #b2b2b2;
-      }
-    }
   }
 
   &__btn {
@@ -226,7 +219,7 @@
     &__prev,
     &__next {
       &:hover {
-        polygon {
+        .reviews__slider-toggle {
           fill: #666666;
         }
       }

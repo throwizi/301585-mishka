@@ -12,6 +12,10 @@
     color: #000000;
   }
 
+  &__icon {
+    fill: #35a999;
+  }
+
   &__link {
     display: flex;
     justify-content: space-between;
@@ -28,8 +32,8 @@
     &:active {
       color: #8be2d0;
 
-      path {
-        fill: #44c0aa;
+      .type-list__icon {
+        fill: #37b2a0;
       }
     }
 
@@ -42,14 +46,6 @@
     &--right {
       padding-top: 20px;
       background-color: #46c1ae;
-
-      &:active {
-        color: #7ed4c6;
-
-        path {
-          fill: #37b2a0;
-        }
-      }
     }
   }
 }

@@ -20,15 +20,19 @@
     margin-right: 0;
   }
 
+  &__icon {
+    fill: #231F20;
+  }
+
   &__link {
     &:focus {
-      path {
+      .social__icon {
         fill: #46c1ae;
       }
     }
 
     &:active {
-      path {
+      .social__icon {
         fill: #bde3dd;
       }
     }
@@ -63,7 +67,7 @@
   .social {
     &__link {
       &:hover {
-        path {
+        .social__icon {
           fill: #46c1ae;
         }
       }
