@@ -236,10 +236,10 @@
       padding-top: 15px;
       padding-bottom: 15px;
 
-      background: url("../img/icon-phone.svg") 97% 40% no-repeat;
+      background: url("../img/bg-icon-phone.svg") 97% 40% no-repeat;
 
       &:focus {
-        background-image: url("../img/icon-phone-hover.svg");
+        background-image: url("../img/bg-icon-phone-hover.svg");
       }
     }
 
@@ -248,10 +248,10 @@
       padding-top: 15px;
       padding-bottom: 15px;
 
-      background: url("../img/icon-mail.svg") 98% 61% no-repeat;
+      background: url("../img/bg-icon-mail.svg") 98% 61% no-repeat;
 
       &:focus {
-        background-image: url("../img/icon-mail-hover.svg");
+        background-image: url("../img/bg-icon-mail-hover.svg");
       }
     }
 
@@ -689,7 +689,7 @@
         background-position: 99% 45%;
 
         &:hover {
-          background-image: url("../img/icon-phone-hover.svg");
+          background-image: url("../img/bg-icon-phone-hover.svg");
         }
       }
 
@@ -698,7 +698,7 @@
         background-position: 99% 80%;
 
         &:hover {
-          background-image: url("../img/icon-mail-hover.svg");
+          background-image: url("../img/bg-icon-mail-hover.svg");
         }
       }
 

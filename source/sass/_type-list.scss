@@ -15,7 +15,7 @@
   &__icon {
     fill: #3bb09d;
 
-    &--lego-icon {
+    &--icon-toy {
       fill: #35a999;
     }
   }
@@ -37,7 +37,13 @@
       color: #8be2d0;
 
       .type-list__icon {
-        fill: #37b2a0;
+        &--icon-interior {
+          fill: #44c0aa;
+        }
+
+        &--icon-toy {
+          fill: #37b2a0;
+        }
       }
     }
 
