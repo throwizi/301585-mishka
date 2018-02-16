@@ -4,6 +4,10 @@
   align-items: center;
   padding: 5px 37px 0;
 
+  &__icon {
+    fill: #63d1bb;
+  }
+
   &__link {
     display: flex;
     width: 200px;
@@ -14,15 +18,17 @@
     font-weight: bold;
 
     &:focus {
-      path {
+      .copyright__icon {
         fill: #46c1ae;
       }
     }
 
     &:active {
-      color: #a8a8a8;
+      .copyright__text {
+        color: #a8a8a8;
+      }
 
-      path {
+      .copyright__icon {
         fill: #bde3dd;
       }
     }

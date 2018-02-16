@@ -56,6 +56,10 @@
     }
   }
 
+  &__play-btn-icon {
+    fill: #62d1ba;
+  }
+
   &__play-btn {
     position: absolute;
     left: 50%;
@@ -68,8 +72,10 @@
     transition: all 3s;
     cursor: pointer;
 
-    &:active path {
-      fill: #d0f1ea;
+    &:active {
+      .video__play-btn-icon {
+        fill: #d0f1ea;
+      }
     }
   }
 
@@ -202,7 +208,7 @@
       }
 
       &:hover {
-        svg {
+        .video__play-btn-icon {
           width: 120px;
           height: 90px;
         }

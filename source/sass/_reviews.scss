@@ -70,36 +70,27 @@
 
     background-color: #ffffff;
     cursor: pointer;
-  }
 
-  &__prev {
     &:focus {
-      polygon {
+      .reviews__slider-toggle {
         fill: #666666;
       }
     }
 
     &:active {
-      polygon {
+      .reviews__slider-toggle {
         fill: #b2b2b2;
       }
     }
   }
+
+  &__slider-toggle {
+    fill: #000000;
+  }
+
 
   &__next {
     border-left: none;
-
-    &:focus {
-      polygon {
-        fill: #666666;
-      }
-    }
-
-    &:active {
-      polygon {
-        fill: #b2b2b2;
-      }
-    }
   }
 
   &__btn {
@@ -124,10 +115,10 @@
     background: #ffffff url("../img/review@1x.jpg") 0% 0% no-repeat;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-        background-image: url("../img/review@2x.jpg");
-        background-size: 350px auto;
-      }
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
 
     &__title {
       margin-bottom: 0;
@@ -226,7 +217,7 @@
     &__prev,
     &__next {
       &:hover {
-        polygon {
+        .reviews__slider-toggle {
           fill: #666666;
         }
       }

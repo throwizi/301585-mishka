@@ -30,11 +30,15 @@
     "*.json",
     "*.js",
     "source/*.html",
-    "source/js/**/*.js",
+    "source/js/!(picturefill).js",
     "source/img/**/*.svg",
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
     "node": "8.9"
+  },
+  "dependencies": {
+    "gulp-rename": "^1.2.2",
+    "gulp-svgstore": "^6.1.1"
   }
 }
