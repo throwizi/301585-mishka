@@ -70,14 +70,7 @@
 
     background-color: #ffffff;
     cursor: pointer;
-  }
 
-  &__slider-toggle {
-    fill: #000000;
-  }
-
-  &__prev,
-  &__next {
     &:focus {
       .reviews__slider-toggle {
         fill: #666666;
@@ -90,6 +83,11 @@
       }
     }
   }
+
+  &__slider-toggle {
+    fill: #000000;
+  }
+
 
   &__next {
     border-left: none;
@@ -117,10 +115,10 @@
     background: #ffffff url("../img/review@1x.jpg") 0% 0% no-repeat;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-        background-image: url("../img/review@2x.jpg");
-        background-size: 350px auto;
-      }
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
 
     &__title {
       margin-bottom: 0;

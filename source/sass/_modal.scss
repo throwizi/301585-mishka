@@ -119,11 +119,10 @@
     text-transform: uppercase;
 
     border: 2px solid $border-color;
-
   }
 
   &__input {
-    &:focus + .modal__text{
+    &:focus + .modal__text {
       border-color: #c7c7c7;
     }
 
