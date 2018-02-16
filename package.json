@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "gulp-rename": "^1.2.2",
-    "gulp-svgstore": "^6.1.1"
+    "gulp-svgstore": "^6.1.1",
+    "gulp-webp": "^3.0.0"
   }
 }

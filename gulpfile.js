@@ -6,6 +6,7 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var svgstore = require("gulp-svgstore");
+var webp = require("gulp-webp");
 var rename = require("gulp-rename");
 var server = require("browser-sync").create();
 
@@ -35,6 +36,12 @@ gulp.task("logo-sprite", function () {
       inlineSvg: true
     }))
     .pipe(rename("sprite-logo.svg"))
+    .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("webp", function (){
+  return gulp.src("source/img/triple-*.{jpg, png}")
+    .pipe(webp({quality: 70}))
     .pipe(gulp.dest("source/img"));
 });
 
