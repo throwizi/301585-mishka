@@ -50,6 +50,7 @@
     display: block;
     margin-bottom: 30px;
     color: $text-color;
+    width: 140px;
   }
 
   &__slider-toggles {
@@ -149,6 +150,7 @@
 
     &__link {
       margin-bottom: 0;
+      width: 150px;
     }
 
     &__slider-toggles {
@@ -207,6 +209,10 @@
 
     &__author-name {
       font-size: 17px;
+    }
+
+    &__link {
+      width: 160px;
     }
 
     &__slider-toggles {

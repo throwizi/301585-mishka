@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 21px;
+    padding-top: 22px;
 
     &:active {
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
@@ -25,7 +25,7 @@
   &__header {
     display: flex;
     padding: 0 28px;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 
   &__title {
@@ -133,6 +133,10 @@
         width: 330px;
         height: 330px;
       }
+
+      &--source {
+        margin-bottom: 7px;
+      }
     }
 
     &__description {
@@ -174,7 +178,7 @@
       }
 
       &--source {
-        padding-right: 28px;
+        margin-bottom: 5px;
       }
     }
 
@@ -188,7 +192,7 @@
     }
 
     &__header {
-      margin-bottom: 40px;
+      margin-bottom: 38px;
     }
 
     &__footer {
@@ -196,11 +200,11 @@
     }
 
     &__wrapper {
-      padding-bottom: 25px;
+      padding-bottom: 27px;
     }
 
     &:last-child &__header {
-      margin-bottom: 15px;
+      margin-bottom: 14px;
     }
 
     &__order {

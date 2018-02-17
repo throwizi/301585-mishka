@@ -11,7 +11,7 @@
   margin: 0 auto;
 
   background-color: #ffffff;
-  padding-top: 27px;
+  padding-top: 28px;
   padding-bottom: 36px;
 
   &__header {
@@ -55,7 +55,7 @@
     align-self: center;
 
     width: 260px;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
   }
 
   &__footer {
@@ -76,6 +76,7 @@
 
   &__btn {
     align-self: center;
+    padding-top: 17px;
   }
 
   &__modal {
@@ -89,7 +90,7 @@
   .feature {
     position: relative;
     max-width: $tablet-width;
-    padding-top: 47px;
+    padding-top: 45px;
     padding-bottom: 54px;
 
 
@@ -131,7 +132,7 @@
     &__img {
       position: absolute;
       width: 334px;
-      top: 155px;
+      top: 153px;
       right: 50px;
     }
 

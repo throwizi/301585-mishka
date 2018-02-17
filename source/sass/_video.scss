@@ -39,7 +39,7 @@
       left: -59px;
       width: 36px;
       height: 27px;
-      background: url("../img/icon-video.svg") 50% 50% no-repeat;
+      background: url("../img/bg-icon-video.svg") 50% 50% no-repeat;
     }
   }
 
@@ -165,7 +165,7 @@
     padding-bottom: 103px;
 
     &__wrapper {
-      width: 100%;
+      width: 1050px;
       flex-direction: column;
       flex-wrap: wrap;
       height: 454px;
@@ -202,7 +202,7 @@
     }
 
     &__play-btn {
-      svg {
+      &-icon {
         transition-property: width, height;
         transition-duration: 0.3s;
       }
