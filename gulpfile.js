@@ -79,7 +79,7 @@ gulp.task("serve", function() {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/**/*.{woff, woff2}",
+    "source/fonts/**/*.*",
     "source/img/**",
     "source/js/**"
   ], {
@@ -97,6 +97,7 @@ gulp.task("build", function(done) {
     "clean",
     "copy",
     "images",
+    "webp",
     "style",
     "content-svg-sprite",
     "html",
