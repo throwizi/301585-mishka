@@ -15,7 +15,6 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var htmlmin = require("gulp-htmlmin");
 var uglify = require("gulp-uglify");
-var pump = require("pump");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
 
